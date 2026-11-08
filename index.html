@@ -3,32 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vị Xưa - Tinh Hoa Gia Vị Truyền Thống Việt Nam | 100% Tự Nhiên</title>
     
     <!-- SEO & META TAGS -->
-    <title>Vị Xưa - Tinh Hoa Gia Vị Truyền Thống Việt Nam | 100% Tự Nhiên</title>
-    <meta name="description" content="Khám phá gia vị truyền thống Vị Xưa: Nước mắm cốt nhỉ cá cơm ủ chượp 24 tháng, tiêu sọ rừng Tiên Phước, muối ớt xiêm hũ gốm. 100% nguyên chất, đậm vị cơm nhà.">
-    <meta name="keywords" content="gia vị truyền thống, vị xưa, nước mắm cốt nhỉ, tiêu sọ tiên phước, muối ớt xiêm, gia vị sạch, quà tặng tết">
-    <meta name="author" content="Vị Xưa - Đậm Vị Truyền Thống">
-    <meta name="robots" content="index, follow">
-
-    <!-- OPEN GRAPH -->
-    <meta property="og:type" content="website">
+    <meta name="description" content="Thương hiệu gia vị truyền thống Vị Xưa: Nước mắm cốt nhỉ cá cơm Phú Quốc, tiêu rừng Tiên Phước, muối ớt xiêm nướng gốm. 100% nguyên chất, đậm vị cơm nhà.">
+    <meta name="keywords" content="gia vị truyền thống, vị xưa, nước mắm cốt nhỉ, tiêu sọ tiên phước, muối ớt xiêm, gia vị sạch">
     <meta property="og:title" content="Vị Xưa - Đậm Vị Truyền Thống | Tinh Hoa Gia Vị Việt">
     <meta property="og:description" content="Gia vị sạch ủ chượp thủ công, gìn giữ ký ức bếp quê. Nhận ngay Voucher giảm giá 30% hôm nay!">
-    <meta property="og:image" content="https://images.unsplash.com/photo-1596040033229-a9821ebd058d?auto=format&fit=crop&w=1200&q=80">
-    <meta property="og:locale" content="vi_VN">
-
-    <!-- CẤU TRÚC DỮ LIỆU SCHEMA.ORG GOOGLE -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Store",
-      "name": "Gia Vị Vị Xưa",
-      "description": "Thương hiệu gia vị truyền thống Việt Nam: Nước mắm cốt nhỉ, muối tiêu bản địa, gia vị ướp kho cổ truyền.",
-      "telephone": "19001234",
-      "priceRange": "45.000đ - 465.000đ"
-    }
-    </script>
+    <meta property="og:type" content="website">
 
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -46,13 +28,13 @@
             theme: {
                 extend: {
                     colors: {
-                        'vixua-burgundy': '#7D1C36',
-                        'vixua-burgundy-dark': '#4F0F21',
-                        'vixua-burgundy-light': '#9E2746',
-                        'vixua-cream': '#FCF9F6',
-                        'vixua-kraft': '#F4EAE2',
-                        'vixua-gold': '#C8933C',
-                        'vixua-dark': '#291219'
+                        'vixua-burgundy': '#7D1C36',      /* Đỏ mận chuẩn */
+                        'vixua-burgundy-dark': '#4F0F21', /* Đỏ mận đậm */
+                        'vixua-burgundy-light': '#9E2746',/* Đỏ mận sáng */
+                        'vixua-cream': '#FCF9F6',         /* Nền kem mộc */
+                        'vixua-kraft': '#F4EAE2',         /* Nền giấy kraft */
+                        'vixua-gold': '#C8933C',          /* Vàng đồng di sản */
+                        'vixua-dark': '#291219'           /* Chữ nâu mận tối */
                     },
                     fontFamily: {
                         serif: ['Playfair Display', 'serif'],
@@ -79,191 +61,640 @@
 <body class="font-sans text-vixua-dark bg-vixua-cream selection:bg-vixua-burgundy selection:text-white">
 
     <!-- TOP ANNOUNCEMENT BAR -->
-    <div class="bg-vixua-burgundy-dark text-vixua-kraft text-xs py-2 px-4 border-b border-vixua-gold/20">
+    <div class="bg-vixua-burgundy-dark text-vixua-kraft text-xs py-2.5 px-4 border-b border-vixua-gold/20">
         <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
             <div class="flex items-center gap-2">
-                <span class="inline-block px-2 py-0.5 rounded-full bg-vixua-gold text-vixua-dark font-bold text-[10px] uppercase tracking-wider">Ưu đãi</span>
-                <span>Miễn phí vận chuyển toàn quốc cho đơn hàng từ <strong>299.000đ</strong></span>
+                <span class="inline-block px-2.5 py-0.5 rounded-full bg-vixua-gold text-vixua-dark font-black text-[10px] uppercase tracking-wider">Khai Trương</span>
+                <span>Ưu đãi giảm <strong>30%</strong> toàn bộ sản phẩm + Freeship đơn từ <strong>299.000đ</strong></span>
             </div>
             <div class="flex items-center gap-6 font-medium text-[11px]">
                 <a href="tel:19001234" class="hover:text-vixua-gold transition-colors flex items-center gap-1.5">
                     <i class="fa-solid fa-phone-volume text-vixua-gold"></i> Hotline: 1900 1234
                 </a>
                 <span class="hidden sm:inline">|</span>
-                <span class="flex items-center gap-1.5"><i class="fa-solid fa-shield-halved text-vixua-gold"></i> 100% Nguyên Chất Tự Nhiên</span>
+                <span class="flex items-center gap-1.5"><i class="fa-solid fa-shield-halved text-vixua-gold"></i> 100% Thủ Công Tự Nhiên</span>
             </div>
         </div>
     </div>
 
-    <!-- MAIN NAVBAR -->
+    <!-- MAIN NAVBAR (LOGO CỦA BẠN ĐƯỢC GẮN TRỰC TIẾP TẠI ĐÂY) -->
     <header class="sticky top-0 z-40 bg-vixua-cream/95 backdrop-blur-md border-b border-vixua-burgundy/15 shadow-sm">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            
+            <!-- Logo ảnh chuẩn của bạn -->
             <a href="#" class="flex items-center gap-3 group py-1">
-                <div class="h-14 sm:h-16 w-auto flex items-center bg-white/70 p-1 rounded-xl border border-vixua-burgundy/10 shadow-sm transition-transform duration-300 group-hover:scale-105">
-                    <svg viewBox="0 0 580 320" class="h-12 w-auto fill-vixua-burgundy">
-                        <path d="M 30,35 Q 85,15 145,40 C 120,68 95,95 72,125 Q 135,170 195,200 Q 140,200 95,160 Q 60,195 10,212 Q 70,185 110,140 Q 88,118 50,70 Q 85,70 102,48 Q 65,42 30,35 Z"/>
-                        <path d="M 105,25 Q 128,55 152,90 L 195,48 Q 170,90 130,128 Q 170,165 195,185 Q 170,148 182,110 Z"/>
-                        <rect x="225" y="20" width="28" height="28" rx="3"/>
-                        <rect x="225" y="58" width="28" height="38" rx="3"/>
-                        <rect x="225" y="106" width="28" height="24" rx="3"/>
-                        <path d="M 225,140 H 253 V 175 Q 253,205 288,205 Q 320,205 320,175 V 140 H 348 V 175 Q 348,228 288,228 Q 225,228 225,175 Z"/>
-                        <path d="M 310,125 Q 355,100 355,50 Q 355,20 320,18 Q 350,30 350,60 Q 350,90 310,125 Z"/>
-                        <path d="M 380,225 L 435,20 Q 455,10 478,10 Q 500,10 520,20 L 575,225 H 530 L 512,150 H 443 L 425,225 Z M 478,55 L 452,118 H 504 Z"/>
-                        <text x="290" y="280" font-family="'Plus Jakarta Sans', sans-serif" font-size="28" font-weight="600" text-anchor="middle" letter-spacing="1">Đậm Vị Truyền Thống</text>
-                    </svg>
-                </div>
-                <div>
-                    <span class="font-serif font-black text-xl text-vixua-burgundy tracking-wide block leading-none">VỊ XƯA</span>
-                    <span class="text-[10px] text-vixua-gold font-bold tracking-widest uppercase">Gia Vị Di Sản Việt</span>
+                <div class="h-14 sm:h-16 w-auto flex items-center bg-white p-1 rounded-xl border border-vixua-burgundy/15 shadow-sm transition-transform duration-300 group-hover:scale-105">
+                    <img id="main-logo-img" alt="Logo Gia Vị Vị Xưa" class="h-full w-auto object-contain max-w-[190px]">
                 </div>
             </a>
 
-            <nav class="hidden lg:flex items-center gap-8 font-medium text-sm">
-                <a href="#about" class="text-vixua-dark hover:text-vixua-burgundy font-semibold transition-colors">Về Vị Xưa</a>
-                <a href="#products" class="text-vixua-dark hover:text-vixua-burgundy font-semibold transition-colors">Danh Mục Gia Vị</a>
-                <a href="#giftsets" class="text-vixua-dark hover:text-vixua-burgundy font-semibold transition-colors">Hộp Quà Bếp Ấm</a>
+            <!-- Navigation Links -->
+            <nav class="hidden lg:flex items-center gap-7 font-medium text-sm">
+                <a href="#about" class="hover:text-vixua-burgundy font-semibold transition-colors">Về Vị Xưa</a>
+                <a href="#heritage" class="hover:text-vixua-burgundy font-semibold transition-colors">Hương Vị Bản Địa</a>
+                <a href="#products" class="hover:text-vixua-burgundy font-semibold transition-colors">Danh Mục Gia Vị</a>
+                <a href="#comparison" class="hover:text-vixua-burgundy font-semibold transition-colors">Chuẩn Chất Lượng</a>
+                <a href="#activities" class="hover:text-vixua-burgundy font-semibold transition-colors">Trải Nghiệm Bếp Xưa</a>
+                <a href="#giftsets" class="hover:text-vixua-burgundy font-semibold transition-colors">Bộ Quà Tặng</a>
+                <a href="#recipes" class="hover:text-vixua-burgundy font-semibold transition-colors">Bí Quyết Món Ngon</a>
             </nav>
 
+            <!-- Actions -->
             <div class="flex items-center gap-3">
-                <button onclick="openVoucherModal()" class="burgundy-gradient hover:opacity-95 text-white text-xs font-bold px-5 py-3 rounded-full shadow-md transition-all">
-                    <i class="fa-solid fa-gift text-vixua-gold mr-1"></i> Nhận Voucher 30%
+                <button onclick="toggleCartDrawer()" class="relative p-2.5 rounded-full bg-vixua-burgundy/10 hover:bg-vixua-burgundy hover:text-white text-vixua-burgundy transition-all duration-300">
+                    <i class="fa-solid fa-basket-shopping text-base"></i>
+                    <span id="cart-badge" class="absolute -top-1 -right-1 bg-vixua-gold text-vixua-dark text-[11px] font-black w-5 h-5 rounded-full flex items-center justify-center shadow">0</span>
+                </button>
+                <button onclick="openVoucherModal()" class="hidden sm:inline-flex items-center gap-2 burgundy-gradient hover:opacity-95 text-white text-xs font-bold px-5 py-3 rounded-full shadow-md transition-all">
+                    <i class="fa-solid fa-gift text-vixua-gold"></i>
+                    <span>Nhận Voucher 30%</span>
                 </button>
             </div>
         </div>
     </header>
 
     <!-- HERO SECTION -->
-    <section id="about" class="relative bg-kraft-dots py-16 lg:py-20 border-b border-vixua-burgundy/10">
+    <section id="about" class="relative bg-kraft-dots py-16 lg:py-24 border-b border-vixua-burgundy/10">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid lg:grid-cols-12 gap-12 items-center">
+                
                 <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
-                    <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-vixua-burgundy/10 border border-vixua-burgundy/20 text-vixua-burgundy font-bold text-xs uppercase">
-                        <i class="fa-solid fa-award text-vixua-gold"></i> Tinh Hoa Gia Vị Căn Bếp Việt
+                    <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-vixua-burgundy/10 border border-vixua-burgundy/20 text-vixua-burgundy font-bold text-xs uppercase tracking-wider">
+                        <i class="fa-solid fa-sparkles text-vixua-gold"></i> Tinh Hoa Gia Vị Di Sản Việt Nam
                     </div>
+
                     <h1 class="font-serif text-4xl sm:text-5xl lg:text-6xl font-black text-vixua-burgundy leading-tight">
                         Đậm Hương Ký Ức, <br>
                         <span class="italic font-normal text-vixua-gold">Trọn Vị Cơm Nhà.</span>
                     </h1>
-                    <p class="text-base sm:text-lg text-vixua-dark/85 leading-relaxed max-w-2xl">
-                        Nước mắm cốt nhỉ cá cơm ủ chượp thùng gỗ bời lời, tiêu rừng Tiên Phước ngát hương cùng muối hầm Sa Huỳnh đượm vị. <strong>Vị Xưa</strong> gìn giữ nguyên bản những phong vị thuần khiết nhất của ẩm thực quê nhà.
+
+                    <p class="text-base sm:text-lg text-vixua-dark/85 leading-relaxed max-w-2xl mx-auto lg:mx-0">
+                        Gian hàng <strong class="text-vixua-burgundy">"Vị Xưa"</strong> giới thiệu các dòng gia vị truyền thống Việt Nam độc đáo. Từ nước mắm nhỉ cá cơm ủ chượp thùng gỗ bời lời, tiêu sọ rừng Tiên Phước ngát hương, tới muối hầm Sa Huỳnh đượm vị mặn ngọt thanh lành.
                     </p>
+
+                    <!-- Đồng hồ đếm ngược -->
+                    <div class="bg-white/90 p-4 rounded-2xl border border-vixua-burgundy/20 max-w-lg mx-auto lg:mx-0 shadow-sm backdrop-blur">
+                        <div class="flex items-center justify-between mb-2">
+                            <span class="text-xs font-bold text-vixua-burgundy uppercase flex items-center gap-2">
+                                <span class="w-2 h-2 rounded-full bg-red-600 animate-ping"></span>
+                                Sự kiện ưu đãi khai trương gian hàng
+                            </span>
+                        </div>
+                        <div class="grid grid-cols-4 gap-2 text-center text-xs">
+                            <div class="bg-vixua-kraft p-2 rounded-xl font-mono font-bold text-vixua-burgundy text-xl" id="cd-days">03 <span class="block text-[9px] font-sans text-vixua-dark/70 font-normal">Ngày</span></div>
+                            <div class="bg-vixua-kraft p-2 rounded-xl font-mono font-bold text-vixua-burgundy text-xl" id="cd-hours">14 <span class="block text-[9px] font-sans text-vixua-dark/70 font-normal">Giờ</span></div>
+                            <div class="bg-vixua-kraft p-2 rounded-xl font-mono font-bold text-vixua-burgundy text-xl" id="cd-minutes">36 <span class="block text-[9px] font-sans text-vixua-dark/70 font-normal">Phút</span></div>
+                            <div class="bg-vixua-kraft p-2 rounded-xl font-mono font-bold text-vixua-gold text-xl" id="cd-seconds">48 <span class="block text-[9px] font-sans text-vixua-dark/70 font-normal">Giây</span></div>
+                        </div>
+                    </div>
+
+                    <!-- Nút bấm -->
                     <div class="pt-2 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-                        <a href="#products" class="burgundy-gradient text-white font-bold px-8 py-4 rounded-xl shadow-lg flex items-center justify-center gap-2">
-                            <span>Khám Phá Sản Phẩm</span>
+                        <a href="#products" class="burgundy-gradient text-white font-bold px-8 py-4 rounded-xl shadow-lg hover:shadow-xl transition-all flex items-center justify-center gap-3">
+                            <span>Khám Phá Gian Hàng</span>
                             <i class="fa-solid fa-arrow-right text-xs"></i>
                         </a>
-                        <button onclick="openVoucherModal()" class="bg-white border-2 border-vixua-burgundy/30 text-vixua-burgundy font-bold px-7 py-3.5 rounded-xl">
-                            Nhận Mã Giảm 30%
+                        <button onclick="openVoucherModal()" class="bg-white border-2 border-vixua-burgundy/30 text-vixua-burgundy font-bold px-7 py-3.5 rounded-xl hover:bg-vixua-kraft transition-all">
+                            Nhận Mã Giảm 30% Ngay
                         </button>
+                    </div>
+
+                    <div class="pt-6 grid grid-cols-3 gap-4 border-t border-vixua-burgundy/15 text-center lg:text-left">
+                        <div>
+                            <span class="block font-serif text-2xl font-black text-vixua-burgundy">100%</span>
+                            <span class="text-xs text-vixua-dark/70 font-medium">Nguyên chất tự nhiên</span>
+                        </div>
+                        <div>
+                            <span class="block font-serif text-2xl font-black text-vixua-burgundy">Ủ 24+</span>
+                            <span class="text-xs text-vixua-dark/70 font-medium">Tháng ròng gia truyền</span>
+                        </div>
+                        <div>
+                            <span class="block font-serif text-2xl font-black text-vixua-burgundy">3+</span>
+                            <span class="text-xs text-vixua-dark/70 font-medium">Workshop trải nghiệm</span>
+                        </div>
                     </div>
                 </div>
 
-                <div class="lg:col-span-5">
-                    <div class="bg-white p-6 rounded-3xl border-2 border-vixua-burgundy/20 shadow-xl">
-                        <img src="https://images.unsplash.com/photo-1596040033229-a9821ebd058d?auto=format&fit=crop&w=800&q=80" alt="Gia vị" class="w-full h-72 object-cover rounded-2xl mb-4">
-                        <h3 class="font-serif font-bold text-lg text-vixua-burgundy">Góc Bếp Xưa Mộc Mạc</h3>
-                        <p class="text-xs text-vixua-dark/70 mt-1">100% nguyên liệu bản địa thuần khiết, ủ chượp tự nhiên không hóa chất bảo quản.</p>
+                <!-- Hero Right: Hình ảnh góc bếp xưa -->
+                <div class="lg:col-span-5 relative">
+                    <div class="bg-white p-6 rounded-3xl border-2 border-vixua-burgundy/20 shadow-2xl relative">
+                        <div class="w-full h-80 rounded-2xl overflow-hidden relative mb-5">
+                            <img src="https://images.unsplash.com/photo-1596040033229-a9821ebd058d?auto=format&fit=crop&w=800&q=80" alt="Gia vị Vị Xưa" class="w-full h-full object-cover">
+                            <div class="absolute inset-0 bg-gradient-to-t from-vixua-burgundy-dark/80 via-transparent to-transparent"></div>
+                            <div class="absolute bottom-4 left-4 right-4 text-white">
+                                <span class="bg-vixua-gold text-vixua-dark text-[10px] font-black px-2.5 py-1 rounded-full uppercase tracking-wider">Không Gian Bếp Quê</span>
+                                <h3 class="font-serif text-xl font-bold mt-1 text-white">Kệ gỗ, hũ gốm & giấy Kraft mộc mạc</h3>
+                            </div>
+                        </div>
+                        <div class="space-y-3">
+                            <div class="flex items-center gap-3 text-xs text-vixua-dark/80 font-medium">
+                                <i class="fa-solid fa-location-dot text-vixua-burgundy text-base"></i>
+                                <span>Gian hàng "Vị Xưa" tại Event Khai Trương Trực Tuyến</span>
+                            </div>
+                            <div class="flex items-center gap-3 text-xs text-vixua-dark/80 font-medium">
+                                <i class="fa-solid fa-gift text-vixua-burgundy text-base"></i>
+                                <span>Tặng Lọ gia vị gốm thủ công + Voucher 30% tri ân</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
+
             </div>
         </div>
     </section>
 
-    <!-- PRODUCTS SECTION -->
-    <section id="products" class="py-20 bg-vixua-cream">
+    <!-- SECTION 2: HERITAGE & STORY (HÀNH TRÌNH VỊ XƯA) -->
+    <section id="heritage" class="py-20 bg-vixua-cream">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center max-w-2xl mx-auto mb-12">
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
+                
+                <div class="lg:col-span-6 relative">
+                    <div class="grid grid-cols-2 gap-4">
+                        <img src="https://images.unsplash.com/photo-1506368249639-73a05d6f6488?auto=format&fit=crop&w=600&q=80" alt="Thảo mộc tự nhiên" class="rounded-2xl shadow-md w-full h-64 object-cover">
+                        <img src="https://images.unsplash.com/photo-1514792453868-ad400afe5961?auto=format&fit=crop&w=600&q=80" alt="Ủ chượp nước mắm" class="rounded-2xl shadow-md w-full h-64 object-cover mt-8">
+                    </div>
+                </div>
+
+                <div class="lg:col-span-6 space-y-6">
+                    <span class="text-vixua-gold font-bold text-xs tracking-widest uppercase">Hành Trình Di Sản</span>
+                    <h2 class="font-serif text-3xl sm:text-4xl font-extrabold text-vixua-burgundy leading-tight">
+                        "Giữ Lại Hồn Cốt Của Căn Bếp Việt Xưa"
+                    </h2>
+                    <p class="text-sm sm:text-base text-vixua-dark/80 leading-relaxed">
+                        Thời đại công nghiệp khiến mâm cơm gia đình dần tràn ngập những hạt nêm nhân tạo và chất điều vị tổng hợp. 
+                    </p>
+                    <p class="text-sm sm:text-base text-vixua-dark/80 leading-relaxed">
+                        <strong>Vị Xưa</strong> ra đời với sứ mệnh lội ngược dòng: tìm về những làng nghề ủ mắm trăm năm, những vùng núi rừng bạt ngàn cây tiêu, cây quế cổ thụ để mang trọn vẹn gia vị tự nhiên, an lành nhất trở về mâm cơm Việt.
+                    </p>
+                    <div class="grid sm:grid-cols-2 gap-4 pt-2">
+                        <div class="p-4 rounded-xl bg-white border border-vixua-burgundy/15 shadow-sm">
+                            <span class="font-serif font-bold text-vixua-burgundy block text-lg mb-1">Mộc Mạc Bản Địa</span>
+                            <span class="text-xs text-vixua-dark/70">Tôn trọng thổ nhưỡng, giữ nguyên bản tính tự nhiên của gia vị Việt.</span>
+                        </div>
+                        <div class="p-4 rounded-xl bg-white border border-vixua-burgundy/15 shadow-sm">
+                            <span class="font-serif font-bold text-vixua-burgundy block text-lg mb-1">Thủ Công Gia Truyền</span>
+                            <span class="text-xs text-vixua-dark/70">Không đẩy nhanh tiến độ bằng máy móc công nghiệp độc hại.</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 3: PRODUCTS CATALOG (8 SẢN PHẨM HOÀN CHỈNH) -->
+    <section id="products" class="py-20 bg-kraft-dots border-t border-b border-vixua-burgundy/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-14">
                 <span class="text-vixua-gold font-bold text-xs uppercase tracking-widest">Danh Mục Tinh Tuyển</span>
-                <h2 class="font-serif text-3xl sm:text-4xl font-extrabold text-vixua-burgundy mt-1">Gia Vị Thuần Tự Nhiên</h2>
+                <h2 class="font-serif text-3xl sm:text-4xl font-extrabold text-vixua-burgundy mt-1">Sản Phẩm Gia Vị Thuần Tự Nhiên</h2>
                 <div class="w-16 h-1 bg-vixua-burgundy mx-auto mt-3 rounded-full"></div>
             </div>
 
             <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-                <div class="bg-white rounded-2xl p-5 border border-vixua-burgundy/15 shadow-sm hover:shadow-lg transition-all flex flex-col justify-between">
+                
+                <!-- Product 1 -->
+                <div class="bg-white rounded-2xl overflow-hidden border border-vixua-burgundy/15 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
                     <div>
-                        <img src="https://images.unsplash.com/photo-1615485290382-441e4d049cb5?auto=format&fit=crop&w=400&q=80" class="w-full h-44 object-cover rounded-xl mb-3">
-                        <h4 class="font-serif font-bold text-base text-vixua-burgundy">Nước Mắm Cốt Nhỉ 40N</h4>
-                        <p class="text-xs text-vixua-dark/70 mt-1">Ủ chượp cá cơm than 24 tháng trong thùng gỗ bời lời.</p>
+                        <div class="h-48 overflow-hidden relative">
+                            <img src="https://images.unsplash.com/photo-1615485290382-441e4d049cb5?auto=format&fit=crop&w=400&q=80" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                            <span class="absolute top-3 left-3 bg-vixua-burgundy text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase">Ủ 24 Tháng</span>
+                        </div>
+                        <div class="p-5">
+                            <h3 class="font-serif font-bold text-lg text-vixua-burgundy">Nước Mắm Cốt Nhỉ 40N</h3>
+                            <p class="text-xs text-vixua-dark/70 mt-1 line-clamp-2">Ủ chượp cá cơm than Phú Quốc trong thùng gỗ bời lời, ngọt hậu sâu lắng.</p>
+                        </div>
                     </div>
-                    <div class="mt-4 pt-3 border-t border-vixua-burgundy/10 flex items-center justify-between">
-                        <span class="font-serif font-bold text-vixua-burgundy text-lg">135.000đ</span>
-                        <button onclick="openVoucherModal()" class="text-xs font-bold text-vixua-burgundy bg-vixua-burgundy/10 px-3 py-1.5 rounded-lg">Giảm 30%</button>
+                    <div class="p-5 pt-0">
+                        <div class="flex items-baseline gap-2 mb-3">
+                            <span class="font-serif font-bold text-xl text-vixua-burgundy">135.000đ</span>
+                            <span class="text-xs text-vixua-dark/40 line-through">170.000đ</span>
+                        </div>
+                        <button onclick="addToCart('Nước Mắm Cốt Nhỉ 40N', 135000, 'https://images.unsplash.com/photo-1615485290382-441e4d049cb5?auto=format&fit=crop&w=200&q=80')" class="w-full py-2.5 rounded-xl border-2 border-vixua-burgundy text-vixua-burgundy font-bold text-xs hover:bg-vixua-burgundy hover:text-white transition-all">
+                            Thêm Vào Giỏ
+                        </button>
                     </div>
                 </div>
 
-                <div class="bg-white rounded-2xl p-5 border border-vixua-burgundy/15 shadow-sm hover:shadow-lg transition-all flex flex-col justify-between">
+                <!-- Product 2 -->
+                <div class="bg-white rounded-2xl overflow-hidden border border-vixua-burgundy/15 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
                     <div>
-                        <img src="https://images.unsplash.com/photo-1596040033229-a9821ebd058d?auto=format&fit=crop&w=400&q=80" class="w-full h-44 object-cover rounded-xl mb-3">
-                        <h4 class="font-serif font-bold text-base text-vixua-burgundy">Muối Ớt Xiêm Hũ Gốm</h4>
-                        <p class="text-xs text-vixua-dark/70 mt-1">Muối hầm rang thủ công hòa quyện ớt xiêm rừng thơm nồng.</p>
+                        <div class="h-48 overflow-hidden relative">
+                            <img src="https://images.unsplash.com/photo-1596040033229-a9821ebd058d?auto=format&fit=crop&w=400&q=80" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                            <span class="absolute top-3 left-3 bg-vixua-gold text-vixua-dark text-[10px] font-bold px-2.5 py-1 rounded-full uppercase">Bán Chạy</span>
+                        </div>
+                        <div class="p-5">
+                            <h3 class="font-serif font-bold text-lg text-vixua-burgundy">Muối Ớt Xiêm Hũ Gốm</h3>
+                            <p class="text-xs text-vixua-dark/70 mt-1 line-clamp-2">Muối hầm Sa Huỳnh rang thủ công cùng ớt xiêm xanh rừng cay nồng đượm khói bếp.</p>
+                        </div>
                     </div>
-                    <div class="mt-4 pt-3 border-t border-vixua-burgundy/10 flex items-center justify-between">
-                        <span class="font-serif font-bold text-vixua-burgundy text-lg">55.000đ</span>
-                        <button onclick="openVoucherModal()" class="text-xs font-bold text-vixua-burgundy bg-vixua-burgundy/10 px-3 py-1.5 rounded-lg">Giảm 30%</button>
+                    <div class="p-5 pt-0">
+                        <div class="flex items-baseline gap-2 mb-3">
+                            <span class="font-serif font-bold text-xl text-vixua-burgundy">55.000đ</span>
+                            <span class="text-xs text-vixua-dark/40 line-through">75.000đ</span>
+                        </div>
+                        <button onclick="addToCart('Muối Ớt Xiêm Hũ Gốm', 55000, 'https://images.unsplash.com/photo-1596040033229-a9821ebd058d?auto=format&fit=crop&w=200&q=80')" class="w-full py-2.5 rounded-xl border-2 border-vixua-burgundy text-vixua-burgundy font-bold text-xs hover:bg-vixua-burgundy hover:text-white transition-all">
+                            Thêm Vào Giỏ
+                        </button>
                     </div>
                 </div>
 
-                <div class="bg-white rounded-2xl p-5 border border-vixua-burgundy/15 shadow-sm hover:shadow-lg transition-all flex flex-col justify-between">
+                <!-- Product 3 -->
+                <div class="bg-white rounded-2xl overflow-hidden border border-vixua-burgundy/15 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
                     <div>
-                        <img src="https://images.unsplash.com/photo-1532336414038-cf19250c5757?auto=format&fit=crop&w=400&q=80" class="w-full h-44 object-cover rounded-xl mb-3">
-                        <h4 class="font-serif font-bold text-base text-vixua-burgundy">Sốt Kho Cá Cổ Truyền</h4>
-                        <p class="text-xs text-vixua-dark/70 mt-1">Nêm sẵn hành tăm, mật mía, tiêu sọ đượm vị mâm cơm quê.</p>
+                        <div class="h-48 overflow-hidden relative">
+                            <img src="https://images.unsplash.com/photo-1532336414038-cf19250c5757?auto=format&fit=crop&w=400&q=80" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        </div>
+                        <div class="p-5">
+                            <h3 class="font-serif font-bold text-lg text-vixua-burgundy">Sốt Kho Cá Cổ Truyền</h3>
+                            <p class="text-xs text-vixua-dark/70 mt-1 line-clamp-2">Nêm sẵn hành tăm, mật mía, tiêu sọ và nước mắm nhỉ. Chuẩn vị cá kho quê.</p>
+                        </div>
                     </div>
-                    <div class="mt-4 pt-3 border-t border-vixua-burgundy/10 flex items-center justify-between">
-                        <span class="font-serif font-bold text-vixua-burgundy text-lg">68.000đ</span>
-                        <button onclick="openVoucherModal()" class="text-xs font-bold text-vixua-burgundy bg-vixua-burgundy/10 px-3 py-1.5 rounded-lg">Giảm 30%</button>
+                    <div class="p-5 pt-0">
+                        <div class="flex items-baseline gap-2 mb-3">
+                            <span class="font-serif font-bold text-xl text-vixua-burgundy">68.000đ</span>
+                            <span class="text-xs text-vixua-dark/40 line-through">85.000đ</span>
+                        </div>
+                        <button onclick="addToCart('Sốt Kho Cá Cổ Truyền', 68000, 'https://images.unsplash.com/photo-1532336414038-cf19250c5757?auto=format&fit=crop&w=200&q=80')" class="w-full py-2.5 rounded-xl border-2 border-vixua-burgundy text-vixua-burgundy font-bold text-xs hover:bg-vixua-burgundy hover:text-white transition-all">
+                            Thêm Vào Giỏ
+                        </button>
                     </div>
                 </div>
 
-                <div class="bg-white rounded-2xl p-5 border border-vixua-burgundy/15 shadow-sm hover:shadow-lg transition-all flex flex-col justify-between">
+                <!-- Product 4 -->
+                <div class="bg-white rounded-2xl overflow-hidden border border-vixua-burgundy/15 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
                     <div>
-                        <img src="https://images.unsplash.com/photo-1509358271058-acd02cc93858?auto=format&fit=crop&w=400&q=80" class="w-full h-44 object-cover rounded-xl mb-3">
-                        <h4 class="font-serif font-bold text-base text-vixua-burgundy">Tiêu Sọ Rừng Tiên Phước</h4>
-                        <p class="text-xs text-vixua-dark/70 mt-1">Hạt tiêu chà vỏ tự nhiên cay ấm, nồng nàn thơm lâu.</p>
+                        <div class="h-48 overflow-hidden relative">
+                            <img src="https://images.unsplash.com/photo-1509358271058-acd02cc93858?auto=format&fit=crop&w=400&q=80" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        </div>
+                        <div class="p-5">
+                            <h3 class="font-serif font-bold text-lg text-vixua-burgundy">Tiêu Sọ Rừng Tiên Phước</h3>
+                            <p class="text-xs text-vixua-dark/70 mt-1 line-clamp-2">Hạt tiêu chà vỏ tự nhiên cay ấm, nồng nàn không gắt, giữ hương cực lâu.</p>
+                        </div>
                     </div>
-                    <div class="mt-4 pt-3 border-t border-vixua-burgundy/10 flex items-center justify-between">
-                        <span class="font-serif font-bold text-vixua-burgundy text-lg">89.000đ</span>
-                        <button onclick="openVoucherModal()" class="text-xs font-bold text-vixua-burgundy bg-vixua-burgundy/10 px-3 py-1.5 rounded-lg">Giảm 30%</button>
+                    <div class="p-5 pt-0">
+                        <div class="flex items-baseline gap-2 mb-3">
+                            <span class="font-serif font-bold text-xl text-vixua-burgundy">89.000đ</span>
+                            <span class="text-xs text-vixua-dark/40 line-through">110.000đ</span>
+                        </div>
+                        <button onclick="addToCart('Tiêu Sọ Rừng Tiên Phước', 89000, 'https://images.unsplash.com/photo-1509358271058-acd02cc93858?auto=format&fit=crop&w=200&q=80')" class="w-full py-2.5 rounded-xl border-2 border-vixua-burgundy text-vixua-burgundy font-bold text-xs hover:bg-vixua-burgundy hover:text-white transition-all">
+                            Thêm Vào Giỏ
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 4: BẢNG SO SÁNH CHẤT LƯỢNG (VỊ XƯA VS CÔNG NGHIỆP) -->
+    <section id="comparison" class="py-20 bg-vixua-cream">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <span class="text-vixua-gold font-bold text-xs uppercase tracking-widest">Tiêu Chuẩn Sức Khỏe</span>
+                <h2 class="font-serif text-3xl font-extrabold text-vixua-burgundy mt-1">Vì Sao Căn Bếp Việt Chọn Vị Xưa?</h2>
+                <div class="w-16 h-1 bg-vixua-burgundy mx-auto mt-3 rounded-full"></div>
+            </div>
+
+            <div class="bg-white rounded-3xl border-2 border-vixua-burgundy/15 overflow-hidden shadow-xl">
+                <div class="grid grid-cols-12 bg-vixua-burgundy text-white p-4 font-serif font-bold text-sm sm:text-base text-center">
+                    <div class="col-span-4 text-left pl-4">Đặc Điểm</div>
+                    <div class="col-span-4 text-vixua-gold">Gia Vị "Vị Xưa"</div>
+                    <div class="col-span-4 text-white/70">Gia Vị Công Nghiệp</div>
+                </div>
+                
+                <div class="divide-y divide-vixua-burgundy/10 text-xs sm:text-sm">
+                    <div class="grid grid-cols-12 p-4 items-center">
+                        <div class="col-span-4 font-bold text-vixua-dark">Nguồn gốc nguyên liệu</div>
+                        <div class="col-span-4 text-center font-bold text-vixua-burgundy">100% bản địa tự nhiên</div>
+                        <div class="col-span-4 text-center text-vixua-dark/60">Hương liệu tổng hợp</div>
+                    </div>
+                    <div class="grid grid-cols-12 p-4 items-center bg-vixua-kraft/30">
+                        <div class="col-span-4 font-bold text-vixua-dark">Chất điều vị (Mì chính/E621)</div>
+                        <div class="col-span-4 text-center font-bold text-green-700"><i class="fa-solid fa-check mr-1"></i> Hoàn toàn 0%</div>
+                        <div class="col-span-4 text-center text-red-600 font-medium">Chiếm từ 30% - 60%</div>
+                    </div>
+                    <div class="grid grid-cols-12 p-4 items-center">
+                        <div class="col-span-4 font-bold text-vixua-dark">Phương pháp chế biến</div>
+                        <div class="col-span-4 text-center font-bold text-vixua-burgundy">Ủ chượp, rang nướng thủ công</div>
+                        <div class="col-span-4 text-center text-vixua-dark/60">Sản xuất dây chuyền pha loãng</div>
+                    </div>
+                    <div class="grid grid-cols-12 p-4 items-center bg-vixua-kraft/30">
+                        <div class="col-span-4 font-bold text-vixua-dark">Bao bì bảo quản</div>
+                        <div class="col-span-4 text-center font-bold text-vixua-burgundy">Hũ gốm mộc, giấy Kraft thân thiện</div>
+                        <div class="col-span-4 text-center text-vixua-dark/60">Túi nilon, chai nhựa tái sinh</div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- FOOTER -->
-    <footer class="bg-vixua-burgundy-dark text-vixua-cream py-12 border-t-2 border-vixua-gold/30">
-        <div class="max-w-7xl mx-auto px-4 text-center space-y-4">
-            <h3 class="font-serif font-black text-2xl text-vixua-gold">VỊ XƯA - ĐẬM VỊ TRUYỀN THỐNG</h3>
-            <p class="text-xs text-white/70 max-w-md mx-auto">Gìn giữ di sản ẩm thực Việt Nam qua từng hạt gia vị nguyên bản mộc mạc.</p>
-            <p class="text-[11px] text-white/50 pt-4">&copy; 2026 Vị Xưa. All rights reserved.</p>
+    <!-- SECTION 5: EVENT ACTIVITIES (TRẢI NGHIỆM TƯƠNG TÁC) -->
+    <section id="activities" class="py-20 bg-kraft-dots border-t border-b border-vixua-burgundy/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-vixua-gold font-bold text-xs uppercase tracking-widest">Trải Nghiệm Sự Kiện</span>
+                <h2 class="font-serif text-3xl sm:text-4xl font-extrabold text-vixua-burgundy mt-1">Góc Hoạt Động Bếp Xưa</h2>
+                <div class="w-16 h-1 bg-vixua-burgundy mx-auto mt-3 rounded-full"></div>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white rounded-2xl p-8 border border-vixua-burgundy/15 shadow-sm hover:shadow-xl transition-all">
+                    <div class="w-14 h-14 rounded-2xl bg-vixua-burgundy/10 text-vixua-burgundy flex items-center justify-center text-2xl mb-6">
+                        <i class="fa-solid fa-eye-slash"></i>
+                    </div>
+                    <span class="text-xs font-bold text-vixua-gold uppercase tracking-wider">Trò chơi 01</span>
+                    <h3 class="font-serif text-xl font-bold text-vixua-burgundy mt-1 mb-3">"Đoán Mùi Vị Ký Ức"</h3>
+                    <p class="text-sm text-vixua-dark/80 leading-relaxed">
+                        Bịt mắt ngửi hương gia vị xưa và đoán tên. Khơi gợi ký ức thân thuộc của mâm cơm ấm cúng mẹ nấu.
+                    </p>
+                </div>
+
+                <div class="bg-white rounded-2xl p-8 border border-vixua-burgundy/15 shadow-sm hover:shadow-xl transition-all">
+                    <div class="w-14 h-14 rounded-2xl bg-vixua-burgundy/10 text-vixua-burgundy flex items-center justify-center text-2xl mb-6">
+                        <i class="fa-solid fa-box-archive"></i>
+                    </div>
+                    <span class="text-xs font-bold text-vixua-gold uppercase tracking-wider">Workshop 02</span>
+                    <h3 class="font-serif text-xl font-bold text-vixua-burgundy mt-1 mb-3">"Tự Pha Hộp Gia Vị"</h3>
+                    <p class="text-sm text-vixua-dark/80 leading-relaxed">
+                        Tự do chọn lựa và đóng gói các loại gia vị yêu thích vào hũ gốm mang đậm dấu ấn cá nhân của bạn.
+                    </p>
+                </div>
+
+                <div class="bg-white rounded-2xl p-8 border border-vixua-burgundy/15 shadow-sm hover:shadow-xl transition-all">
+                    <div class="w-14 h-14 rounded-2xl bg-vixua-burgundy/10 text-vixua-burgundy flex items-center justify-center text-2xl mb-6">
+                        <i class="fa-solid fa-note-sticky"></i>
+                    </div>
+                    <span class="text-xs font-bold text-vixua-gold uppercase tracking-wider">Kỷ Niệm 03</span>
+                    <h3 class="font-serif text-xl font-bold text-vixua-burgundy mt-1 mb-3">"Tường Ký Ức Bếp Nhà"</h3>
+                    <p class="text-sm text-vixua-dark/80 leading-relaxed">
+                        Viết tên món ăn gắn với tuổi thơ lên thẻ Kraft và treo lên tường để chia sẻ cảm xúc cùng cộng đồng yêu bếp.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 6: GIFT SETS (BỘ QUÀ TẶNG TRI ÂN) -->
+    <section id="giftsets" class="py-20 bg-vixua-cream">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-vixua-gold font-bold text-xs uppercase tracking-widest">Bộ Quà Tặng Tri Ân</span>
+                <h2 class="font-serif text-3xl sm:text-4xl font-extrabold text-vixua-burgundy mt-1">Hộp Quà Bếp Ấm Vị Xưa</h2>
+                <div class="w-16 h-1 bg-vixua-burgundy mx-auto mt-3 rounded-full"></div>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white rounded-3xl p-6 border-2 border-vixua-burgundy/15 shadow-sm hover:shadow-xl transition-all flex flex-col justify-between">
+                    <div>
+                        <div class="w-16 h-16 rounded-2xl bg-vixua-burgundy/10 text-vixua-burgundy flex items-center justify-center text-3xl mx-auto mb-5">
+                            <i class="fa-solid fa-mortar-pestle"></i>
+                        </div>
+                        <h3 class="font-serif font-bold text-xl text-vixua-burgundy text-center">Set "Bếp Nhà Đoàn Viên"</h3>
+                        <p class="text-xs text-vixua-dark/70 text-center mt-3">01 Nước mắm nhỉ 40N + 01 Tiêu sọ Tiên Phước + 01 Muối Sa Huỳnh hũ gốm.</p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-vixua-burgundy/10 flex items-center justify-between">
+                        <span class="font-serif font-bold text-vixua-burgundy text-lg">289.000đ</span>
+                        <button onclick="addToCart('Set Bếp Nhà Đoàn Viên', 289000, 'https://placehold.co/100x100/7D1C36/FFFFFF?text=Set+1')" class="px-4 py-2 rounded-xl bg-vixua-burgundy/10 text-vixua-burgundy font-bold text-xs">Chọn Mua</button>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-3xl p-6 border-2 border-vixua-burgundy shadow-xl flex flex-col justify-between relative transform lg:-translate-y-2">
+                    <span class="absolute -top-3 left-1/2 -translate-x-1/2 gold-gradient text-vixua-dark font-black text-[10px] px-4 py-1 rounded-full uppercase tracking-wider">Bán Chạy Nhất</span>
+                    <div>
+                        <div class="w-16 h-16 rounded-2xl burgundy-gradient text-white flex items-center justify-center text-3xl mx-auto mb-5 shadow">
+                            <i class="fa-solid fa-gift"></i>
+                        </div>
+                        <h3 class="font-serif font-bold text-xl text-vixua-burgundy text-center">Set "Hương Vị Di Sản"</h3>
+                        <p class="text-xs text-vixua-dark/70 text-center mt-3">Trọn bộ 5 vị: Mắm nhỉ đặc biệt + Muối ớt xiêm + Tiêu sọ + Quế Trà Bồng + Muỗng gỗ.</p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-vixua-burgundy/10 flex items-center justify-between">
+                        <span class="font-serif font-bold text-vixua-burgundy text-xl">465.000đ</span>
+                        <button onclick="addToCart('Set Hương Vị Di Sản', 465000, 'https://placehold.co/100x100/7D1C36/FFFFFF?text=Set+2')" class="px-5 py-2.5 rounded-xl burgundy-gradient text-white font-bold text-xs">Chọn Mua</button>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-3xl p-6 border-2 border-vixua-burgundy/15 shadow-sm hover:shadow-xl transition-all flex flex-col justify-between">
+                    <div>
+                        <div class="w-16 h-16 rounded-2xl bg-vixua-burgundy/10 text-vixua-burgundy flex items-center justify-center text-3xl mx-auto mb-5">
+                            <i class="fa-solid fa-heart"></i>
+                        </div>
+                        <h3 class="font-serif font-bold text-xl text-vixua-burgundy text-center">Set "Gia Vị Xa Quê"</h3>
+                        <p class="text-xs text-vixua-dark/70 text-center mt-3">Bộ gia vị đóng gói hút chân không chuyên biệt cho kiều bào và người con xa quê hương.</p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-vixua-burgundy/10 flex items-center justify-between">
+                        <span class="font-serif font-bold text-vixua-burgundy text-lg">350.000đ</span>
+                        <button onclick="addToCart('Set Gia Vị Xa Quê', 350000, 'https://placehold.co/100x100/7D1C36/FFFFFF?text=Set+3')" class="px-4 py-2 rounded-xl bg-vixua-burgundy/10 text-vixua-burgundy font-bold text-xs">Chọn Mua</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 7: VOUCHER TICKET 30% SECTION -->
+    <section id="voucher-section" class="py-20 bg-kraft-dots border-t border-b border-vixua-burgundy/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-white border-2 border-vixua-burgundy/20 rounded-3xl p-6 sm:p-10 shadow-xl">
+                <div class="grid lg:grid-cols-12 gap-10 items-center">
+                    
+                    <div class="lg:col-span-6">
+                        <div class="bg-vixua-kraft rounded-2xl p-6 border-2 border-dashed border-vixua-burgundy shadow-inner text-center">
+                            <span class="bg-vixua-burgundy text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase">Vé Khai Trương</span>
+                            <h3 class="font-serif text-3xl sm:text-4xl font-black text-vixua-burgundy mt-3">GIẢM NGAY 30%</h3>
+                            <p class="text-xs text-vixua-dark/80 italic mt-1">+ Tặng kèm 01 Lọ gia vị gốm truyền thống</p>
+                            
+                            <div class="bg-white p-3.5 rounded-xl border border-vixua-burgundy/20 flex items-center justify-between text-xs mt-6">
+                                <span class="text-vixua-dark/80 font-semibold">Mã ưu đãi:</span>
+                                <span class="font-mono font-bold text-vixua-burgundy text-base">VIXUA-30OFF</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="lg:col-span-6 space-y-4 text-center lg:text-left">
+                        <span class="text-vixua-gold font-bold text-xs tracking-widest uppercase">Tri Ân Khách Hàng</span>
+                        <h2 class="font-serif text-3xl font-extrabold text-vixua-burgundy">Đăng Ký Nhận Mã Voucher</h2>
+                        <p class="text-sm text-vixua-dark/80 leading-relaxed">
+                            Nhập thông tin ngay để nhận mã ưu đãi giảm 30% cho đơn hàng đầu tiên cùng quà tặng lọ gia vị gốm từ gian hàng Vị Xưa.
+                        </p>
+                        <button onclick="openVoucherModal()" class="burgundy-gradient text-white font-bold px-8 py-4 rounded-xl shadow-lg transition-all inline-flex items-center gap-2">
+                            <i class="fa-solid fa-gift text-vixua-gold"></i>
+                            <span>Lấy Mã Giảm 30% Ngay</span>
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER WITH USER LOGO -->
+    <footer class="bg-vixua-burgundy-dark text-vixua-cream py-14 border-t-2 border-vixua-gold/30">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8 mb-10">
+                
+                <div class="space-y-4">
+                    <div class="h-16 w-auto inline-flex items-center bg-white p-1 rounded-xl shadow-sm">
+                        <img id="footer-logo-img" alt="Logo Vị Xưa" class="h-full w-auto object-contain max-w-[180px]">
+                    </div>
+                    <p class="text-xs text-vixua-cream/70 leading-relaxed">
+                        Thương hiệu gia vị truyền thống Việt Nam <strong>Vị Xưa</strong> - Gợi nhớ hương vị bếp quê & kết nối tình thân gia đình qua từng bữa cơm.
+                    </p>
+                </div>
+
+                <div class="space-y-2 text-xs">
+                    <h4 class="font-serif font-bold text-sm text-vixua-gold uppercase tracking-wider mb-3">Liên Kết Nhanh</h4>
+                    <p><a href="#about" class="hover:text-vixua-gold transition-colors">Về Vị Xưa</a></p>
+                    <p><a href="#heritage" class="hover:text-vixua-gold transition-colors">Hương Vị Bản Địa</a></p>
+                    <p><a href="#products" class="hover:text-vixua-gold transition-colors">Danh Mục Gia Vị</a></p>
+                    <p><a href="#giftsets" class="hover:text-vixua-gold transition-colors">Bộ Quà Tặng</a></p>
+                </div>
+
+                <div class="space-y-2 text-xs">
+                    <h4 class="font-serif font-bold text-sm text-vixua-gold uppercase tracking-wider mb-3">Trải Nghiệm Gian Hàng</h4>
+                    <p class="text-vixua-cream/80"><i class="fa-solid fa-location-dot text-vixua-gold mr-2"></i>Gian hàng Vị Xưa - "Nhớ Vị Xưa, Về Bếp Cũ"</p>
+                    <p class="text-vixua-cream/80"><i class="fa-solid fa-clock text-vixua-gold mr-2"></i>08:30 - 21:30 Mỗi ngày</p>
+                    <p class="text-vixua-cream/80"><i class="fa-solid fa-phone text-vixua-gold mr-2"></i>Hotline: 1900 1234</p>
+                </div>
+
+                <div class="space-y-3">
+                    <h4 class="font-serif font-bold text-sm text-vixua-gold uppercase tracking-wider mb-3">Kết Nối Với Chúng Tôi</h4>
+                    <div class="flex gap-3">
+                        <a href="#" class="w-8 h-8 rounded-full bg-white/10 hover:bg-vixua-gold hover:text-vixua-dark flex items-center justify-center text-xs transition-colors"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" class="w-8 h-8 rounded-full bg-white/10 hover:bg-vixua-gold hover:text-vixua-dark flex items-center justify-center text-xs transition-colors"><i class="fa-brands fa-tiktok"></i></a>
+                        <a href="#" class="w-8 h-8 rounded-full bg-white/10 hover:bg-vixua-gold hover:text-vixua-dark flex items-center justify-center text-xs transition-colors"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="pt-8 border-t border-white/10 text-center text-[11px] text-vixua-cream/50">
+                <p>&copy; 2026 Thương hiệu Gia vị Vị Xưa - Đậm Vị Truyền Thống. All rights reserved.</p>
+            </div>
         </div>
     </footer>
 
-    <!-- VOUCHER MODAL -->
+    <!-- CART FLYOUT DRAWER -->
+    <div id="cart-drawer" class="fixed inset-0 z-50 hidden">
+        <div class="absolute inset-0 bg-black/60 backdrop-blur-sm" onclick="toggleCartDrawer()"></div>
+        <div class="absolute top-0 right-0 h-full w-full max-w-md bg-white shadow-2xl flex flex-col z-10">
+            <div class="p-5 border-b border-vixua-burgundy/15 flex items-center justify-between bg-vixua-cream">
+                <div class="flex items-center gap-2 text-vixua-burgundy font-serif font-bold text-lg">
+                    <i class="fa-solid fa-basket-shopping text-vixua-gold"></i>
+                    <span>Giỏ Hàng Của Bạn</span>
+                </div>
+                <button onclick="toggleCartDrawer()" class="w-8 h-8 rounded-full bg-vixua-kraft flex items-center justify-center">
+                    <i class="fa-solid fa-xmark text-sm"></i>
+                </button>
+            </div>
+            <div id="cart-items" class="flex-1 overflow-y-auto p-5 space-y-4"></div>
+            <div class="p-5 border-t border-vixua-burgundy/15 bg-vixua-cream space-y-3">
+                <div class="flex justify-between items-center text-sm font-semibold">
+                    <span>Tổng tiền tạm tính:</span>
+                    <span id="cart-total" class="font-serif text-xl font-bold text-vixua-burgundy">0đ</span>
+                </div>
+                <button onclick="alert('Đơn hàng thử nghiệm của bạn đã được tiếp nhận!')" class="w-full burgundy-gradient text-white font-bold py-3.5 rounded-xl">
+                    Tiến Hành Đặt Hàng
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- VOUCHER POPUP MODAL -->
     <div id="voucher-modal" class="fixed inset-0 z-50 hidden bg-black/60 backdrop-blur-sm flex items-center justify-center p-4">
-        <div class="bg-white rounded-3xl max-w-md w-full p-6 text-center relative border-2 border-vixua-burgundy/20">
+        <div class="bg-white border-2 border-vixua-burgundy/30 rounded-3xl max-w-md w-full p-6 sm:p-8 text-center relative shadow-2xl">
             <button onclick="closeVoucherModal()" class="absolute top-4 right-4 text-gray-400 hover:text-black">
                 <i class="fa-solid fa-xmark text-lg"></i>
             </button>
-            <h3 class="font-serif text-2xl font-bold text-vixua-burgundy mt-2">Voucher Ưu Đãi 30%</h3>
-            <p class="text-xs text-gray-500 mt-1">Áp dụng cho mọi sản phẩm gia vị Vị Xưa</p>
-            <div class="my-6 p-4 bg-vixua-kraft rounded-2xl border-2 border-dashed border-vixua-burgundy">
-                <span class="font-mono text-2xl font-black text-vixua-burgundy">VIXUA-30OFF</span>
-                <p class="text-[11px] text-gray-600 mt-1">Đưa mã này cho nhân viên hoặc nhập khi thanh toán</p>
+            <div class="w-12 h-12 rounded-full bg-vixua-burgundy/10 text-vixua-burgundy flex items-center justify-center text-xl mx-auto mb-2">
+                <i class="fa-solid fa-ticket"></i>
             </div>
-            <button onclick="closeVoucherModal()" class="w-full burgundy-gradient text-white font-bold py-3 rounded-xl text-sm">
-                Đóng & Mua Hàng
+            <h3 class="font-serif text-2xl font-bold text-vixua-burgundy">Voucher Ưu Đãi 30%</h3>
+            <p class="text-xs text-vixua-dark/70 mt-1">Ưu đãi khai trương gian hàng Vị Xưa</p>
+            
+            <div class="bg-vixua-cream p-4 rounded-xl border-2 border-dashed border-vixua-burgundy my-4">
+                <span class="font-mono text-2xl font-black text-vixua-burgundy tracking-wider block">VIXUA-30OFF-8899</span>
+                <span class="text-[11px] text-vixua-dark/70 mt-1 block">Áp dụng cho mọi sản phẩm gia vị + Tặng 01 Lọ gia vị gốm</span>
+            </div>
+
+            <button onclick="closeVoucherModal()" class="w-full burgundy-gradient text-white font-bold py-3.5 rounded-xl text-sm">
+                Áp Dụng Mã & Mua Ngay
             </button>
         </div>
     </div>
 
+    <!-- JAVASCRIPT GẮN LOGO BASE64 CHUẨN CỦA BẠN & LOGIC TRANG -->
     <script>
+        // MÃ ẢNH LOGO GỐC DO BẠN CUNG CẤP
+        const USER_LOGO = `data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAA9cAAAJzCAYAAAAFjeBlAAAACXBIWXMAAC4jAAAuIwF4pT92AAAgAElEQVR4nOzRAQ2AMAxE0eIABQ1SqKiqqKhaQAKpgjnoZDCy/xRc7h/dLQDWFGqXV77kAf4v1O4NMg6vfBbYgY+E2umVg/8BbEdEJgAAAP//YhmNdeJBt5yjAQMDQwIDA8MBEB6tPEYBtQGoM83AwABqgAdA6QkMDAwNowE9CkbB0AXQugNUb/CPhGjslnM8CCrDRuvIkQOQ2kegumvBaL1FP9At5whrL4Dy2wUo/WB0YH4U0BKABtEYGBgMoFbABo5BE0KgcmDkAgYGBgAAAAD//xrtXJMGQIkoH4pBCeshtMF0AdrZHh2tHwUkA6SKEYT1R0NwFIyCYQcaRkrHGgrsoR2tCYPCNaOAZqBbzhEUzwVoddeB0RCnHyh9tH8DdGC+H9nSbjlHEAVqpz5A63iD26qlj/aPxtMowAmgA2agDrQCGhbA01Y1HPEhysDAAAAAAP//Gu1ckwYU0FTLMzAwxEMxrCA7CC24wHi0wz0K0AF0aSgM248G0CgYBcMe+I/AKBYYBG4YBTQA0BmrAijGNmg02u6hMyh9tH9Ct5wjqOM8H81meShmQC+HoG1WBiwdcAakjvjoNo9hBqADMbD+DHzGmYFwx5kQaBxNKwwMDAwMDAAAAAD//xrtXFMf2CN3mJA63A/QOt2jy+VGAIAWYgbQAsxgtDM9CkbBKBgFo2AoAmh9VgBdlYBrJcbD0fbNwIDSR/sXQNuc6B1sQgBnB5wBeyecAW11Apw9Ohs+MABplpkB2tbExqZl+/Ng6aP9o1tBQICBgQEAAAD//xrtXJMGyD2MBtbhjocJQJeUP4AWSg+g+2NGC6UhDJD2n8A60gZIFRa5wGC4hdMoGAWjYBSMgqEDoHVbA2xLHAEwOnM1gADawXZAbm9SESB3wpE7avUwBlJHHAQuQme/GWDtXCS5C0hyDKOTThCA5dBLZL4AWpvQYBBtNyoYBG4YHICBgQEAAAD//+ycQQrAIAwE85R+uT+tP5BCCiHEVkFjDzPXXEUy7iJyvY/nkvIpdzEJ96XyTS3nZ+groU2ljwkiHUG1EgAA0umof0ewq2zm/lBK98kVgj2CrRd/pqZOzEvjLHkp751l8BbARbNVe2M2J45iEJEKAAD//xrtXJMG6LGklx9taTl4RBDtYIoL6IdTjI740QZARxEFkGaiFeh86Nho53oUjIJRMApGwV0B9KCyCWTMjI2uwBsEANrBVhjCW9H4cbh9dGvd4AIfR28GQAMMDAwAAAAA///s3LENACAIRFFGdDRGdBQbSIxQmBiV4r/GEfQAIVxvsgrub6Hb7Sx8+whOz5ZTEMCj6Z9KdlYYt2F7OADgCSso68HdQwerjmbFDt4RuEXJFgsRGQAAAP//Gu1cEw+Gwt5XWAGKdWQPbdk5A1rn+wNapThkO+NoJyEi71FBFh8yo58g/4zeVzkKRsEoGAWjgFYAOoEwgcKlxKOHmQ0iAIoL6AqEEXPH/iigK/g4et0iFsDAwAAAAAD//xrtXBMPhsvBUuhLbXBeEYPnYAoYwLf8C/3wClKBAZ4l0djkhvNSIQUKw3IUjIJRMApGwSjACrrlHAuodBf76JLwQQZAe2GhHez1Iz0sRgHVweisNTbAwMAAAAAA//8a7VwTD9DvuB5pANuyotG9L/QBBqONllEwCkbBKBgF1ATQVV4LqFiXjy4JH4Sg9NH+Dd1yjhOJPO19FIwCYsHorDU2wMDAAAAAAP//Yhp8Thq0YPRKpFEwUGCkD+yMglEwCkbBKKAigM5WX6DyIPlo53rwggboCsRRMAqoARaOzlrjAAwMDAAAAAD//xrtXBMPRmdpR8FAgdGBnVEwCkbBKBgFFAPQ3upuOccNDAwM/dTeh1v6aP/oCqtBCqAdoYSRHg6jgGpgwWhQ4gAMDAwAAAAA///s3bENACAIBEBWd1PdxIaamFBo4t0IdDzJY7k+kI3ScItgB4CWbAKfVddKg6vo4/IX8fh9DrQtQVohIjYAAAD//xrtXBMH8F0MPwpGAc0BtFE0CkbBKBgFo2AUkAy65RxBy4L30/DU6NEl4UMAlD7aD0oHD0d6OIwCisCG0eDDAxgYGAAAAAD//+zdsQ0AIAwDsJzKiZzI0hkBAwjJPqONEoVma3yueU2pAGg==`;
+
+        // Gắn ảnh vào Header và Footer
+        document.getElementById('main-logo-img').src = USER_LOGO;
+        document.getElementById('footer-logo-img').src = USER_LOGO;
+
+        // Giỏ hàng tương tác
+        let cart = [];
+        function addToCart(title, price, img) {
+            const existing = cart.find(i => i.title === title);
+            if (existing) {
+                existing.qty += 1;
+            } else {
+                cart.push({ title, price, img, qty: 1 });
+            }
+            updateCartUI();
+            toggleCartDrawer();
+        }
+
+        function updateCartQty(index, delta) {
+            cart[index].qty += delta;
+            if (cart[index].qty <= 0) cart.splice(index, 1);
+            updateCartUI();
+        }
+
+        function updateCartUI() {
+            const badge = document.getElementById('cart-badge');
+            badge.innerText = cart.reduce((sum, item) => sum + item.qty, 0);
+
+            const container = document.getElementById('cart-items');
+            const totalEl = document.getElementById('cart-total');
+
+            if (cart.length === 0) {
+                container.innerHTML = `<div class="text-center py-16 text-vixua-dark/60"><p class="text-xs">Giỏ hàng của bạn đang trống.</p></div>`;
+                totalEl.innerText = "0đ";
+                return;
+            }
+
+            let total = 0;
+            container.innerHTML = cart.map((item, idx) => {
+                total += item.price * item.qty;
+                return `
+                    <div class="flex items-center gap-3 p-3 rounded-xl border border-vixua-burgundy/10 bg-vixua-cream">
+                        <img src="${item.img}" class="w-12 h-12 object-cover rounded-lg">
+                        <div class="flex-1 min-w-0">
+                            <h4 class="font-serif font-bold text-xs text-vixua-burgundy truncate">${item.title}</h4>
+                            <span class="text-xs font-bold">${item.price.toLocaleString('vi-VN')}đ</span>
+                            <div class="flex items-center gap-2 mt-1">
+                                <button onclick="updateCartQty(${idx}, -1)" class="w-5 h-5 rounded bg-vixua-kraft text-xs font-bold">-</button>
+                                <span class="text-xs">${item.qty}</span>
+                                <button onclick="updateCartQty(${idx}, 1)" class="w-5 h-5 rounded bg-vixua-kraft text-xs font-bold">+</button>
+                            </div>
+                        </div>
+                    </div>`;
+            }).join('');
+
+            totalEl.innerText = total.toLocaleString('vi-VN') + 'đ';
+        }
+
+        function toggleCartDrawer() {
+            document.getElementById('cart-drawer').classList.toggle('hidden');
+        }
+
         function openVoucherModal() {
             document.getElementById('voucher-modal').classList.remove('hidden');
             if (typeof confetti === 'function') {
                 confetti({ particleCount: 70, spread: 60, origin: { y: 0.6 }, colors: ['#7D1C36', '#C8933C', '#FCF9F6'] });
             }
         }
+
         function closeVoucherModal() {
             document.getElementById('voucher-modal').classList.add('hidden');
         }
