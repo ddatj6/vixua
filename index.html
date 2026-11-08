@@ -28,7 +28,7 @@
             theme: {
                 extend: {
                     colors: {
-                        'vixua-burgundy': '#7D1C36',      /* Đỏ mận chuẩn */
+                        'vixua-burgundy': '#7D1C36',      /* Đỏ mận chủ đạo */
                         'vixua-burgundy-dark': '#4F0F21', /* Đỏ mận đậm */
                         'vixua-burgundy-light': '#9E2746',/* Đỏ mận sáng */
                         'vixua-cream': '#FCF9F6',         /* Nền kem mộc */
@@ -77,14 +77,14 @@
         </div>
     </div>
 
-    <!-- MAIN NAVBAR (LOGO CỦA BẠN ĐƯỢC GẮN TRỰC TIẾP TẠI ĐÂY) -->
+    <!-- MAIN NAVBAR (GỌI TRỰC TIẾP TỪ FILE logo.png) -->
     <header class="sticky top-0 z-40 bg-vixua-cream/95 backdrop-blur-md border-b border-vixua-burgundy/15 shadow-sm">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
             
-            <!-- Logo ảnh chuẩn của bạn -->
+            <!-- Logo ảnh chuẩn từ logo.png -->
             <a href="#" class="flex items-center gap-3 group py-1">
                 <div class="h-14 sm:h-16 w-auto flex items-center bg-white p-1 rounded-xl border border-vixua-burgundy/15 shadow-sm transition-transform duration-300 group-hover:scale-105">
-                    <img id="main-logo-img" alt="Logo Gia Vị Vị Xưa" class="h-full w-auto object-contain max-w-[190px]">
+                    <img src="logo.png" alt="Logo Gia Vị Vị Xưa" class="h-full w-auto object-contain max-w-[200px]" onerror="this.onerror=null; this.parentElement.innerHTML='<span class=\'font-serif font-black text-xl text-vixua-burgundy px-3\'>VỊ XƯA</span>';">
                 </div>
             </a>
 
@@ -96,7 +96,6 @@
                 <a href="#comparison" class="hover:text-vixua-burgundy font-semibold transition-colors">Chuẩn Chất Lượng</a>
                 <a href="#activities" class="hover:text-vixua-burgundy font-semibold transition-colors">Trải Nghiệm Bếp Xưa</a>
                 <a href="#giftsets" class="hover:text-vixua-burgundy font-semibold transition-colors">Bộ Quà Tặng</a>
-                <a href="#recipes" class="hover:text-vixua-burgundy font-semibold transition-colors">Bí Quyết Món Ngon</a>
             </nav>
 
             <!-- Actions -->
@@ -203,7 +202,7 @@
         </div>
     </section>
 
-    <!-- SECTION 2: HERITAGE & STORY (HÀNH TRÌNH VỊ XƯA) -->
+    <!-- SECTION 2: HERITAGE & STORY -->
     <section id="heritage" class="py-20 bg-vixua-cream">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid lg:grid-cols-12 gap-12 items-center">
@@ -242,7 +241,7 @@
         </div>
     </section>
 
-    <!-- SECTION 3: PRODUCTS CATALOG (8 SẢN PHẨM HOÀN CHỈNH) -->
+    <!-- SECTION 3: PRODUCTS CATALOG -->
     <section id="products" class="py-20 bg-kraft-dots border-t border-b border-vixua-burgundy/10">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-3xl mx-auto mb-14">
@@ -252,7 +251,6 @@
             </div>
 
             <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-                
                 <!-- Product 1 -->
                 <div class="bg-white rounded-2xl overflow-hidden border border-vixua-burgundy/15 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
                     <div>
@@ -342,12 +340,11 @@
                         </button>
                     </div>
                 </div>
-
             </div>
         </div>
     </section>
 
-    <!-- SECTION 4: BẢNG SO SÁNH CHẤT LƯỢNG (VỊ XƯA VS CÔNG NGHIỆP) -->
+    <!-- SECTION 4: BẢNG SO SÁNH CHẤT LƯỢNG -->
     <section id="comparison" class="py-20 bg-vixua-cream">
         <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-12">
@@ -389,7 +386,7 @@
         </div>
     </section>
 
-    <!-- SECTION 5: EVENT ACTIVITIES (TRẢI NGHIỆM TƯƠNG TÁC) -->
+    <!-- SECTION 5: EVENT ACTIVITIES -->
     <section id="activities" class="py-20 bg-kraft-dots border-t border-b border-vixua-burgundy/10">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-3xl mx-auto mb-16">
@@ -435,7 +432,7 @@
         </div>
     </section>
 
-    <!-- SECTION 6: GIFT SETS (BỘ QUÀ TẶNG TRI ÂN) -->
+    <!-- SECTION 6: GIFT SETS -->
     <section id="giftsets" class="py-20 bg-vixua-cream">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-3xl mx-auto mb-16">
@@ -491,7 +488,7 @@
         </div>
     </section>
 
-    <!-- SECTION 7: VOUCHER TICKET 30% SECTION -->
+    <!-- SECTION 7: VOUCHER SECTION -->
     <section id="voucher-section" class="py-20 bg-kraft-dots border-t border-b border-vixua-burgundy/10">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="bg-white border-2 border-vixua-burgundy/20 rounded-3xl p-6 sm:p-10 shadow-xl">
@@ -527,14 +524,14 @@
         </div>
     </section>
 
-    <!-- FOOTER WITH USER LOGO -->
+    <!-- FOOTER (LOGO CỦA BẠN ĐƯỢC GẮN TẠI ĐÂY) -->
     <footer class="bg-vixua-burgundy-dark text-vixua-cream py-14 border-t-2 border-vixua-gold/30">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid md:grid-cols-4 gap-8 mb-10">
                 
                 <div class="space-y-4">
                     <div class="h-16 w-auto inline-flex items-center bg-white p-1 rounded-xl shadow-sm">
-                        <img id="footer-logo-img" alt="Logo Vị Xưa" class="h-full w-auto object-contain max-w-[180px]">
+                        <img src="logo.png" alt="Logo Vị Xưa" class="h-full w-auto object-contain max-w-[190px]" onerror="this.onerror=null; this.parentElement.innerHTML='<span class=\'font-serif font-black text-xl text-vixua-burgundy px-3\'>VỊ XƯA</span>';">
                     </div>
                     <p class="text-xs text-vixua-cream/70 leading-relaxed">
                         Thương hiệu gia vị truyền thống Việt Nam <strong>Vị Xưa</strong> - Gợi nhớ hương vị bếp quê & kết nối tình thân gia đình qua từng bữa cơm.
@@ -622,16 +619,8 @@
         </div>
     </div>
 
-    <!-- JAVASCRIPT GẮN LOGO BASE64 CHUẨN CỦA BẠN & LOGIC TRANG -->
+    <!-- JAVASCRIPT LOGIC -->
     <script>
-        // MÃ ẢNH LOGO GỐC DO BẠN CUNG CẤP
-        const USER_LOGO = `data:image/png;base64,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`;
-
-        // Gắn ảnh vào Header và Footer
-        document.getElementById('main-logo-img').src = USER_LOGO;
-        document.getElementById('footer-logo-img').src = USER_LOGO;
-
-        // Giỏ hàng tương tác
         let cart = [];
         function addToCart(title, price, img) {
             const existing = cart.find(i => i.title === title);
