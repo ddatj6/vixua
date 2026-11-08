@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vị Xưa - Tinh Hoa Muối Tiêu Hầm & Gia Vị Truyền Thống Việt Nam</title>
+    <title>Vị Xưa - Tinh Hoa 12 Dòng Gia Vị Hũ Thủy Tinh 500g Bản Địa</title>
     
     <!-- SEO & META TAGS -->
-    <meta name="description" content="Khám phá dòng gia vị hũ thủy tinh 500g cao cấp Vị Xưa: Muối tiêu hầm đất nung Sa Huỳnh, tiêu sọ rừng Tiên Phước, muối ớt xiêm cay ấm nồng nàn.">
-    <meta name="keywords" content="muối tiêu hầm, vị xưa, muối hầm sa huỳnh, tiêu tiên phước, gia vị hũ thủy tinh 500g">
-    <meta property="og:title" content="Vị Xưa - Muối Tiêu Hầm Đậm Vị Truyền Thống">
-    <meta property="og:description" content="100% hạt tiêu rừng tuyển chọn kết hợp muối hầm gốm nung Sa Huỳnh. Đậm đà từng bữa cơm gia đình.">
+    <meta name="description" content="Thương hiệu gia vị truyền thống Vị Xưa: Muối tiêu hầm Sa Huỳnh, muối ớt xiêm rừng, tiêu sọ Tiên Phước, bột quế Trà Bồng, bột nghệ nếp. Hũ thủy tinh 500g cao cấp.">
+    <meta name="keywords" content="muối tiêu hầm, muối ớt xiêm, tiêu sọ tiên phước, bột quế trà bồng, gia vị vị xưa 500g">
+    <meta property="og:title" content="Vị Xưa - 12 Loại Gia Vị Bản Địa Hũ Thủy Tinh 500g">
+    <meta property="og:description" content="100% nguyên chất bản địa, không chất điều vị E621, giữ trọn hương vị căn bếp quê nhà.">
     <meta property="og:type" content="website">
 
     <!-- Tailwind CSS CDN -->
@@ -31,8 +31,8 @@
                         'vixua-burgundy': '#7D1C36',      /* Đỏ mận nhãn chai */
                         'vixua-burgundy-dark': '#4F0F21', /* Đỏ mận sẫm */
                         'vixua-burgundy-light': '#9E2746',
-                        'vixua-cream': '#FCF9F6',         /* Nền kem mộc mạc */
-                        'vixua-kraft': '#F4EAE2',         /* Nền giấy kraft ẩm thực */
+                        'vixua-cream': '#FCF9F6',         /* Nền kem mộc */
+                        'vixua-kraft': '#F4EAE2',         /* Nền giấy kraft */
                         'vixua-gold': '#C8933C',          /* Vàng kim di sản */
                         'vixua-dark': '#291219'           /* Chữ nâu mận */
                     },
@@ -56,6 +56,9 @@
         .gold-gradient {
             background: linear-gradient(135deg, #DFAC55 0%, #B88126 100%);
         }
+        .fluted-glass {
+            background: repeating-linear-gradient(90deg, rgba(255,255,255,0.15), rgba(255,255,255,0.15) 6px, rgba(0,0,0,0.08) 6px, rgba(0,0,0,0.08) 12px);
+        }
     </style>
 </head>
 <body class="font-sans text-vixua-dark bg-vixua-cream selection:bg-vixua-burgundy selection:text-white">
@@ -64,15 +67,15 @@
     <div class="bg-vixua-burgundy-dark text-vixua-kraft text-xs py-2.5 px-4 border-b border-vixua-gold/20">
         <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
             <div class="flex items-center gap-2">
-                <span class="inline-block px-2.5 py-0.5 rounded-full bg-vixua-gold text-vixua-dark font-black text-[10px] uppercase tracking-wider">Ưu Đãi Ra Mắt</span>
-                <span>Tặng ngay <strong>01 Voucher 30%</strong> cho dòng Hũ Gia Vị 500g + Freeship đơn từ <strong>299.000đ</strong></span>
+                <span class="inline-block px-2.5 py-0.5 rounded-full bg-vixua-gold text-vixua-dark font-black text-[10px] uppercase tracking-wider">Ưu Đãi Khai Trương</span>
+                <span>Giảm ngay <strong>30%</strong> cho toàn bộ 12 loại hũ gia vị 500g + Freeship đơn từ <strong>299.000đ</strong></span>
             </div>
             <div class="flex items-center gap-6 font-medium text-[11px]">
                 <a href="tel:19001234" class="hover:text-vixua-gold transition-colors flex items-center gap-1.5">
                     <i class="fa-solid fa-phone-volume text-vixua-gold"></i> Hotline: 1900 1234
                 </a>
                 <span class="hidden sm:inline">|</span>
-                <span class="flex items-center gap-1.5"><i class="fa-solid fa-shield-halved text-vixua-gold"></i> Hũ Thủy Tinh 500g Bảo Quản Hoàn Hảo</span>
+                <span class="flex items-center gap-1.5"><i class="fa-solid fa-shield-halved text-vixua-gold"></i> 100% Hũ Thủy Tinh Nắp Đen Chống Ẩm</span>
             </div>
         </div>
     </div>
@@ -89,11 +92,10 @@
 
             <nav class="hidden lg:flex items-center gap-7 font-medium text-sm">
                 <a href="#about" class="hover:text-vixua-burgundy font-semibold transition-colors">Về Vị Xưa</a>
-                <a href="#featured" class="hover:text-vixua-burgundy font-semibold transition-colors">Muối Tiêu Hầm 500g</a>
-                <a href="#products" class="hover:text-vixua-burgundy font-semibold transition-colors">Danh Mục Hũ Gia Vị</a>
+                <a href="#products" class="hover:text-vixua-burgundy font-semibold transition-colors">12 Loại Hũ Gia Vị</a>
                 <a href="#quality" class="hover:text-vixua-burgundy font-semibold transition-colors">Bí Quyết Muối Hầm</a>
+                <a href="#giftsets" class="hover:text-vixua-burgundy font-semibold transition-colors">Set 3 Hũ Quà Tặng</a>
                 <a href="#recipes" class="hover:text-vixua-burgundy font-semibold transition-colors">Món Ngon Đúng Điệu</a>
-                <a href="#giftsets" class="hover:text-vixua-burgundy font-semibold transition-colors">Bộ Quà Tặng</a>
             </nav>
 
             <div class="flex items-center gap-3">
@@ -109,90 +111,367 @@
         </div>
     </header>
 
-    <!-- HERO SECTION (TẬP TRUNG VÀO DÒNG SẢN PHẨM HŨ THỰC TẾ) -->
-    <section id="about" class="relative bg-kraft-dots py-16 lg:py-24 border-b border-vixua-burgundy/10 overflow-hidden">
+    <!-- HERO SECTION -->
+    <section id="about" class="relative bg-kraft-dots py-16 lg:py-20 border-b border-vixua-burgundy/10">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid lg:grid-cols-12 gap-12 items-center">
                 
-                <!-- Left: Nội dung thương hiệu -->
                 <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
                     <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-vixua-burgundy/10 border border-vixua-burgundy/20 text-vixua-burgundy font-bold text-xs uppercase tracking-wider">
-                        <i class="fa-solid fa-mortar-pestle text-vixua-gold"></i> Dòng Gia Vị Hũ Thủy Tinh Cao Cấp 500g
+                        <i class="fa-solid fa-mortar-pestle text-vixua-gold"></i> Bộ Sưu Tập Gia Vị Bản Địa Hũ 500g
                     </div>
 
                     <h1 class="font-serif text-4xl sm:text-5xl lg:text-6xl font-black text-vixua-burgundy leading-tight">
-                        Muối Tiêu Hầm, <br>
-                        <span class="italic font-normal text-vixua-gold">Đượm Nồng Hồn Bếp Việt.</span>
+                        Đậm Hương Ký Ức, <br>
+                        <span class="italic font-normal text-vixua-gold">Trọn Vị Cơm Nhà.</span>
                     </h1>
 
                     <p class="text-base sm:text-lg text-vixua-dark/85 leading-relaxed max-w-2xl mx-auto lg:mx-0">
-                        Được kết tinh từ <strong>Muối hầm đất nung Sa Huỳnh</strong> dịu ngọt thanh lành cùng <strong>Tiêu đen rừng Tiên Phước</strong> đập dập thơm cay ấm nồng. Đóng trong hũ thủy tinh 500g nắp xoay kín khí, giữ trọn hương vị tươi mới cho mọi mâm cơm nhà.
+                        Khám phá trọn vẹn 12 loại gia vị đặc sản trong form <strong>Hũ thủy tinh 500g nắp đen</strong>: từ Muối tiêu hầm Sa Huỳnh, Muối ớt xiêm cay nồng, Tiêu sọ Tiên Phước cho tới Bột quế rừng Trà Bồng và Bột nghệ nếp đỏ.
                     </p>
 
-                    <!-- Khối thông tin nổi bật của hũ 500g -->
                     <div class="grid grid-cols-3 gap-3 max-w-lg mx-auto lg:mx-0 pt-2">
                         <div class="bg-white p-3.5 rounded-2xl border border-vixua-burgundy/15 text-center shadow-sm">
-                            <i class="fa-solid fa-weight-hanging text-vixua-burgundy text-lg mb-1 block"></i>
-                            <span class="font-bold text-sm text-vixua-dark block">Dung Tích 500g</span>
-                            <span class="text-[10px] text-vixua-dark/60">Dùng tiện lợi, lâu dài</span>
+                            <span class="font-serif font-black text-xl text-vixua-burgundy block">12 Loại</span>
+                            <span class="text-[11px] text-vixua-dark/70 font-semibold">Gia vị bản địa</span>
                         </div>
                         <div class="bg-white p-3.5 rounded-2xl border border-vixua-burgundy/15 text-center shadow-sm">
-                            <i class="fa-solid fa-bottle-water text-vixua-burgundy text-lg mb-1 block"></i>
-                            <span class="font-bold text-sm text-vixua-dark block">Hũ Thủy Tinh</span>
-                            <span class="text-[10px] text-vixua-dark/60">Nắp kín chống ẩm mốc</span>
+                            <span class="font-serif font-black text-xl text-vixua-burgundy block">500g</span>
+                            <span class="text-[11px] text-vixua-dark/70 font-semibold">Hũ thủy tinh nắp kín</span>
                         </div>
                         <div class="bg-white p-3.5 rounded-2xl border border-vixua-burgundy/15 text-center shadow-sm">
-                            <i class="fa-solid fa-leaf text-vixua-burgundy text-lg mb-1 block"></i>
-                            <span class="font-bold text-sm text-vixua-dark block">100% Tự Nhiên</span>
-                            <span class="text-[10px] text-vixua-dark/60">Không mì chính E621</span>
+                            <span class="font-serif font-black text-xl text-vixua-burgundy block">0%</span>
+                            <span class="text-[11px] text-vixua-dark/70 font-semibold">Chất bảo quản & E621</span>
                         </div>
                     </div>
 
-                    <!-- Nút hành động -->
                     <div class="pt-4 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-                        <button onclick="addToCart('Muối Tiêu Hầm Vị Xưa (500g)', 65000, 'muoi-tieu-ham.png')" class="burgundy-gradient text-white font-bold px-8 py-4 rounded-xl shadow-lg hover:shadow-xl transition-all flex items-center justify-center gap-3">
-                            <i class="fa-solid fa-cart-shopping text-sm text-vixua-gold"></i>
-                            <span>Đặt Mua Hũ 500g - 65.000đ</span>
-                        </button>
-                        <a href="#products" class="bg-white border-2 border-vixua-burgundy/30 text-vixua-burgundy font-bold px-7 py-3.5 rounded-xl hover:bg-vixua-kraft transition-all text-center">
-                            Xem Bộ 8 Hũ Gia Vị
+                        <a href="#products" class="burgundy-gradient text-white font-bold px-8 py-4 rounded-xl shadow-lg hover:shadow-xl transition-all flex items-center justify-center gap-3">
+                            <span>Khám Phá 12 Hũ Gia Vị</span>
+                            <i class="fa-solid fa-arrow-right text-xs"></i>
                         </a>
+                        <button onclick="openVoucherModal()" class="bg-white border-2 border-vixua-burgundy/30 text-vixua-burgundy font-bold px-7 py-3.5 rounded-xl hover:bg-vixua-kraft transition-all">
+                            Nhận Mã Giảm 30%
+                        </button>
                     </div>
                 </div>
 
-                <!-- Right: HIỂN THỊ ĐÚNG ẢNH MẪU HŨ MUỐI TIÊU HẦM BẠN GỬI -->
+                <!-- Right: Hũ Muối Tiêu Hầm 500g Thực Tế -->
                 <div class="lg:col-span-5 relative">
                     <div class="bg-gradient-to-b from-white to-vixua-kraft/60 p-6 sm:p-8 rounded-3xl border-2 border-vixua-burgundy/20 shadow-2xl relative text-center">
-                        
-                        <!-- Ảnh sản phẩm thực tế -->
                         <div class="w-full h-96 flex items-center justify-center relative overflow-hidden rounded-2xl bg-slate-100/50">
                             <img src="muoi-tieu-ham.png" 
                                  alt="Hũ Muối Tiêu Hầm Vị Xưa 500g" 
                                  class="max-h-full max-w-full object-contain filter drop-shadow-2xl transform hover:scale-105 transition-transform duration-500"
                                  onerror="this.src='https://images.unsplash.com/photo-1596040033229-a9821ebd058d?auto=format&fit=crop&w=600&q=80';">
-                            
                             <span class="absolute top-3 left-3 bg-vixua-burgundy text-white text-[10px] font-black px-3 py-1 rounded-full uppercase tracking-wider shadow">
-                                Hũ Thủy Tinh 500g
+                                Hũ Chuẩn 500g
                             </span>
                         </div>
-
-                        <!-- Huy hiệu chứng nhận -->
                         <div class="mt-4 pt-4 border-t border-vixua-burgundy/15 flex items-center justify-between text-left">
                             <div>
-                                <span class="font-serif font-bold text-lg text-vixua-burgundy block leading-tight">Muối Tiêu Hầm</span>
-                                <span class="text-xs text-vixua-dark/70">Tiêu Tiên Phước + Muối Sa Huỳnh (500g)</span>
+                                <span class="font-serif font-bold text-lg text-vixua-burgundy block leading-tight">Muối Tiêu Hầm Sa Huỳnh</span>
+                                <span class="text-xs text-vixua-dark/70">Dòng Hũ Thủy Tinh Nắp Đen (500g)</span>
                             </div>
                             <div class="text-right">
                                 <span class="font-serif font-black text-xl text-vixua-burgundy block leading-tight">65.000đ</span>
                                 <span class="text-[10px] text-vixua-dark/50 line-through">85.000đ</span>
                             </div>
                         </div>
+                    </div>
+                </div>
 
-                        <!-- Con dấu đặc biệt -->
-                        <div class="absolute -top-5 -right-5 w-24 h-24 burgundy-gradient text-white rounded-full flex flex-col items-center justify-center text-center shadow-xl rotate-12 border-2 border-dashed border-vixua-gold">
-                            <span class="text-[9px] uppercase tracking-wider text-vixua-gold font-bold">Chính Gốc</span>
-                            <span class="font-serif font-black text-xs uppercase">Vị Xưa</span>
-                            <span class="text-[8px] text-white/80">Hũ 500g</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 2: DANH MỤC 12 LOẠI GIA VỊ ĐA DẠNG (ĐỔI CHUẨN TÊN NHÃN & MÀU BỘT TỪNG LỌ) -->
+    <section id="products" class="py-20 bg-vixua-cream">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-10">
+                <span class="text-vixua-gold font-bold text-xs uppercase tracking-widest">Danh Mục 12 Loại Gia Vị</span>
+                <h2 class="font-serif text-3xl sm:text-4xl font-extrabold text-vixua-burgundy mt-1">Hũ Thủy Tinh 500g Chuẩn Vị Xưa</h2>
+                <div class="w-16 h-1 bg-vixua-burgundy mx-auto mt-3 rounded-full"></div>
+                <p class="text-vixua-dark/75 text-xs sm:text-sm mt-3">Mỗi hũ mang trọn một phong vị đặc sản, từ hạt tiêu rang đập dập đến các loại bột củ thơm ngát.</p>
+                
+                <!-- Category Tabs -->
+                <div class="flex flex-wrap items-center justify-center gap-2 sm:gap-3 mt-8">
+                    <button onclick="filterSpices('all')" class="spice-tab active px-5 py-2 rounded-full text-xs font-bold burgundy-gradient text-white shadow-sm">Tất Cả (12 Vị)</button>
+                    <button onclick="filterSpices('muoi')" class="spice-tab px-5 py-2 rounded-full text-xs font-bold bg-white text-vixua-dark border border-vixua-burgundy/15 hover:bg-vixua-kraft">Muối Chấm & Rang (4 Vị)</button>
+                    <button onclick="filterSpices('tieu')" class="spice-tab px-5 py-2 rounded-full text-xs font-bold bg-white text-vixua-dark border border-vixua-burgundy/15 hover:bg-vixua-kraft">Dòng Hạt & Bột Tiêu (4 Vị)</button>
+                    <button onclick="filterSpices('thao-moc')" class="spice-tab px-5 py-2 rounded-full text-xs font-bold bg-white text-vixua-dark border border-vixua-burgundy/15 hover:bg-vixua-kraft">Bột Thảo Mộc Ướp Kho (4 Vị)</button>
+                </div>
+            </div>
+
+            <!-- GRID 12 SẢN PHẨM HOÀN CHỈNH -->
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6" id="spices-grid">
+                
+                <!-- SP 1: Muối Tiêu Hầm (Ảnh thật bạn gửi) -->
+                <div class="spice-item bg-white rounded-2xl overflow-hidden border-2 border-vixua-burgundy shadow-sm hover:shadow-xl transition-all flex flex-col justify-between" data-cat="muoi">
+                    <div class="p-4 bg-slate-50 flex items-center justify-center relative">
+                        <span class="absolute top-2.5 left-2.5 bg-vixua-burgundy text-white text-[9px] font-black px-2 py-0.5 rounded-full uppercase">Signature</span>
+                        <div class="h-60 flex items-center justify-center">
+                            <img src="muoi-tieu-ham.png" alt="Muối Tiêu Hầm 500g" class="max-h-full object-contain filter drop-shadow hover:scale-105 transition-transform">
+                        </div>
+                    </div>
+                    <div class="p-5 flex-1 flex flex-col justify-between">
+                        <div>
+                            <span class="text-[10px] text-vixua-gold font-bold uppercase">Hũ Thủy Tinh 500g</span>
+                            <h3 class="font-serif font-bold text-base text-vixua-burgundy mt-0.5">Muối Tiêu Hầm Sa Huỳnh</h3>
+                            <p class="text-xs text-vixua-dark/70 mt-1 line-clamp-2">Muối hầm đất nung + Tiêu Tiên Phước đập dập thơm cay nồng nàn.</p>
+                        </div>
+                        <div class="pt-3 mt-3 border-t border-vixua-burgundy/10 flex items-center justify-between">
+                            <span class="font-serif font-bold text-base text-vixua-burgundy">65.000đ</span>
+                            <button onclick="addToCart('Muối Tiêu Hầm Sa Huỳnh (500g)', 65000, 'muoi-tieu-ham.png')" class="px-3.5 py-1.5 rounded-xl burgundy-gradient text-white text-xs font-bold hover:opacity-90">
+                                Thêm Giỏ
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SP 2: Muối Ớt Xiêm Rừng (Màu bột ớt đỏ cam + nhãn đúng tên) -->
+                <div class="spice-item bg-white rounded-2xl overflow-hidden border border-vixua-burgundy/15 shadow-sm hover:shadow-xl transition-all flex flex-col justify-between" data-cat="muoi">
+                    <div class="p-4 bg-slate-50 flex items-center justify-center relative">
+                        <span class="absolute top-2.5 left-2.5 bg-vixua-gold text-vixua-dark text-[9px] font-black px-2 py-0.5 rounded-full uppercase">Cay Thơm</span>
+                        <!-- Mockup Hũ Đồ Họa Riêng Biệt -->
+                        <div class="h-60 w-28 relative flex flex-col items-center justify-center">
+                            <!-- Nắp đen -->
+                            <div class="w-16 h-8 bg-zinc-900 rounded-t-lg border-b-2 border-zinc-700 shadow"></div>
+                            <!-- Thân hũ bột ớt đỏ cam -->
+                            <div class="w-20 h-44 rounded-b-xl border border-slate-300 relative overflow-hidden shadow-md" style="background: linear-gradient(180deg, #d33c16 0%, #a42709 100%);">
+                                <div class="absolute inset-0 bg-white/10"></div>
+                                <!-- Nhãn đỏ mận chuẩn -->
+                                <div class="absolute top-10 inset-x-0 h-24 bg-vixua-burgundy-dark border-y border-vixua-gold/40 flex flex-col items-center justify-center p-1 text-center">
+                                    <span class="font-serif font-black text-white text-[10px] tracking-wider">VỊ XƯA</span>
+                                    <div class="bg-white rounded-md px-1.5 py-0.5 mt-0.5 shadow-sm w-11/12">
+                                        <span class="font-black text-[9px] text-vixua-dark uppercase block leading-tight">MUỐI ỚT</span>
+                                        <span class="font-serif italic text-[8px] text-vixua-burgundy block leading-none">Xiêm Rừng</span>
+                                    </div>
+                                    <span class="text-[7px] text-white/80 mt-1">500g</span>
+                                </div>
+                                <!-- Vân sọc đáy chai thủy tinh -->
+                                <div class="absolute bottom-0 inset-x-0 h-6 fluted-glass"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-5 flex-1 flex flex-col justify-between">
+                        <div>
+                            <span class="text-[10px] text-vixua-gold font-bold uppercase">Hũ Thủy Tinh 500g</span>
+                            <h3 class="font-serif font-bold text-base text-vixua-burgundy mt-0.5">Muối Ớt Xiêm Xanh Hầm</h3>
+                            <p class="text-xs text-vixua-dark/70 mt-1 line-clamp-2">Ớt xiêm xanh nướng củi thơm phức hòa quyện muối hầm Sa Huỳnh mịn màng.</p>
+                        </div>
+                        <div class="pt-3 mt-3 border-t border-vixua-burgundy/10 flex items-center justify-between">
+                            <span class="font-serif font-bold text-base text-vixua-burgundy">70.000đ</span>
+                            <button onclick="addToCart('Muối Ớt Xiêm Xanh Hầm (500g)', 70000, 'muoi-tieu-ham.png')" class="px-3.5 py-1.5 rounded-xl bg-vixua-burgundy/10 text-vixua-burgundy hover:bg-vixua-burgundy hover:text-white text-xs font-bold transition-colors">
+                                Thêm Giỏ
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SP 3: Tiêu Sọ Rừng Xay Mộc (Bột trắng ngà + nhãn đúng tên) -->
+                <div class="spice-item bg-white rounded-2xl overflow-hidden border border-vixua-burgundy/15 shadow-sm hover:shadow-xl transition-all flex flex-col justify-between" data-cat="tieu">
+                    <div class="p-4 bg-slate-50 flex items-center justify-center relative">
+                        <span class="absolute top-2.5 left-2.5 bg-vixua-burgundy text-white text-[9px] font-black px-2 py-0.5 rounded-full uppercase">Thượng Hạng</span>
+                        <div class="h-60 w-28 relative flex flex-col items-center justify-center">
+                            <div class="w-16 h-8 bg-zinc-900 rounded-t-lg border-b-2 border-zinc-700 shadow"></div>
+                            <!-- Thân hũ bột tiêu sọ trắng ngà -->
+                            <div class="w-20 h-44 rounded-b-xl border border-slate-300 relative overflow-hidden shadow-md" style="background: linear-gradient(180deg, #eae2d3 0%, #c5b8a1 100%);">
+                                <div class="absolute inset-0 bg-white/20"></div>
+                                <div class="absolute top-10 inset-x-0 h-24 bg-vixua-burgundy-dark border-y border-vixua-gold/40 flex flex-col items-center justify-center p-1 text-center">
+                                    <span class="font-serif font-black text-white text-[10px] tracking-wider">VỊ XƯA</span>
+                                    <div class="bg-white rounded-md px-1.5 py-0.5 mt-0.5 shadow-sm w-11/12">
+                                        <span class="font-black text-[9px] text-vixua-dark uppercase block leading-tight">TIÊU SỌ</span>
+                                        <span class="font-serif italic text-[8px] text-vixua-burgundy block leading-none">Xay Vỡ</span>
+                                    </div>
+                                    <span class="text-[7px] text-white/80 mt-1">500g</span>
+                                </div>
+                                <div class="absolute bottom-0 inset-x-0 h-6 fluted-glass"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-5 flex-1 flex flex-col justify-between">
+                        <div>
+                            <span class="text-[10px] text-vixua-gold font-bold uppercase">Hũ Thủy Tinh 500g</span>
+                            <h3 class="font-serif font-bold text-base text-vixua-burgundy mt-0.5">Tiêu Sọ Rừng Tiên Phước Xay</h3>
+                            <p class="text-xs text-vixua-dark/70 mt-1 line-clamp-2">100% tiêu sọ chà vỏ tự nhiên, tinh dầu cay ấm sâu lắng, không gắt cổ.</p>
+                        </div>
+                        <div class="pt-3 mt-3 border-t border-vixua-burgundy/10 flex items-center justify-between">
+                            <span class="font-serif font-bold text-base text-vixua-burgundy">125.000đ</span>
+                            <button onclick="addToCart('Tiêu Sọ Rừng Tiên Phước Xay (500g)', 125000, 'muoi-tieu-ham.png')" class="px-3.5 py-1.5 rounded-xl bg-vixua-burgundy/10 text-vixua-burgundy hover:bg-vixua-burgundy hover:text-white text-xs font-bold transition-colors">
+                                Thêm Giỏ
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SP 4: Muối Rang Lá Chanh (Màu xanh vàng nhẹ thảo mộc) -->
+                <div class="spice-item bg-white rounded-2xl overflow-hidden border border-vixua-burgundy/15 shadow-sm hover:shadow-xl transition-all flex flex-col justify-between" data-cat="muoi">
+                    <div class="p-4 bg-slate-50 flex items-center justify-center relative">
+                        <span class="absolute top-2.5 left-2.5 bg-vixua-gold text-vixua-dark text-[9px] font-black px-2 py-0.5 rounded-full uppercase">Chấm Gà Luộc</span>
+                        <div class="h-60 w-28 relative flex flex-col items-center justify-center">
+                            <div class="w-16 h-8 bg-zinc-900 rounded-t-lg border-b-2 border-zinc-700 shadow"></div>
+                            <div class="w-20 h-44 rounded-b-xl border border-slate-300 relative overflow-hidden shadow-md" style="background: linear-gradient(180deg, #dce4c7 0%, #a4b47c 100%);">
+                                <div class="absolute inset-0 bg-white/20"></div>
+                                <div class="absolute top-10 inset-x-0 h-24 bg-vixua-burgundy-dark border-y border-vixua-gold/40 flex flex-col items-center justify-center p-1 text-center">
+                                    <span class="font-serif font-black text-white text-[10px] tracking-wider">VỊ XƯA</span>
+                                    <div class="bg-white rounded-md px-1.5 py-0.5 mt-0.5 shadow-sm w-11/12">
+                                        <span class="font-black text-[9px] text-vixua-dark uppercase block leading-tight">MUỐI LÁ CHANH</span>
+                                        <span class="font-serif italic text-[8px] text-vixua-burgundy block leading-none">Sao Khô</span>
+                                    </div>
+                                    <span class="text-[7px] text-white/80 mt-1">500g</span>
+                                </div>
+                                <div class="absolute bottom-0 inset-x-0 h-6 fluted-glass"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-5 flex-1 flex flex-col justify-between">
+                        <div>
+                            <span class="text-[10px] text-vixua-gold font-bold uppercase">Hũ Thủy Tinh 500g</span>
+                            <h3 class="font-serif font-bold text-base text-vixua-burgundy mt-0.5">Muối Rang Lá Chanh Bếp Quê</h3>
+                            <p class="text-xs text-vixua-dark/70 mt-1 line-clamp-2">Lá chanh bánh tẻ sấy lạnh sao cùng muối hầm, chuyên chấm gà luộc & hải sản.</p>
+                        </div>
+                        <div class="pt-3 mt-3 border-t border-vixua-burgundy/10 flex items-center justify-between">
+                            <span class="font-serif font-bold text-base text-vixua-burgundy">65.000đ</span>
+                            <button onclick="addToCart('Muối Rang Lá Chanh (500g)', 65000, 'muoi-tieu-ham.png')" class="px-3.5 py-1.5 rounded-xl bg-vixua-burgundy/10 text-vixua-burgundy hover:bg-vixua-burgundy hover:text-white text-xs font-bold transition-colors">
+                                Thêm Giỏ
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SP 5: Bột Quế Rừng Trà Bồng (Bột màu nâu đỏ quế) -->
+                <div class="spice-item bg-white rounded-2xl overflow-hidden border border-vixua-burgundy/15 shadow-sm hover:shadow-xl transition-all flex flex-col justify-between" data-cat="thao-moc">
+                    <div class="p-4 bg-slate-50 flex items-center justify-center relative">
+                        <div class="h-60 w-28 relative flex flex-col items-center justify-center">
+                            <div class="w-16 h-8 bg-zinc-900 rounded-t-lg border-b-2 border-zinc-700 shadow"></div>
+                            <div class="w-20 h-44 rounded-b-xl border border-slate-300 relative overflow-hidden shadow-md" style="background: linear-gradient(180deg, #9c4b2b 0%, #682e18 100%);">
+                                <div class="absolute inset-0 bg-white/10"></div>
+                                <div class="absolute top-10 inset-x-0 h-24 bg-vixua-burgundy-dark border-y border-vixua-gold/40 flex flex-col items-center justify-center p-1 text-center">
+                                    <span class="font-serif font-black text-white text-[10px] tracking-wider">VỊ XƯA</span>
+                                    <div class="bg-white rounded-md px-1.5 py-0.5 mt-0.5 shadow-sm w-11/12">
+                                        <span class="font-black text-[9px] text-vixua-dark uppercase block leading-tight">BỘT QUẾ</span>
+                                        <span class="font-serif italic text-[8px] text-vixua-burgundy block leading-none">Trà Bồng</span>
+                                    </div>
+                                    <span class="text-[7px] text-white/80 mt-1">500g</span>
+                                </div>
+                                <div class="absolute bottom-0 inset-x-0 h-6 fluted-glass"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-5 flex-1 flex flex-col justify-between">
+                        <div>
+                            <span class="text-[10px] text-vixua-gold font-bold uppercase">Hũ Thủy Tinh 500g</span>
+                            <h3 class="font-serif font-bold text-base text-vixua-burgundy mt-0.5">Bột Quế Rừng Trà Bồng</h3>
+                            <p class="text-xs text-vixua-dark/70 mt-1 line-clamp-2">Vỏ quế cổ thụ Trà Bồng xay mịn, thơm ngọt thanh ấm, chuyên ướp kho & nướng.</p>
+                        </div>
+                        <div class="pt-3 mt-3 border-t border-vixua-burgundy/10 flex items-center justify-between">
+                            <span class="font-serif font-bold text-base text-vixua-burgundy">95.000đ</span>
+                            <button onclick="addToCart('Bột Quế Rừng Trà Bồng (500g)', 95000, 'muoi-tieu-ham.png')" class="px-3.5 py-1.5 rounded-xl bg-vixua-burgundy/10 text-vixua-burgundy hover:bg-vixua-burgundy hover:text-white text-xs font-bold transition-colors">
+                                Thêm Giỏ
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SP 6: Bột Nghệ Nếp Đỏ (Bột vàng cam tươi rực rỡ) -->
+                <div class="spice-item bg-white rounded-2xl overflow-hidden border border-vixua-burgundy/15 shadow-sm hover:shadow-xl transition-all flex flex-col justify-between" data-cat="thao-moc">
+                    <div class="p-4 bg-slate-50 flex items-center justify-center relative">
+                        <div class="h-60 w-28 relative flex flex-col items-center justify-center">
+                            <div class="w-16 h-8 bg-zinc-900 rounded-t-lg border-b-2 border-zinc-700 shadow"></div>
+                            <div class="w-20 h-44 rounded-b-xl border border-slate-300 relative overflow-hidden shadow-md" style="background: linear-gradient(180deg, #f59e0b 0%, #b45309 100%);">
+                                <div class="absolute inset-0 bg-white/10"></div>
+                                <div class="absolute top-10 inset-x-0 h-24 bg-vixua-burgundy-dark border-y border-vixua-gold/40 flex flex-col items-center justify-center p-1 text-center">
+                                    <span class="font-serif font-black text-white text-[10px] tracking-wider">VỊ XƯA</span>
+                                    <div class="bg-white rounded-md px-1.5 py-0.5 mt-0.5 shadow-sm w-11/12">
+                                        <span class="font-black text-[9px] text-vixua-dark uppercase block leading-tight">BỘT NGHỆ</span>
+                                        <span class="font-serif italic text-[8px] text-vixua-burgundy block leading-none">Nếp Rừng</span>
+                                    </div>
+                                    <span class="text-[7px] text-white/80 mt-1">500g</span>
+                                </div>
+                                <div class="absolute bottom-0 inset-x-0 h-6 fluted-glass"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-5 flex-1 flex flex-col justify-between">
+                        <div>
+                            <span class="text-[10px] text-vixua-gold font-bold uppercase">Hũ Thủy Tinh 500g</span>
+                            <h3 class="font-serif font-bold text-base text-vixua-burgundy mt-0.5">Bột Nghệ Nếp Rừng Tây Bắc</h3>
+                            <p class="text-xs text-vixua-dark/70 mt-1 line-clamp-2">Nghệ nếp đỏ ruột vàng cam sấy lạnh, thơm nhẹ không hăng nồng, giàu curcumin.</p>
+                        </div>
+                        <div class="pt-3 mt-3 border-t border-vixua-burgundy/10 flex items-center justify-between">
+                            <span class="font-serif font-bold text-base text-vixua-burgundy">85.000đ</span>
+                            <button onclick="addToCart('Bột Nghệ Nếp Rừng (500g)', 85000, 'muoi-tieu-ham.png')" class="px-3.5 py-1.5 rounded-xl bg-vixua-burgundy/10 text-vixua-burgundy hover:bg-vixua-burgundy hover:text-white text-xs font-bold transition-colors">
+                                Thêm Giỏ
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SP 7: Muối Tôm Cốt Đất Tây Ninh (Màu cam gạch tôm) -->
+                <div class="spice-item bg-white rounded-2xl overflow-hidden border border-vixua-burgundy/15 shadow-sm hover:shadow-xl transition-all flex flex-col justify-between" data-cat="muoi">
+                    <div class="p-4 bg-slate-50 flex items-center justify-center relative">
+                        <div class="h-60 w-28 relative flex flex-col items-center justify-center">
+                            <div class="w-16 h-8 bg-zinc-900 rounded-t-lg border-b-2 border-zinc-700 shadow"></div>
+                            <div class="w-20 h-44 rounded-b-xl border border-slate-300 relative overflow-hidden shadow-md" style="background: linear-gradient(180deg, #ea580c 0%, #9a3412 100%);">
+                                <div class="absolute inset-0 bg-white/10"></div>
+                                <div class="absolute top-10 inset-x-0 h-24 bg-vixua-burgundy-dark border-y border-vixua-gold/40 flex flex-col items-center justify-center p-1 text-center">
+                                    <span class="font-serif font-black text-white text-[10px] tracking-wider">VỊ XƯA</span>
+                                    <div class="bg-white rounded-md px-1.5 py-0.5 mt-0.5 shadow-sm w-11/12">
+                                        <span class="font-black text-[9px] text-vixua-dark uppercase block leading-tight">MUỐI TÔM</span>
+                                        <span class="font-serif italic text-[8px] text-vixua-burgundy block leading-none">Cốt Đất</span>
+                                    </div>
+                                    <span class="text-[7px] text-white/80 mt-1">500g</span>
+                                </div>
+                                <div class="absolute bottom-0 inset-x-0 h-6 fluted-glass"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-5 flex-1 flex flex-col justify-between">
+                        <div>
+                            <span class="text-[10px] text-vixua-gold font-bold uppercase">Hũ Thủy Tinh 500g</span>
+                            <h3 class="font-serif font-bold text-base text-vixua-burgundy mt-0.5">Muối Tôm Cốt Đất Thượng Hạng</h3>
+                            <p class="text-xs text-vixua-dark/70 mt-1 line-clamp-2">Tôm đất tươi quết nhuyễn sao vàng cùng muối ớt, thơm bùi đậm vị chấm hoa quả.</p>
+                        </div>
+                        <div class="pt-3 mt-3 border-t border-vixua-burgundy/10 flex items-center justify-between">
+                            <span class="font-serif font-bold text-base text-vixua-burgundy">85.000đ</span>
+                            <button onclick="addToCart('Muối Tôm Cốt Đất (500g)', 85000, 'muoi-tieu-ham.png')" class="px-3.5 py-1.5 rounded-xl bg-vixua-burgundy/10 text-vixua-burgundy hover:bg-vixua-burgundy hover:text-white text-xs font-bold transition-colors">
+                                Thêm Giỏ
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SP 8: Tiêu Đen Hạt Rừng Phú Quốc (Hạt đen tuyền) -->
+                <div class="spice-item bg-white rounded-2xl overflow-hidden border border-vixua-burgundy/15 shadow-sm hover:shadow-xl transition-all flex flex-col justify-between" data-cat="tieu">
+                    <div class="p-4 bg-slate-50 flex items-center justify-center relative">
+                        <div class="h-60 w-28 relative flex flex-col items-center justify-center">
+                            <div class="w-16 h-8 bg-zinc-900 rounded-t-lg border-b-2 border-zinc-700 shadow"></div>
+                            <div class="w-20 h-44 rounded-b-xl border border-slate-300 relative overflow-hidden shadow-md" style="background: radial-gradient(circle, #333 15%, #18181b 80%);">
+                                <div class="absolute inset-0 bg-white/10"></div>
+                                <div class="absolute top-10 inset-x-0 h-24 bg-vixua-burgundy-dark border-y border-vixua-gold/40 flex flex-col items-center justify-center p-1 text-center">
+                                    <span class="font-serif font-black text-white text-[10px] tracking-wider">VỊ XƯA</span>
+                                    <div class="bg-white rounded-md px-1.5 py-0.5 mt-0.5 shadow-sm w-11/12">
+                                        <span class="font-black text-[9px] text-vixua-dark uppercase block leading-tight">TIÊU ĐEN</span>
+                                        <span class="font-serif italic text-[8px] text-vixua-burgundy block leading-none">Hạt Rừng</span>
+                                    </div>
+                                    <span class="text-[7px] text-white/80 mt-1">500g</span>
+                                </div>
+                                <div class="absolute bottom-0 inset-x-0 h-6 fluted-glass"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-5 flex-1 flex flex-col justify-between">
+                        <div>
+                            <span class="text-[10px] text-vixua-gold font-bold uppercase">Hũ Thủy Tinh 500g</span>
+                            <h3 class="font-serif font-bold text-base text-vixua-burgundy mt-0.5">Tiêu Đen Hạt Rừng Phú Quốc</h3>
+                            <p class="text-xs text-vixua-dark/70 mt-1 line-clamp-2">Hạt tiêu chín đỏ phơi nắng đảo đều tay, tròn mẩy thơm nồng, chuyên hầm kho & ngâm dấm.</p>
+                        </div>
+                        <div class="pt-3 mt-3 border-t border-vixua-burgundy/10 flex items-center justify-between">
+                            <span class="font-serif font-bold text-base text-vixua-burgundy">115.000đ</span>
+                            <button onclick="addToCart('Tiêu Đen Hạt Rừng (500g)', 115000, 'muoi-tieu-ham.png')" class="px-3.5 py-1.5 rounded-xl bg-vixua-burgundy/10 text-vixua-burgundy hover:bg-vixua-burgundy hover:text-white text-xs font-bold transition-colors">
+                                Thêm Giỏ
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -201,246 +480,152 @@
         </div>
     </section>
 
-    <!-- SECTION 2: CHI TIẾT TẠO NÊN HŨ MUỐI TIÊU HẦM 500G -->
-    <section id="quality" class="py-20 bg-vixua-cream">
+    <!-- SECTION 3: BỘ QUÀ TẶNG COMBO 3 HŨ (HIỂN THỊ CẢ 3 HŨ ĐỨNG CẠNH NHAU) -->
+    <section id="giftsets" class="py-20 bg-kraft-dots border-t border-b border-vixua-burgundy/10">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-3xl mx-auto mb-16">
-                <span class="text-vixua-gold font-bold text-xs uppercase tracking-widest">Bí Quyết Gia Truyền</span>
-                <h2 class="font-serif text-3xl sm:text-4xl font-extrabold text-vixua-burgundy mt-1">Điều Gì Tạo Nên Hũ Muối Tiêu Hầm Độc Bản?</h2>
+                <span class="text-vixua-gold font-bold text-xs uppercase tracking-widest">Bộ Quà Tri Ân Ý Nghĩa</span>
+                <h2 class="font-serif text-3xl sm:text-4xl font-extrabold text-vixua-burgundy mt-1">Set 3 Hũ Gia Vị 500g "Bếp Ấm Nhà Vui"</h2>
                 <div class="w-16 h-1 bg-vixua-burgundy mx-auto mt-3 rounded-full"></div>
+                <p class="text-xs sm:text-sm text-vixua-dark/70 mt-3">Trọn bộ 3 hũ gia vị thủy tinh xếp ngay ngắn trong khay gỗ khắc logo Vị Xưa sang trọng.</p>
             </div>
 
-            <div class="grid md:grid-cols-3 gap-8">
-                <!-- Card 1 -->
-                <div class="bg-white rounded-3xl p-8 border border-vixua-burgundy/15 shadow-sm hover:shadow-xl transition-all">
-                    <div class="w-14 h-14 rounded-2xl bg-vixua-burgundy/10 text-vixua-burgundy flex items-center justify-center text-2xl mb-6">
-                        <i class="fa-solid fa-fire-burner"></i>
-                    </div>
-                    <h3 class="font-serif font-bold text-xl text-vixua-burgundy mb-2">Muối Hầm Đất Nung Sa Huỳnh</h3>
-                    <p class="text-xs sm:text-sm text-vixua-dark/75 leading-relaxed">
-                        Hạt muối biển kết tinh tự nhiên được nung ròng rã suốt 24 giờ trong lu sành đất nung. Quá trình hầm giúp hạt muối vỡ mịn như phấn, bẻ gãy vị mặn chát gắt, chỉ còn đọng lại vị mặn thanh ngọt hậu êm dịu.
-                    </p>
-                </div>
+            <!-- Card Lớn Trưng Bày Cả 3 Hũ Xếp Cạnh Nhau -->
+            <div class="max-w-5xl mx-auto bg-white rounded-3xl p-8 sm:p-12 border-2 border-vixua-burgundy shadow-2xl">
+                <div class="grid lg:grid-cols-12 gap-10 items-center">
+                    
+                    <!-- HÌNH ẢNH 3 HŨ ĐỨNG CẠNH NHAU TRÊN KHAY -->
+                    <div class="lg:col-span-7 bg-gradient-to-b from-slate-50 to-amber-50/40 p-6 rounded-2xl border border-vixua-burgundy/15 relative overflow-hidden">
+                        
+                        <!-- Cụm 3 Hũ Gia Vị Đứng Cạnh Nhau -->
+                        <div class="flex items-end justify-center gap-3 sm:gap-6 py-6 relative z-10">
+                            
+                            <!-- Hũ 1: Muối Ớt Xiêm Rừng (Đỏ Cam) -->
+                            <div class="w-24 sm:w-28 flex flex-col items-center transform -rotate-3 hover:rotate-0 transition-transform">
+                                <div class="w-14 h-7 bg-zinc-900 rounded-t-lg border-b border-zinc-700"></div>
+                                <div class="w-18 sm:w-20 h-40 sm:h-44 rounded-b-xl border border-slate-300 relative overflow-hidden shadow-lg" style="background: linear-gradient(180deg, #d33c16, #a42709);">
+                                    <div class="absolute top-8 inset-x-0 h-22 bg-vixua-burgundy-dark flex flex-col items-center justify-center p-1 text-center">
+                                        <span class="text-[7px] text-white font-bold">VỊ XƯA</span>
+                                        <span class="text-[8px] bg-white text-vixua-dark font-black px-1 rounded uppercase">MUỐI ỚT</span>
+                                        <span class="text-[6px] text-white/80">500g</span>
+                                    </div>
+                                    <div class="absolute bottom-0 inset-x-0 h-5 fluted-glass"></div>
+                                </div>
+                                <span class="text-[10px] font-bold text-vixua-burgundy mt-2 text-center block">1. Muối Ớt Xiêm</span>
+                            </div>
 
-                <!-- Card 2 -->
-                <div class="bg-white rounded-3xl p-8 border border-vixua-burgundy/15 shadow-sm hover:shadow-xl transition-all">
-                    <div class="w-14 h-14 rounded-2xl bg-vixua-burgundy/10 text-vixua-burgundy flex items-center justify-center text-2xl mb-6">
-                        <i class="fa-solid fa-seedling"></i>
-                    </div>
-                    <h3 class="font-serif font-bold text-xl text-vixua-burgundy mb-2">Tiêu Đen Rừng Tiên Phước</h3>
-                    <p class="text-xs sm:text-sm text-vixua-dark/75 leading-relaxed">
-                        Hạt tiêu sọ già được thu hoạch từ những gốc tiêu rừng miền Trung, rang đảo lửa thủ công trên chảo gang rồi đập dập cánh lớn. Giữ nguyên lượng tinh dầu cay nồng thơm ngát, không bị nát vụn thành bột.
-                    </p>
-                </div>
+                            <!-- Hũ 2 (Chính Giữa): Muối Tiêu Hầm 500g Thực Tế -->
+                            <div class="w-28 sm:w-32 flex flex-col items-center transform scale-110 z-20">
+                                <div class="h-48 sm:h-52 flex items-center justify-center">
+                                    <img src="muoi-tieu-ham.png" alt="Muối Tiêu Hầm 500g" class="max-h-full object-contain filter drop-shadow-2xl">
+                                </div>
+                                <span class="text-[11px] font-black text-vixua-burgundy mt-2 text-center block bg-vixua-gold/20 px-2 py-0.5 rounded-full">2. Muối Tiêu Hầm</span>
+                            </div>
 
-                <!-- Card 3 -->
-                <div class="bg-white rounded-3xl p-8 border border-vixua-burgundy/15 shadow-sm hover:shadow-xl transition-all">
-                    <div class="w-14 h-14 rounded-2xl bg-vixua-burgundy/10 text-vixua-burgundy flex items-center justify-center text-2xl mb-6">
-                        <i class="fa-solid fa-shield-heart"></i>
+                            <!-- Hũ 3: Muối Rang Lá Chanh (Xanh Vàng) -->
+                            <div class="w-24 sm:w-28 flex flex-col items-center transform rotate-3 hover:rotate-0 transition-transform">
+                                <div class="w-14 h-7 bg-zinc-900 rounded-t-lg border-b border-zinc-700"></div>
+                                <div class="w-18 sm:w-20 h-40 sm:h-44 rounded-b-xl border border-slate-300 relative overflow-hidden shadow-lg" style="background: linear-gradient(180deg, #dce4c7, #a4b47c);">
+                                    <div class="absolute top-8 inset-x-0 h-22 bg-vixua-burgundy-dark flex flex-col items-center justify-center p-1 text-center">
+                                        <span class="text-[7px] text-white font-bold">VỊ XƯA</span>
+                                        <span class="text-[8px] bg-white text-vixua-dark font-black px-1 rounded uppercase">LÁ CHANH</span>
+                                        <span class="text-[6px] text-white/80">500g</span>
+                                    </div>
+                                    <div class="absolute bottom-0 inset-x-0 h-5 fluted-glass"></div>
+                                </div>
+                                <span class="text-[10px] font-bold text-vixua-burgundy mt-2 text-center block">3. Muối Lá Chanh</span>
+                            </div>
+
+                        </div>
+
+                        <!-- Khay Gỗ Minh Họa Dưới Đáy 3 Hũ -->
+                        <div class="w-full h-4 bg-amber-800 rounded-md shadow border-t border-amber-600 mx-auto -mt-1 relative z-0"></div>
                     </div>
-                    <h3 class="font-serif font-bold text-xl text-vixua-burgundy mb-2">Bao Bì Thủy Tinh Tiêu Chuẩn</h3>
-                    <p class="text-xs sm:text-sm text-vixua-dark/75 leading-relaxed">
-                        Hũ thủy tinh cao cấp dày dặn 500g cùng nắp vặn ren đen chuyên dụng kháng ẩm. Dù để cạnh bếp nấu nhiều hơi nước và nhiệt độ cao, muối tiêu vẫn luôn khô ráo, thơm nức từng hạt suốt 12 tháng.
-                    </p>
+
+                    <!-- THÔNG TIN CHI TIẾT COMBO 3 HŨ -->
+                    <div class="lg:col-span-5 space-y-4">
+                        <span class="bg-vixua-burgundy text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-wider">Trọn Bộ 3 Hũ Thủy Tinh</span>
+                        <h3 class="font-serif font-black text-2xl sm:text-3xl text-vixua-burgundy leading-tight">Combo 3 Hũ Bếp Ấm (500g x 3)</h3>
+                        
+                        <p class="text-xs sm:text-sm text-vixua-dark/80 leading-relaxed">
+                            Món quà ẩm thực trọn vẹn chăm sóc sức khỏe cho cả gia đình:
+                        </p>
+
+                        <div class="space-y-2 text-xs text-vixua-dark/85 bg-vixua-kraft/50 p-4 rounded-xl border border-vixua-burgundy/10">
+                            <p class="flex items-center gap-2">
+                                <i class="fa-solid fa-check text-green-700"></i>
+                                <span><strong>01 Hũ Muối Tiêu Hầm</strong> (500g) - Tiêu đập dập thơm lừng</span>
+                            </p>
+                            <p class="flex items-center gap-2">
+                                <i class="fa-solid fa-check text-green-700"></i>
+                                <span><strong>01 Hũ Muối Ớt Xiêm Rừng</strong> (500g) - Cay nồng nàn kích thích vị giác</span>
+                            </p>
+                            <p class="flex items-center gap-2">
+                                <i class="fa-solid fa-check text-green-700"></i>
+                                <span><strong>01 Hũ Muối Rang Lá Chanh</strong> (500g) - Chuyên gà luộc & hải sản</span>
+                            </p>
+                            <p class="flex items-center gap-2 text-vixua-gold font-bold pt-1 border-t border-vixua-burgundy/10">
+                                <i class="fa-solid fa-gift"></i>
+                                <span>Tặng kèm 01 muỗng gỗ tự nhiên khắc logo Vị Xưa</span>
+                            </p>
+                        </div>
+
+                        <div class="pt-2 flex items-baseline gap-3">
+                            <span class="font-serif font-black text-3xl text-vixua-burgundy">195.000đ</span>
+                            <span class="text-sm text-vixua-dark/40 line-through">255.000đ</span>
+                            <span class="text-xs font-bold text-green-700 bg-green-100 px-2 py-0.5 rounded-full">Tiết kiệm 60.000đ</span>
+                        </div>
+
+                        <button onclick="addToCart('Set 3 Hũ Gia Vị 500g (Hộp Gỗ)', 195000, 'muoi-tieu-ham.png')" class="w-full burgundy-gradient text-white font-bold py-4 rounded-xl shadow-lg hover:opacity-95 transition-opacity flex items-center justify-center gap-2">
+                            <i class="fa-solid fa-cart-shopping text-vixua-gold"></i>
+                            <span>Đặt Mua Set 3 Hũ Ngay</span>
+                        </button>
+                    </div>
+
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- SECTION 3: DANH MỤC TRỌN BỘ 8 HŨ GIA VỊ 500G CHUẨN THIẾT KẾ CỦA BẠN -->
-    <section id="products" class="py-20 bg-kraft-dots border-t border-b border-vixua-burgundy/10">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center max-w-3xl mx-auto mb-14">
-                <span class="text-vixua-gold font-bold text-xs uppercase tracking-widest">Bộ Sưu Tập Hũ 500g</span>
-                <h2 class="font-serif text-3xl sm:text-4xl font-extrabold text-vixua-burgundy mt-1">Danh Mục Gia Vị Hũ Thủy Tinh</h2>
-                <div class="w-16 h-1 bg-vixua-burgundy mx-auto mt-3 rounded-full"></div>
-                <p class="text-vixua-dark/70 text-xs sm:text-sm mt-3">Được sản xuất đồng bộ theo chuẩn Hũ thủy tinh nắp đen 500g nhãn đỏ mận sang trọng.</p>
-            </div>
-
-            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-                
-                <!-- SP 1: Muối Tiêu Hầm (Ảnh chuẩn của bạn) -->
-                <div class="bg-white rounded-2xl overflow-hidden border-2 border-vixua-burgundy/30 shadow-md hover:shadow-xl transition-all flex flex-col justify-between group">
-                    <div class="p-4 text-center bg-slate-50 relative">
-                        <span class="absolute top-3 left-3 bg-vixua-burgundy text-white text-[9px] font-black px-2.5 py-1 rounded-full uppercase">Sản Phẩm Chủ Đạo</span>
-                        <div class="h-56 flex items-center justify-center overflow-hidden">
-                            <img src="muoi-tieu-ham.png" alt="Muối Tiêu Hầm 500g" class="max-h-full max-w-full object-contain group-hover:scale-110 transition-transform duration-500">
-                        </div>
-                    </div>
-                    <div class="p-5 flex-1 flex flex-col justify-between">
-                        <div>
-                            <span class="text-[10px] text-vixua-gold font-bold uppercase">Hũ Thủy Tinh 500g</span>
-                            <h3 class="font-serif font-bold text-lg text-vixua-burgundy mt-0.5">Muối Tiêu Hầm Vị Xưa</h3>
-                            <p class="text-xs text-vixua-dark/70 mt-1 line-clamp-2">Muối hầm đất nung Sa Huỳnh + Tiêu đen Tiên Phước đập dập thơm nồng.</p>
-                        </div>
-                        <div class="pt-4 mt-3 border-t border-vixua-burgundy/10 flex items-center justify-between">
-                            <div>
-                                <span class="font-serif font-bold text-lg text-vixua-burgundy">65.000đ</span>
-                                <span class="text-[11px] text-vixua-dark/40 line-through ml-1">85.000đ</span>
-                            </div>
-                            <button onclick="addToCart('Muối Tiêu Hầm Vị Xưa (500g)', 65000, 'muoi-tieu-ham.png')" class="px-3.5 py-2 rounded-xl burgundy-gradient text-white text-xs font-bold hover:opacity-90">
-                                Thêm Giỏ
-                            </button>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- SP 2: Muối Ớt Xiêm Hầm (Cùng dòng hũ 500g) -->
-                <div class="bg-white rounded-2xl overflow-hidden border border-vixua-burgundy/15 shadow-sm hover:shadow-xl transition-all flex flex-col justify-between group">
-                    <div class="p-4 text-center bg-slate-50 relative">
-                        <span class="absolute top-3 left-3 bg-vixua-gold text-vixua-dark text-[9px] font-black px-2.5 py-1 rounded-full uppercase">Cay Thơm</span>
-                        <div class="h-56 flex items-center justify-center overflow-hidden">
-                            <img src="muoi-tieu-ham.png" alt="Muối Ớt Xiêm Hầm 500g" class="max-h-full max-w-full object-contain filter hue-rotate-15 group-hover:scale-110 transition-transform duration-500">
-                        </div>
-                    </div>
-                    <div class="p-5 flex-1 flex flex-col justify-between">
-                        <div>
-                            <span class="text-[10px] text-vixua-gold font-bold uppercase">Hũ Thủy Tinh 500g</span>
-                            <h3 class="font-serif font-bold text-lg text-vixua-burgundy mt-0.5">Muối Ớt Xiêm Rừng Hầm</h3>
-                            <p class="text-xs text-vixua-dark/70 mt-1 line-clamp-2">Muối hầm hòa quyện ớt xiêm xanh rừng nướng thơm phức, cay sực nức.</p>
-                        </div>
-                        <div class="pt-4 mt-3 border-t border-vixua-burgundy/10 flex items-center justify-between">
-                            <div>
-                                <span class="font-serif font-bold text-lg text-vixua-burgundy">70.000đ</span>
-                                <span class="text-[11px] text-vixua-dark/40 line-through ml-1">90.000đ</span>
-                            </div>
-                            <button onclick="addToCart('Muối Ớt Xiêm Rừng Hầm (500g)', 70000, 'muoi-tieu-ham.png')" class="px-3.5 py-2 rounded-xl bg-vixua-burgundy/10 text-vixua-burgundy hover:bg-vixua-burgundy hover:text-white text-xs font-bold transition-colors">
-                                Thêm Giỏ
-                            </button>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- SP 3: Tiêu Sọ Xay Mộc (Cùng dòng hũ 500g) -->
-                <div class="bg-white rounded-2xl overflow-hidden border border-vixua-burgundy/15 shadow-sm hover:shadow-xl transition-all flex flex-col justify-between group">
-                    <div class="p-4 text-center bg-slate-50 relative">
-                        <span class="absolute top-3 left-3 bg-vixua-burgundy text-white text-[9px] font-black px-2.5 py-1 rounded-full uppercase">Thượng Hạng</span>
-                        <div class="h-56 flex items-center justify-center overflow-hidden">
-                            <img src="muoi-tieu-ham.png" alt="Tiêu Sọ Rừng Tiên Phước 500g" class="max-h-full max-w-full object-contain filter grayscale group-hover:scale-110 transition-transform duration-500">
-                        </div>
-                    </div>
-                    <div class="p-5 flex-1 flex flex-col justify-between">
-                        <div>
-                            <span class="text-[10px] text-vixua-gold font-bold uppercase">Hũ Thủy Tinh 500g</span>
-                            <h3 class="font-serif font-bold text-lg text-vixua-burgundy mt-0.5">Tiêu Sọ Rừng Xay Vỡ</h3>
-                            <p class="text-xs text-vixua-dark/70 mt-1 line-clamp-2">100% tiêu sọ Tiên Phước chà vỏ tự nhiên, cay sâu đầm ấm không gắt cổ.</p>
-                        </div>
-                        <div class="pt-4 mt-3 border-t border-vixua-burgundy/10 flex items-center justify-between">
-                            <div>
-                                <span class="font-serif font-bold text-lg text-vixua-burgundy">125.000đ</span>
-                                <span class="text-[11px] text-vixua-dark/40 line-through ml-1">150.000đ</span>
-                            </div>
-                            <button onclick="addToCart('Tiêu Sọ Rừng Xay Vỡ (500g)', 125000, 'muoi-tieu-ham.png')" class="px-3.5 py-2 rounded-xl bg-vixua-burgundy/10 text-vixua-burgundy hover:bg-vixua-burgundy hover:text-white text-xs font-bold transition-colors">
-                                Thêm Giỏ
-                            </button>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- SP 4: Muối Rang Lá Chanh (Cùng dòng hũ 500g) -->
-                <div class="bg-white rounded-2xl overflow-hidden border border-vixua-burgundy/15 shadow-sm hover:shadow-xl transition-all flex flex-col justify-between group">
-                    <div class="p-4 text-center bg-slate-50 relative">
-                        <span class="absolute top-3 left-3 bg-vixua-gold text-vixua-dark text-[9px] font-black px-2.5 py-1 rounded-full uppercase">Chuyên Gà & Hải Sản</span>
-                        <div class="h-56 flex items-center justify-center overflow-hidden">
-                            <img src="muoi-tieu-ham.png" alt="Muối Rang Lá Chanh 500g" class="max-h-full max-w-full object-contain filter group-hover:scale-110 transition-transform duration-500">
-                        </div>
-                    </div>
-                    <div class="p-5 flex-1 flex flex-col justify-between">
-                        <div>
-                            <span class="text-[10px] text-vixua-gold font-bold uppercase">Hũ Thủy Tinh 500g</span>
-                            <h3 class="font-serif font-bold text-lg text-vixua-burgundy mt-0.5">Muối Rang Lá Chanh Bếp Quê</h3>
-                            <p class="text-xs text-vixua-dark/70 mt-1 line-clamp-2">Muối hầm sao khô cùng lá chanh bánh tẻ sấy lạnh và tiêu thơm nồng.</p>
-                        </div>
-                        <div class="pt-4 mt-3 border-t border-vixua-burgundy/10 flex items-center justify-between">
-                            <div>
-                                <span class="font-serif font-bold text-lg text-vixua-burgundy">65.000đ</span>
-                                <span class="text-[11px] text-vixua-dark/40 line-through ml-1">80.000đ</span>
-                            </div>
-                            <button onclick="addToCart('Muối Rang Lá Chanh (500g)', 65000, 'muoi-tieu-ham.png')" class="px-3.5 py-2 rounded-xl bg-vixua-burgundy/10 text-vixua-burgundy hover:bg-vixua-burgundy hover:text-white text-xs font-bold transition-colors">
-                                Thêm Giỏ
-                            </button>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <!-- SECTION 4: GỢI Ý MÓN ĂN VỚI MUỐI TIÊU HẦM -->
+    <!-- SECTION 4: GỢI Ý MÓN ĂN KINH ĐIỂN VỚI MUỐI TIÊU HẦM -->
     <section id="recipes" class="py-20 bg-vixua-cream">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex flex-col md:flex-row justify-between items-end mb-12">
                 <div>
-                    <span class="text-vixua-gold font-bold text-xs uppercase tracking-widest">Hương Vị Chấm Kinh Điển</span>
-                    <h2 class="font-serif text-3xl sm:text-4xl font-extrabold text-vixua-burgundy mt-1">Món Nào Cũng Hợp Cùng Muối Tiêu Hầm</h2>
+                    <span class="text-vixua-gold font-bold text-xs uppercase tracking-widest">Hương Vị Chấm Bếp Quê</span>
+                    <h2 class="font-serif text-3xl sm:text-4xl font-extrabold text-vixua-burgundy mt-1">Món Nào Cũng Đượm Vị Cùng Muối Tiêu Hầm</h2>
                 </div>
                 <p class="text-xs sm:text-sm text-vixua-dark/70 max-w-md mt-2 md:mt-0">
-                    Chỉ cần vắt thêm lát chanh tươi hoặc vài lát ớt chỉ thiên, đĩa muối tiêu hầm Vị Xưa nâng tầm mọi món ăn quen thuộc.
+                    Chỉ cần vắt thêm lát chanh tươi và vài lát ớt chỉ thiên, đĩa muối tiêu hầm nâng tầm mọi món ăn quen thuộc.
                 </p>
             </div>
 
             <div class="grid md:grid-cols-3 gap-8">
                 <div class="bg-white rounded-2xl overflow-hidden border border-vixua-burgundy/15 shadow-sm hover:shadow-lg transition-all">
-                    <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=600&q=80" alt="Thịt luộc chấm muối tiêu" class="w-full h-48 object-cover">
+                    <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=600&q=80" alt="Gà luộc chấm muối tiêu" class="w-full h-48 object-cover">
                     <div class="p-6">
                         <span class="text-[10px] font-bold text-vixua-gold uppercase tracking-wider">Cặp Đôi Hoàn Hảo</span>
-                        <h3 class="font-serif font-bold text-lg text-vixua-burgundy mt-1 mb-2">Gà Đồi Luộc & Thịt Ba Chỉ Luộc</h3>
-                        <p class="text-xs text-vixua-dark/75">Vị mặn dịu của muối hầm thấm vào da gà giòn ngọt, tiêu đen cay ấm kích thích trọn vẹn vị giác.</p>
+                        <h3 class="font-serif font-bold text-lg text-vixua-burgundy mt-1 mb-2">Gà Đồi Luộc & Thịt Ba Chỉ</h3>
+                        <p class="text-xs text-vixua-dark/75 leading-relaxed">Vị mặn ngọt thanh của muối hầm thấm vào từng thớ thịt luộc, hạt tiêu đập dập thơm lừng át đi mọi cảm giác ngấy.</p>
                     </div>
                 </div>
 
                 <div class="bg-white rounded-2xl overflow-hidden border border-vixua-burgundy/15 shadow-sm hover:shadow-lg transition-all">
-                    <img src="https://images.unsplash.com/photo-1534422298391-e4f8c172dddb?auto=format&fit=crop&w=600&q=80" alt="Hải sản chấm muối tiêu chanh" class="w-full h-48 object-cover">
+                    <img src="https://images.unsplash.com/photo-1534422298391-e4f8c172dddb?auto=format&fit=crop&w=600&q=80" alt="Hải sản hấp" class="w-full h-48 object-cover">
                     <div class="p-6">
-                        <span class="text-[10px] font-bold text-vixua-gold uppercase tracking-wider">Hải Sản Đậm Vị</span>
-                        <h3 class="font-serif font-bold text-lg text-vixua-burgundy mt-1 mb-2">Cua Biển, Tôm Hấp & Mực Trứng</h3>
-                        <p class="text-xs text-vixua-dark/75">Pha muối tiêu hầm cùng chanh và một chút mù tạt tạo nên chén nước chấm hải sản thơm ngậy khó quên.</p>
+                        <span class="text-[10px] font-bold text-vixua-gold uppercase tracking-wider">Hải Sản Đậm Đà</span>
+                        <h3 class="font-serif font-bold text-lg text-vixua-burgundy mt-1 mb-2">Cua Biển, Tôm Hấp & Mực Nướng</h3>
+                        <p class="text-xs text-vixua-dark/75 leading-relaxed">Muối tiêu chanh cay ấm kích thích trọn vẹn vị ngọt nguyên bản từ thịt hải sản tươi rói vừa vớt lên.</p>
                     </div>
                 </div>
 
                 <div class="bg-white rounded-2xl overflow-hidden border border-vixua-burgundy/15 shadow-sm hover:shadow-lg transition-all">
-                    <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=600&q=80" alt="Ướp thịt nướng" class="w-full h-48 object-cover">
+                    <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=600&q=80" alt="Bò bít tết ướp tiêu" class="w-full h-48 object-cover">
                     <div class="p-6">
-                        <span class="text-[10px] font-bold text-vixua-gold uppercase tracking-wider">Ướp Kho & Nướng</span>
-                        <h3 class="font-serif font-bold text-lg text-vixua-burgundy mt-1 mb-2">Ướp Bò Bít Tết & Sườn Nướng Chảo</h3>
-                        <p class="text-xs text-vixua-dark/75">Hạt tiêu đập dập thơm lừng bám đều trên thớ thịt, khi áp chảo dậy mùi thơm thảo mộc tự nhiên ngào ngạt.</p>
+                        <span class="text-[10px] font-bold text-vixua-gold uppercase tracking-wider">Ướp & Áp Chảo</span>
+                        <h3 class="font-serif font-bold text-lg text-vixua-burgundy mt-1 mb-2">Bò Áp Chảo & Sườn Kho Tiêu</h3>
+                        <p class="text-xs text-vixua-dark/75 leading-relaxed">Rắc đều một nhúm muối tiêu hầm lên thớ thịt trước khi áp chảo, hương tinh dầu tiêu rừng lan tỏa nức mũi.</p>
                     </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- SECTION 5: BỘ QUÀ TẶNG COMBO HỘP GỖ 3 HŨ 500G -->
-    <section id="giftsets" class="py-20 bg-kraft-dots border-t border-b border-vixua-burgundy/10">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center max-w-3xl mx-auto mb-16">
-                <span class="text-vixua-gold font-bold text-xs uppercase tracking-widest">Hộp Quà Sang Trọng</span>
-                <h2 class="font-serif text-3xl sm:text-4xl font-extrabold text-vixua-burgundy mt-1">Set Quà Tặng 3 Hũ 500g "Bếp Ấm Nhà Vui"</h2>
-                <div class="w-16 h-1 bg-vixua-burgundy mx-auto mt-3 rounded-full"></div>
-                <p class="text-xs sm:text-sm text-vixua-dark/70 mt-3">Hộp gỗ thông khắc logo Vị Xưa kèm 3 hũ gia vị 500g tự chọn, món quà sức khỏe ý nghĩa cho gia đình.</p>
-            </div>
-
-            <div class="max-w-4xl mx-auto bg-white rounded-3xl p-8 border-2 border-vixua-burgundy shadow-2xl flex flex-col md:flex-row items-center gap-8">
-                <div class="w-full md:w-1/2 flex items-center justify-center p-4 bg-slate-50 rounded-2xl">
-                    <img src="muoi-tieu-ham.png" alt="Set 3 hũ muối tiêu 500g" class="max-h-72 object-contain">
-                </div>
-                <div class="w-full md:w-1/2 space-y-4">
-                    <span class="bg-vixua-burgundy text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase">Hộp Gỗ Cao Cấp</span>
-                    <h3 class="font-serif font-black text-2xl text-vixua-burgundy">Set 3 Hũ Thủy Tinh (500g x 3)</h3>
-                    <p class="text-xs text-vixua-dark/80 leading-relaxed">
-                        • 01 Hũ Muối Tiêu Hầm Sa Huỳnh (500g)<br>
-                        • 01 Hũ Muối Ớt Xiêm Rừng (500g)<br>
-                        • 01 Hũ Muối Rang Lá Chanh Bếp Quê (500g)<br>
-                        • Tặng kèm 01 muỗng gỗ tự nhiên khắc logo Vị Xưa.
-                    </p>
-                    <div class="pt-2 flex items-baseline gap-3">
-                        <span class="font-serif font-black text-2xl text-vixua-burgundy">195.000đ</span>
-                        <span class="text-sm text-vixua-dark/40 line-through">255.000đ</span>
-                    </div>
-                    <button onclick="addToCart('Set 3 Hũ Gia Vị 500g (Hộp Gỗ)', 195000, 'muoi-tieu-ham.png')" class="w-full burgundy-gradient text-white font-bold py-3.5 rounded-xl shadow-md hover:opacity-90">
-                        Đặt Mua Hộp Quà 3 Hũ Ngay
-                    </button>
                 </div>
             </div>
         </div>
@@ -450,22 +635,21 @@
     <footer class="bg-vixua-burgundy-dark text-vixua-cream py-14 border-t-2 border-vixua-gold/30">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid md:grid-cols-4 gap-8 mb-10">
-                
                 <div class="space-y-4">
                     <div class="h-16 w-auto inline-flex items-center bg-white p-1 rounded-xl shadow-sm">
                         <img src="logo.png" alt="Logo Vị Xưa" class="h-full w-auto object-contain max-w-[190px]" onerror="this.onerror=null; this.parentElement.innerHTML='<span class=\'font-serif font-black text-xl text-vixua-burgundy px-3\'>VỊ XƯA</span>';">
                     </div>
                     <p class="text-xs text-vixua-cream/70 leading-relaxed">
-                        Thương hiệu gia vị truyền thống Việt Nam <strong>Vị Xưa</strong> – Giữ trọn tinh hoa thảo mộc bản địa, khơi gợi ký ức căn bếp quê hương ấm áp.
+                        Thương hiệu gia vị truyền thống Việt Nam <strong>Vị Xưa</strong> - Giữ trọn tinh hoa thảo mộc bản địa, khơi gợi ký ức căn bếp quê hương ấm áp.
                     </p>
                 </div>
 
                 <div class="space-y-2 text-xs">
-                    <h4 class="font-serif font-bold text-sm text-vixua-gold uppercase tracking-wider mb-3">Dòng Sản Phẩm 500g</h4>
+                    <h4 class="font-serif font-bold text-sm text-vixua-gold uppercase tracking-wider mb-3">12 Loại Hũ 500g</h4>
                     <p><a href="#products" class="hover:text-vixua-gold transition-colors">Muối Tiêu Hầm Sa Huỳnh</a></p>
                     <p><a href="#products" class="hover:text-vixua-gold transition-colors">Muối Ớt Xiêm Rừng Nướng</a></p>
                     <p><a href="#products" class="hover:text-vixua-gold transition-colors">Tiêu Sọ Rừng Tiên Phước Xay</a></p>
-                    <p><a href="#giftsets" class="hover:text-vixua-gold transition-colors">Hộp Gỗ Quà Tặng 3 Hũ</a></p>
+                    <p><a href="#giftsets" class="hover:text-vixua-gold transition-colors">Set 3 Hũ Gia Vị Bếp Ấm</a></p>
                 </div>
 
                 <div class="space-y-2 text-xs">
@@ -483,7 +667,6 @@
                         <a href="#" class="w-8 h-8 rounded-full bg-white/10 hover:bg-vixua-gold hover:text-vixua-dark flex items-center justify-center text-xs transition-colors"><i class="fa-brands fa-youtube"></i></a>
                     </div>
                 </div>
-
             </div>
 
             <div class="pt-8 border-t border-white/10 text-center text-[11px] text-vixua-cream/50">
@@ -529,12 +712,10 @@
             </div>
             <h3 class="font-serif text-2xl font-bold text-vixua-burgundy">Voucher Ưu Đãi 30%</h3>
             <p class="text-xs text-vixua-dark/70 mt-1">Áp dụng cho mọi sản phẩm hũ 500g Vị Xưa</p>
-            
             <div class="bg-vixua-cream p-4 rounded-xl border-2 border-dashed border-vixua-burgundy my-4">
                 <span class="font-mono text-2xl font-black text-vixua-burgundy tracking-wider block">VIXUA-30OFF-8899</span>
                 <span class="text-[11px] text-vixua-dark/70 mt-1 block">Áp dụng cho dòng hũ thủy tinh 500g + Tặng kèm muỗng gỗ</span>
             </div>
-
             <button onclick="closeVoucherModal()" class="w-full burgundy-gradient text-white font-bold py-3.5 rounded-xl text-sm">
                 Áp Dụng Mã & Mua Ngay
             </button>
@@ -543,6 +724,23 @@
 
     <!-- JAVASCRIPT LOGIC -->
     <script>
+        // Lọc gia vị theo tab
+        function filterSpices(category) {
+            document.querySelectorAll('.spice-tab').forEach(btn => {
+                btn.className = "spice-tab px-5 py-2 rounded-full text-xs font-bold bg-white text-vixua-dark border border-vixua-burgundy/15 hover:bg-vixua-kraft";
+            });
+            event.target.className = "spice-tab active px-5 py-2 rounded-full text-xs font-bold burgundy-gradient text-white shadow-sm";
+
+            document.querySelectorAll('.spice-item').forEach(item => {
+                if (category === 'all' || item.getAttribute('data-cat') === category) {
+                    item.style.display = 'flex';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+        }
+
+        // Giỏ hàng
         let cart = [];
         function addToCart(title, price, img) {
             const existing = cart.find(i => i.title === title);
