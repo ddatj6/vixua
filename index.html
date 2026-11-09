@@ -6,7 +6,7 @@
     <title>Vị Xưa - Tinh Hoa 20 Dòng Gia Vị Hũ Thủy Tinh 500g Bản Địa</title>
     
     <!-- SEO & META TAGS -->
-    <meta name="description" content="Khám phá 20 dòng gia vị bản địa Việt Nam Vị Xưa đóng hũ thủy tinh 500g nắp kín: Muối tiêu hầm, muối ớt xiêm, tiêu sọ, bột quế, mắc khén, hạt dổi. 100% tự nhiên.">
+    <meta name="description" content="Khám phá 20 dòng gia vị bản địa Việt Nam Vị Xưa đóng hũ thủy tinh 500g nắp kín: Muối tiêu hầm, muối ớt xiêm, tiêu sọ, bột quế, mắc khén. 100% tự nhiên.">
     <meta name="keywords" content="muối tiêu hầm, vị xưa, 20 loại gia vị, tiêu tiên phước, muối ớt xiêm, gia vị bản địa 500g">
     <meta property="og:title" content="Vị Xưa - 20 Loại Gia Vị Bản Địa Hũ Thủy Tinh 500g">
     <meta property="og:description" content="100% nguyên chất bản địa, không chất điều vị E621, gìn giữ trọn vẹn hồn cốt mâm cơm gia đình.">
@@ -56,6 +56,19 @@
         .gold-gradient {
             background: linear-gradient(135deg, #DFAC55 0%, #B88126 100%);
         }
+        /* Mẹo tự động giấu logo Gemini ở góc dưới bên phải */
+        .clean-gemini-crop {
+            overflow: hidden;
+            position: relative;
+        }
+        .clean-gemini-crop img {
+            transform: scale(1.08);
+            transform-origin: center center;
+            transition: transform 0.5s ease;
+        }
+        .clean-gemini-crop:hover img {
+            transform: scale(1.14);
+        }
     </style>
 </head>
 <body class="font-sans text-vixua-dark bg-vixua-cream selection:bg-vixua-burgundy selection:text-white">
@@ -89,8 +102,7 @@
 
             <nav class="hidden lg:flex items-center gap-7 font-medium text-sm">
                 <a href="#about" class="hover:text-vixua-burgundy font-semibold transition-colors">Về Vị Xưa</a>
-                <a href="#products" class="hover:text-vixua-burgundy font-semibold transition-colors">20 Loại Gia Vị</a>
-                <a href="#quality" class="hover:text-vixua-burgundy font-semibold transition-colors">Bí Quyết Muối Hầm</a>
+                <a href="#products" class="hover:text-vixua-burgundy font-semibold transition-colors">20 Hũ Gia Vị</a>
                 <a href="#giftsets" class="hover:text-vixua-burgundy font-semibold transition-colors">Hộp Quà 3 Hũ</a>
                 <a href="#recipes" class="hover:text-vixua-burgundy font-semibold transition-colors">Món Ngon Đúng Điệu</a>
             </nav>
@@ -108,14 +120,14 @@
         </div>
     </header>
 
-    <!-- HERO SECTION -->
+    <!-- HERO SECTION (TẬP TRUNG HŨ CHỦ ĐẠO) -->
     <section id="about" class="relative bg-kraft-dots py-16 lg:py-20 border-b border-vixua-burgundy/10">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid lg:grid-cols-12 gap-12 items-center">
                 
                 <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
                     <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-vixua-burgundy/10 border border-vixua-burgundy/20 text-vixua-burgundy font-bold text-xs uppercase tracking-wider">
-                        <i class="fa-solid fa-mortar-pestle text-vixua-gold"></i> Bộ Sưu Tập 20 Gia Vị Bản Địa Hũ 500g
+                        <i class="fa-solid fa-mortar-pestle text-vixua-gold"></i> Bộ Sưu Tập 20 Hũ Gia Vị Bản Địa 500g
                     </div>
 
                     <h1 class="font-serif text-4xl sm:text-5xl lg:text-6xl font-black text-vixua-burgundy leading-tight">
@@ -130,7 +142,7 @@
                     <div class="grid grid-cols-3 gap-3 max-w-lg mx-auto lg:mx-0 pt-2">
                         <div class="bg-white p-3.5 rounded-2xl border border-vixua-burgundy/15 text-center shadow-sm">
                             <span class="font-serif font-black text-xl text-vixua-burgundy block">20 Loại</span>
-                            <span class="text-[11px] text-vixua-dark/70 font-semibold">Gia vị bản địa</span>
+                            <span class="text-[11px] text-vixua-dark/70 font-semibold">Gia vị trong hũ</span>
                         </div>
                         <div class="bg-white p-3.5 rounded-2xl border border-vixua-burgundy/15 text-center shadow-sm">
                             <span class="font-serif font-black text-xl text-vixua-burgundy block">500g</span>
@@ -138,7 +150,7 @@
                         </div>
                         <div class="bg-white p-3.5 rounded-2xl border border-vixua-burgundy/15 text-center shadow-sm">
                             <span class="font-serif font-black text-xl text-vixua-burgundy block">100%</span>
-                            <span class="text-[11px] text-vixua-dark/70 font-semibold">Tự nhiên 0% E621</span>
+                            <span class="text-[11px] text-vixua-dark/70 font-semibold">Bột thật tự nhiên</span>
                         </div>
                     </div>
 
@@ -153,14 +165,14 @@
                     </div>
                 </div>
 
-                <!-- Right: Hũ Muối Tiêu Hầm 3D của bạn -->
+                <!-- Right: HŨ SẢN PHẨM HERO ĐÃ ĐƯỢC CÂN CHỈNH ĐẸP -->
                 <div class="lg:col-span-5 relative">
                     <div class="bg-gradient-to-b from-white to-vixua-kraft/60 p-6 sm:p-8 rounded-3xl border-2 border-vixua-burgundy/20 shadow-2xl relative text-center">
-                        <div class="w-full h-96 flex items-center justify-center relative overflow-hidden rounded-2xl bg-slate-100/50">
+                        <div class="w-full h-96 flex items-center justify-center relative overflow-hidden rounded-2xl bg-slate-100/50 clean-gemini-crop">
                             <img src="muoi-tieu-ham.png" 
                                  alt="Hũ Muối Tiêu Hầm Vị Xưa 500g" 
-                                 class="max-h-full max-w-full object-contain filter drop-shadow-2xl transform hover:scale-105 transition-transform duration-500"
-                                 onerror="this.src='https://images.unsplash.com/photo-1596040033229-a9821ebd058d?auto=format&fit=crop&w=600&q=80';">
+                                 class="max-h-full max-w-full object-contain filter drop-shadow-2xl"
+                                 onerror="this.src='muoi-tieu.jpg'; this.onerror=function(){this.src='https://images.unsplash.com/photo-1596040033229-a9821ebd058d?auto=format&fit=crop&w=600&q=80';};">
                             <span class="absolute top-3 left-3 bg-vixua-burgundy text-white text-[10px] font-black px-3 py-1 rounded-full uppercase tracking-wider shadow">
                                 Hũ Chuẩn 500g
                             </span>
@@ -182,42 +194,40 @@
         </div>
     </section>
 
-    <!-- SECTION 2: DANH MỤC 20 LOẠI GIA VỊ (CÓ TÌM KIẾM & BỘ LỌC THÔNG MINH) -->
+    <!-- SECTION 2: DANH MỤC 20 LOẠI GIA VỊ (CÓ TỰ ĐỘNG CẮT VIỀN GIẤU LOGO GEMINI) -->
     <section id="products" class="py-20 bg-vixua-cream">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-3xl mx-auto mb-8">
                 <span class="text-vixua-gold font-bold text-xs uppercase tracking-widest">Danh Mục 20 Sản Phẩm</span>
-                <h2 class="font-serif text-3xl sm:text-4xl font-extrabold text-vixua-burgundy mt-1">Gia Vị Thuần Bản Địa 500g</h2>
+                <h2 class="font-serif text-3xl sm:text-4xl font-extrabold text-vixua-burgundy mt-1">Hũ Gia Vị Thuần Bản Địa 500g</h2>
                 <div class="w-16 h-1 bg-vixua-burgundy mx-auto mt-3 rounded-full"></div>
                 <p class="text-vixua-dark/75 text-xs sm:text-sm mt-3">Được sản xuất đồng bộ theo chuẩn Hũ thủy tinh nắp đen 500g nắp kín chống ẩm mốc.</p>
             </div>
 
-            <!-- THANH TÌM KIẾM NHANH TRONG 20 LOẠI GIA VỊ -->
+            <!-- TÌM KIẾM NHANH -->
             <div class="max-w-md mx-auto mb-8 relative">
                 <input type="text" id="spice-search" oninput="searchSpices()" placeholder="🔍 Tìm nhanh: tiêu, ớt, quế, nghệ, mắc khén..." class="w-full px-5 py-3 rounded-full border-2 border-vixua-burgundy/20 bg-white text-sm focus:outline-none focus:border-vixua-burgundy shadow-sm">
             </div>
 
             <!-- BỘ LỌC DANH MỤC -->
             <div class="flex flex-wrap items-center justify-center gap-2 sm:gap-3 mb-10">
-                <button onclick="filterSpices('all')" class="spice-tab active px-5 py-2 rounded-full text-xs font-bold burgundy-gradient text-white shadow-sm">Tất Cả (20 Loại)</button>
-                <button onclick="filterSpices('muoi')" class="spice-tab px-5 py-2 rounded-full text-xs font-bold bg-white text-vixua-dark border border-vixua-burgundy/15 hover:bg-vixua-kraft">Muối Chấm & Rang (6)</button>
-                <button onclick="filterSpices('tieu')" class="spice-tab px-5 py-2 rounded-full text-xs font-bold bg-white text-vixua-dark border border-vixua-burgundy/15 hover:bg-vixua-kraft">Tiêu & Hạt Cay (4)</button>
-                <button onclick="filterSpices('thao-moc')" class="spice-tab px-5 py-2 rounded-full text-xs font-bold bg-white text-vixua-dark border border-vixua-burgundy/15 hover:bg-vixua-kraft">Bột Củ Tự Nhiên (6)</button>
-                <button onclick="filterSpices('kho-uop')" class="spice-tab px-5 py-2 rounded-full text-xs font-bold bg-white text-vixua-dark border border-vixua-burgundy/15 hover:bg-vixua-kraft">Gia Vị Ướp Kho (4)</button>
+                <button onclick="filterSpices('all')" class="spice-tab active px-5 py-2 rounded-full text-xs font-bold burgundy-gradient text-white shadow-sm">Tất Cả (20 Hũ)</button>
+                <button onclick="filterSpices('muoi')" class="spice-tab px-5 py-2 rounded-full text-xs font-bold bg-white text-vixua-dark border border-vixua-burgundy/15 hover:bg-vixua-kraft">Hũ Muối Chấm & Rang (6)</button>
+                <button onclick="filterSpices('tieu')" class="spice-tab px-5 py-2 rounded-full text-xs font-bold bg-white text-vixua-dark border border-vixua-burgundy/15 hover:bg-vixua-kraft">Hũ Tiêu & Hạt Rừng (4)</button>
+                <button onclick="filterSpices('thao-moc')" class="spice-tab px-5 py-2 rounded-full text-xs font-bold bg-white text-vixua-dark border border-vixua-burgundy/15 hover:bg-vixua-kraft">Hũ Bột Củ Tự Nhiên (6)</button>
+                <button onclick="filterSpices('kho-uop')" class="spice-tab px-5 py-2 rounded-full text-xs font-bold bg-white text-vixua-dark border border-vixua-burgundy/15 hover:bg-vixua-kraft">Hũ Gia Vị Ướp Kho (4)</button>
             </div>
 
-            <!-- GRID TỰ ĐỘNG SINH 20 SẢN PHẨM -->
-            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6" id="spices-grid">
-                <!-- Javascript sẽ tự động render đầy đủ 20 hũ gia vị vào đây -->
-            </div>
+            <!-- GRID TỰ ĐỘNG HIỂN THỊ 20 HŨ GIA VỊ -->
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6" id="spices-grid"></div>
             
             <div id="no-result" class="hidden text-center py-12 text-vixua-dark/60 text-sm">
-                Không tìm thấy gia vị phù hợp với từ khóa của bạn.
+                Không tìm thấy hũ gia vị phù hợp với từ khóa của bạn.
             </div>
         </div>
     </section>
 
-    <!-- SECTION 3: BỘ QUÀ TẶNG COMBO 3 HŨ (HIỂN THỊ HỘP QUÀ GỖ SANG TRỌNG) -->
+    <!-- SECTION 3: BỘ QUÀ TẶNG COMBO 3 HŨ -->
     <section id="giftsets" class="py-20 bg-kraft-dots border-t border-b border-vixua-burgundy/10">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-3xl mx-auto mb-16">
@@ -230,31 +240,18 @@
             <div class="max-w-5xl mx-auto bg-white rounded-3xl p-8 sm:p-12 border-2 border-vixua-burgundy shadow-2xl">
                 <div class="grid lg:grid-cols-12 gap-10 items-center">
                     
-                    <div class="lg:col-span-7 rounded-2xl overflow-hidden border border-vixua-burgundy/15 shadow-md">
-                        <img src="https://images.unsplash.com/photo-1596040033229-a9821ebd058d?auto=format&fit=crop&w=800&q=80" alt="Set 3 hũ gia vị Vị Xưa" class="w-full h-80 object-cover transform hover:scale-105 transition-transform duration-500">
+                    <div class="lg:col-span-7 rounded-2xl overflow-hidden border border-vixua-burgundy/15 shadow-md bg-slate-50 p-6 flex items-center justify-center clean-gemini-crop">
+                        <img src="muoi-tieu-ham.png" alt="Set 3 hũ gia vị Vị Xưa" class="max-h-72 object-contain filter drop-shadow-xl" onerror="this.src='https://images.unsplash.com/photo-1596040033229-a9821ebd058d?auto=format&fit=crop&w=800&q=80';">
                     </div>
 
                     <div class="lg:col-span-5 space-y-4">
                         <span class="bg-vixua-burgundy text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-wider">Trọn Bộ 3 Hũ Thủy Tinh 500g</span>
                         <h3 class="font-serif font-black text-2xl sm:text-3xl text-vixua-burgundy leading-tight">Combo 3 Hũ Bếp Ấm (500g x 3)</h3>
                         
-                        <p class="text-xs sm:text-sm text-vixua-dark/80 leading-relaxed">
-                            Món quà ẩm thực trọn vẹn chăm sóc sức khỏe cho cả gia đình:
-                        </p>
-
                         <div class="space-y-2 text-xs text-vixua-dark/85 bg-vixua-kraft/50 p-4 rounded-xl border border-vixua-burgundy/10">
-                            <p class="flex items-center gap-2">
-                                <i class="fa-solid fa-check text-green-700"></i>
-                                <span><strong>01 Hũ Muối Tiêu Hầm</strong> (500g) - Tiêu đập dập thơm lừng</span>
-                            </p>
-                            <p class="flex items-center gap-2">
-                                <i class="fa-solid fa-check text-green-700"></i>
-                                <span><strong>01 Hũ Muối Ớt Xiêm Rừng</strong> (500g) - Cay nồng nàn kích thích vị giác</span>
-                            </p>
-                            <p class="flex items-center gap-2">
-                                <i class="fa-solid fa-check text-green-700"></i>
-                                <span><strong>01 Hũ Muối Rang Lá Chanh</strong> (500g) - Chuyên gà luộc & hải sản</span>
-                            </p>
+                            <p class="flex items-center gap-2"><i class="fa-solid fa-check text-green-700"></i><span><strong>01 Hũ Muối Tiêu Hầm</strong> (500g)</span></p>
+                            <p class="flex items-center gap-2"><i class="fa-solid fa-check text-green-700"></i><span><strong>01 Hũ Muối Ớt Xiêm Rừng</strong> (500g)</span></p>
+                            <p class="flex items-center gap-2"><i class="fa-solid fa-check text-green-700"></i><span><strong>01 Hũ Muối Rang Lá Chanh</strong> (500g)</span></p>
                             <p class="flex items-center gap-2 text-vixua-gold font-bold pt-1 border-t border-vixua-burgundy/10">
                                 <i class="fa-solid fa-gift"></i>
                                 <span>Tặng kèm 01 muỗng gỗ tự nhiên khắc logo Vị Xưa</span>
@@ -287,16 +284,16 @@
                         <img src="logo.png" alt="Logo Vị Xưa" class="h-full w-auto object-contain max-w-[190px]" onerror="this.onerror=null; this.parentElement.innerHTML='<span class=\'font-serif font-black text-xl text-vixua-burgundy px-3\'>VỊ XƯA</span>';">
                     </div>
                     <p class="text-xs text-vixua-cream/70 leading-relaxed">
-                        Thương hiệu gia vị truyền thống Việt Nam <strong>Vị Xưa</strong> – Giữ trọn tinh hoa 20 dòng gia vị bản địa, khơi gợi ký ức căn bếp quê hương ấm áp.
+                        Thương hiệu gia vị truyền thống Việt Nam <strong>Vị Xưa</strong> – Giữ trọn tinh hoa 20 dòng gia vị hũ thủy tinh bản địa, khơi gợi ký ức căn bếp quê hương ấm áp.
                     </p>
                 </div>
 
                 <div class="space-y-2 text-xs">
                     <h4 class="font-serif font-bold text-sm text-vixua-gold uppercase tracking-wider mb-3">20 Dòng Hũ 500g</h4>
-                    <p><a href="#products" class="hover:text-vixua-gold transition-colors">Muối Tiêu Hầm Sa Huỳnh</a></p>
-                    <p><a href="#products" class="hover:text-vixua-gold transition-colors">Muối Ớt Xiêm Rừng Nướng</a></p>
-                    <p><a href="#products" class="hover:text-vixua-gold transition-colors">Tiêu Sọ Rừng Tiên Phước Xay</a></p>
-                    <p><a href="#products" class="hover:text-vixua-gold transition-colors">Bột Quế Rừng Trà Bồng</a></p>
+                    <p><a href="#products" class="hover:text-vixua-gold transition-colors">Hũ Muối Tiêu Hầm Sa Huỳnh</a></p>
+                    <p><a href="#products" class="hover:text-vixua-gold transition-colors">Hũ Muối Ớt Xiêm Rừng Nướng</a></p>
+                    <p><a href="#products" class="hover:text-vixua-gold transition-colors">Hũ Tiêu Sọ Rừng Tiên Phước Xay</a></p>
+                    <p><a href="#products" class="hover:text-vixua-gold transition-colors">Hũ Bột Quế Rừng Trà Bồng</a></p>
                 </div>
 
                 <div class="space-y-2 text-xs">
@@ -369,43 +366,41 @@
         </div>
     </div>
 
-    <!-- JAVASCRIPT: QUẢN LÝ 20 SẢN PHẨM & TÍNH NĂNG THÔNG MINH -->
+    <!-- JAVASCRIPT: DANH SÁCH 20 SẢN PHẨM -->
     <script>
-        // DANH SÁCH 20 SẢN PHẨM GIA VỊ 500G
         const SPICES_DATA = [
-            // 1-6: Muối chấm & rang
-            { id: 1, name: "Muối Tiêu Hầm Sa Huỳnh", cat: "muoi", price: 65000, oldPrice: 85000, badge: "Signature", img: "muoi-tieu-ham.png", desc: "Muối hầm đất nung + Tiêu Tiên Phước đập dập thơm cay nồng nàn." },
-            { id: 2, name: "Muối Ớt Xiêm Rừng Nướng", cat: "muoi", price: 70000, oldPrice: 90000, badge: "Cay Thơm", img: "https://images.unsplash.com/photo-1596040033229-a9821ebd058d?auto=format&fit=crop&w=400&q=80", desc: "Ớt xiêm xanh nướng củi thơm phức hòa quyện muối hầm mịn màng." },
-            { id: 3, name: "Muối Rang Lá Chanh Bếp Quê", cat: "muoi", price: 65000, oldPrice: 80000, badge: "Chấm Gà Luộc", img: "https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=400&q=80", desc: "Lá chanh sấy lạnh sao cùng muối hầm, chuyên chấm gà luộc & hải sản." },
-            { id: 4, name: "Muối Tôm Cốt Đất Tây Ninh", cat: "muoi", price: 85000, oldPrice: 110000, badge: "Thơm Bùi", img: "https://images.unsplash.com/photo-1532336414038-cf19250c5757?auto=format&fit=crop&w=400&q=80", desc: "Tôm đất tươi quết nhuyễn sao vàng thơm bùi đậm vị chấm hoa quả." },
-            { id: 5, name: "Muối Hột Hầm Đất Nung", cat: "muoi", price: 45000, oldPrice: 60000, badge: "Thuần Khiết", img: "https://images.unsplash.com/photo-1518110925495-5fe2fda0442c?auto=format&fit=crop&w=400&q=80", desc: "Muối biển kết tinh nung 24h nồi đất, vị mặn dịu ngọt hậu thanh mát." },
-            { id: 6, name: "Muối Ớt Mắc Khén Tây Bắc", cat: "muoi", price: 75000, oldPrice: 95000, badge: "Tây Bắc", img: "https://images.unsplash.com/photo-1506368249639-73a05d6f6488?auto=format&fit=crop&w=400&q=80", desc: "Muối hầm rang cùng hạt mắc khén thơm lừng tê cay đầu lưỡi." },
+            // 1-6: Muối chấm & rang (Trong hũ)
+            { id: 1, name: "Muối Tiêu Hầm Sa Huỳnh", cat: "muoi", price: 65000, oldPrice: 85000, badge: "Signature", img: "muoi-tieu-ham.png", desc: "Hũ thủy tinh 500g chứa hạt tiêu đen Tiên Phước đập dập và muối hầm Sa Huỳnh." },
+            { id: 2, name: "Hũ Muối Ớt Xiêm Rừng Nướng", cat: "muoi", price: 70000, oldPrice: 90000, badge: "Cay Thơm", img: "https://images.unsplash.com/photo-1596040033229-a9821ebd058d?auto=format&fit=crop&w=500&q=80", desc: "Hũ thủy tinh 500g chứa muối ớt đỏ cay nồng nàn đượm khói bếp." },
+            { id: 3, name: "Hũ Muối Rang Lá Chanh Bếp Quê", cat: "muoi", price: 65000, oldPrice: 80000, badge: "Chấm Gà Luộc", img: "https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=500&q=80", desc: "Hũ 500g chứa muối hầm sao khô cùng lá chanh bánh tẻ sấy lạnh." },
+            { id: 4, name: "Hũ Muối Tôm Cốt Đất Tây Ninh", cat: "muoi", price: 85000, oldPrice: 110000, badge: "Thơm Bùi", img: "https://images.unsplash.com/photo-1532336414038-cf19250c5757?auto=format&fit=crop&w=500&q=80", desc: "Hũ 500g chứa hạt muối tôm cam gạch đậm đà thơm bùi tôm tươi." },
+            { id: 5, name: "Hũ Muối Hột Hầm Đất Nung", cat: "muoi", price: 45000, oldPrice: 60000, badge: "Thuần Khiết", img: "https://images.unsplash.com/photo-1518110925495-5fe2fda0442c?auto=format&fit=crop&w=500&q=80", desc: "Hũ 500g chứa muối biển nung nồi đất mịn màng vị mặn ngọt thanh." },
+            { id: 6, name: "Hũ Muối Ớt Mắc Khén Rừng", cat: "muoi", price: 75000, oldPrice: 95000, badge: "Tây Bắc", img: "https://images.unsplash.com/photo-1506368249639-73a05d6f6488?auto=format&fit=crop&w=500&q=80", desc: "Hũ 500g muối rang thảo mộc thơm tê rần đầu lưỡi chuẩn vị núi rừng." },
 
-            // 7-10: Dòng Tiêu & Hạt Cay
-            { id: 7, name: "Tiêu Sọ Rừng Tiên Phước Xay", cat: "tieu", price: 125000, oldPrice: 150000, badge: "Thượng Hạng", img: "https://images.unsplash.com/photo-1615485290382-441e4d049cb5?auto=format&fit=crop&w=400&q=80", desc: "100% tiêu sọ chà vỏ tự nhiên, tinh dầu cay ấm sâu lắng, không gắt cổ." },
-            { id: 8, name: "Tiêu Đen Hạt Rừng Phú Quốc", cat: "tieu", price: 115000, oldPrice: 140000, badge: "Đảo Ngọc", img: "https://images.unsplash.com/photo-1509358271058-acd02cc93858?auto=format&fit=crop&w=400&q=80", desc: "Hạt tiêu chín đỏ phơi nắng tròn mẩy thơm nồng, chuyên hầm kho." },
-            { id: 9, name: "Tiêu Chín Cây Đỏ Đảo Phú Quốc", cat: "tieu", price: 145000, oldPrice: 180000, badge: "Quý Hiếm", img: "https://images.unsplash.com/photo-1506368249639-73a05d6f6488?auto=format&fit=crop&w=400&q=80", desc: "Thu hái từng chùm tiêu chín đỏ mọng, vị ngọt thơm tinh dầu quý." },
-            { id: 10, name: "Tiêu Lốt Dài Rừng Gia Lai", cat: "tieu", price: 95000, oldPrice: 120000, badge: "Thảo Dược", img: "https://images.unsplash.com/photo-1596040033229-a9821ebd058d?auto=format&fit=crop&w=400&q=80", desc: "Tiêu dài cổ truyền thơm mùi thảo mộc, tính ấm tỳ vị rất tốt cho sức khỏe." },
+            // 7-10: Dòng Tiêu & Hạt (Trong hũ)
+            { id: 7, name: "Hũ Tiêu Sọ Rừng Tiên Phước Xay", cat: "tieu", price: 125000, oldPrice: 150000, badge: "Thượng Hạng", img: "https://images.unsplash.com/photo-1615485290382-441e4d049cb5?auto=format&fit=crop&w=500&q=80", desc: "Hũ 500g chứa bột tiêu sọ trắng ngà nguyên chất, cay ấm thơm sâu." },
+            { id: 8, name: "Hũ Tiêu Đen Hạt Rừng Phú Quốc", cat: "tieu", price: 115000, oldPrice: 140000, badge: "Đảo Ngọc", img: "https://images.unsplash.com/photo-1509358271058-acd02cc93858?auto=format&fit=crop&w=500&q=80", desc: "Hũ 500g chứa hạt tiêu đen tròn mẩy chín đỏ phơi nắng tự nhiên." },
+            { id: 9, name: "Hũ Tiêu Chín Đỏ Đảo Phú Quốc", cat: "tieu", price: 145000, oldPrice: 180000, badge: "Quý Hiếm", img: "https://images.unsplash.com/photo-1506368249639-73a05d6f6488?auto=format&fit=crop&w=500&q=80", desc: "Hũ 500g tiêu chín cây thu hái từng chùm giàu tinh dầu thơm ngọt." },
+            { id: 10, name: "Hũ Tiêu Lốt Dài Rừng Gia Lai", cat: "tieu", price: 95000, oldPrice: 120000, badge: "Thảo Dược", img: "https://images.unsplash.com/photo-1596040033229-a9821ebd058d?auto=format&fit=crop&w=500&q=80", desc: "Hũ 500g tiêu dài cổ truyền tính ấm, thơm nồng đượm mùi dược liệu." },
 
-            // 11-16: Bột củ thảo mộc
-            { id: 11, name: "Bột Quế Rừng Trà Bồng", cat: "thao-moc", price: 95000, oldPrice: 125000, badge: "Nguyên Chất", img: "https://images.unsplash.com/photo-1509358271058-acd02cc93858?auto=format&fit=crop&w=400&q=80", desc: "Vỏ quế cổ thụ Trà Bồng xay mịn, thơm ngọt thanh ấm, chuyên ướp kho." },
-            { id: 12, name: "Bột Nghệ Nếp Rừng Tây Bắc", cat: "thao-moc", price: 85000, oldPrice: 110000, badge: "Giàu Curcumin", img: "https://images.unsplash.com/photo-1615485290382-441e4d049cb5?auto=format&fit=crop&w=400&q=80", desc: "Nghệ nếp đỏ ruột vàng cam sấy lạnh, thơm nhẹ không hăng nồng." },
-            { id: 13, name: "Bột Gừng Gió Đồi Cao", cat: "thao-moc", price: 75000, oldPrice: 95000, badge: "Ấm Tỳ Vị", img: "https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=400&q=80", desc: "Gừng sẻ đồi cay ấm nồng nàn, chuyên khử tanh nấu canh súp hải sản." },
-            { id: 14, name: "Bột Hành Tăm Cổ Truyền", cat: "thao-moc", price: 90000, oldPrice: 115000, badge: "Đặc Sản", img: "https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=400&q=80", desc: "Hành tăm sấy lạnh chuyên dùng ướp kho cá, xào thịt dậy mùi thơm nức." },
-            { id: 15, name: "Bột Tỏi Cô Đơn Lý Sơn", cat: "thao-moc", price: 110000, oldPrice: 140000, badge: "Lý Sơn", img: "https://images.unsplash.com/photo-1518110925495-5fe2fda0442c?auto=format&fit=crop&w=400&q=80", desc: "Tỏi cô đơn đất cát san hô xay mịn thơm thanh, không nồng gắt." },
-            { id: 16, name: "Bột Sả Chanh Sấy Lạnh", cat: "thao-moc", price: 65000, oldPrice: 85000, badge: "Thơm Tươi", img: "https://images.unsplash.com/photo-1506368249639-73a05d6f6488?auto=format&fit=crop&w=400&q=80", desc: "Bột sả giữ trọn màu xanh ngà và hương tinh dầu sả tự nhiên." },
+            // 11-16: Bột củ thảo mộc (Trong hũ)
+            { id: 11, name: "Hũ Bột Quế Rừng Trà Bồng", cat: "thao-moc", price: 95000, oldPrice: 125000, badge: "Nguyên Chất", img: "https://images.unsplash.com/photo-1509358271058-acd02cc93858?auto=format&fit=crop&w=500&q=80", desc: "Hũ 500g bột quế nâu đỏ mịn màng, thơm ngọt ấm nồng nàn." },
+            { id: 12, name: "Hũ Bột Nghệ Nếp Rừng Tây Bắc", cat: "thao-moc", price: 85000, oldPrice: 110000, badge: "Giàu Curcumin", img: "https://images.unsplash.com/photo-1615485290382-441e4d049cb5?auto=format&fit=crop&w=500&q=80", desc: "Hũ 500g bột nghệ nếp ruột vàng cam rực rỡ, không hăng nồng." },
+            { id: 13, name: "Hũ Bột Gừng Gió Đồi Cao", cat: "thao-moc", price: 75000, oldPrice: 95000, badge: "Ấm Tỳ Vị", img: "https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=500&q=80", desc: "Hũ 500g bột gừng sẻ vàng cát cay ấm, khử tanh nấu canh súp cực ngon." },
+            { id: 14, name: "Hũ Bột Hành Tăm Cổ Truyền", cat: "thao-moc", price: 90000, oldPrice: 115000, badge: "Đặc Sản", img: "https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=500&q=80", desc: "Hũ 500g hành tăm sấy lạnh chuyên ướp kho cá xào nấu thơm nức." },
+            { id: 15, name: "Hũ Bột Tỏi Cô Đơn Lý Sơn", cat: "thao-moc", price: 110000, oldPrice: 140000, badge: "Lý Sơn", img: "https://images.unsplash.com/photo-1518110925495-5fe2fda0442c?auto=format&fit=crop&w=500&q=80", desc: "Hũ 500g tỏi cô đơn đất cát san hô thơm thanh dịu lành." },
+            { id: 16, name: "Hũ Bột Sả Chanh Sấy Lạnh", cat: "thao-moc", price: 65000, oldPrice: 85000, badge: "Thơm Tươi", img: "https://images.unsplash.com/photo-1506368249639-73a05d6f6488?auto=format&fit=crop&w=500&q=80", desc: "Hũ 500g bột sả nguyên chất giữ nguyên tinh dầu thơm tươi mát." },
 
-            // 17-20: Gia vị ướp kho nấu
-            { id: 17, name: "Gia Vị Ướp Thịt Nướng Mắc Khén", cat: "kho-uop", price: 85000, oldPrice: 110000, badge: "Ướp Nướng", img: "https://images.unsplash.com/photo-1532336414038-cf19250c5757?auto=format&fit=crop&w=400&q=80", desc: "Phối trộn 8 vị thảo mộc rừng chuyên ướp thịt xiên, sườn nướng than hoa." },
-            { id: 18, name: "Bột Ngũ Vị Hương Cổ Truyền", cat: "kho-uop", price: 70000, oldPrice: 90000, badge: "Gia Truyền", img: "https://images.unsplash.com/photo-1509358271058-acd02cc93858?auto=format&fit=crop&w=400&q=80", desc: "Hồi, quế, đinh hương, tiểu hồi, thảo quả xay mịn chuẩn công thức xưa." },
-            { id: 19, name: "Hạt Dổi Rừng Cổ Thụ Nướng Sấy", cat: "kho-uop", price: 165000, oldPrice: 210000, badge: "Thượng Hạng", img: "https://images.unsplash.com/photo-1506368249639-73a05d6f6488?auto=format&fit=crop&w=400&q=80", desc: "Hạt dổi nếp rừng thơm ngậy như xôi nếp nương, chuyên chấm thịt luộc gà đồi." },
-            { id: 20, name: "Hạt Mắc Khén Rừng Sấy Khô", cat: "kho-uop", price: 95000, oldPrice: 125000, badge: "Tây Bắc", img: "https://images.unsplash.com/photo-1596040033229-a9821ebd058d?auto=format&fit=crop&w=400&q=80", desc: "Hạt mở mắt thơm nồng nàn, vị tê nhẹ đầu lưỡi đặc trưng ẩm thực Tây Bắc." }
+            // 17-20: Gia vị ướp kho nấu (Trong hũ)
+            { id: 17, name: "Hũ Gia Vị Ướp Thịt Nướng Rừng", cat: "kho-uop", price: 85000, oldPrice: 110000, badge: "Ướp Nướng", img: "https://images.unsplash.com/photo-1532336414038-cf19250c5757?auto=format&fit=crop&w=500&q=80", desc: "Hũ 500g phối trộn 8 vị thảo mộc rừng chuyên ướp thịt nướng than hoa." },
+            { id: 18, name: "Hũ Bột Ngũ Vị Hương Cổ Truyền", cat: "kho-uop", price: 70000, oldPrice: 90000, badge: "Gia Truyền", img: "https://images.unsplash.com/photo-1509358271058-acd02cc93858?auto=format&fit=crop&w=500&q=80", desc: "Hũ 500g hồi, quế, đinh hương, thảo quả xay mịn chuẩn vị xưa." },
+            { id: 19, name: "Hũ Hạt Dổi Rừng Nướng Sấy", cat: "kho-uop", price: 165000, oldPrice: 210000, badge: "Thượng Hạng", img: "https://images.unsplash.com/photo-1506368249639-73a05d6f6488?auto=format&fit=crop&w=500&q=80", desc: "Hũ 500g hạt dổi nếp rừng thơm ngậy chuyên giã chấm gà đồi thịt luộc." },
+            { id: 20, name: "Hũ Hạt Mắc Khén Rừng Sấy Khô", cat: "kho-uop", price: 95000, oldPrice: 125000, badge: "Tây Bắc", img: "https://images.unsplash.com/photo-1596040033229-a9821ebd058d?auto=format&fit=crop&w=500&q=80", desc: "Hũ 500g hạt mắc khén thơm nồng, vị tê nhẹ đầu lưỡi độc đáo." }
         ];
 
         let currentCat = 'all';
         let currentSearch = '';
 
-        // Hàm hiển thị danh sách gia vị ra màn hình
         function renderSpices() {
             const grid = document.getElementById('spices-grid');
             const noRes = document.getElementById('no-result');
@@ -429,9 +424,9 @@
                 const card = document.createElement('div');
                 card.className = "bg-white rounded-2xl overflow-hidden border border-vixua-burgundy/15 shadow-sm hover:shadow-xl transition-all flex flex-col justify-between";
                 card.innerHTML = `
-                    <div class="p-0 bg-slate-50 relative aspect-[4/3] overflow-hidden">
+                    <div class="p-4 bg-slate-50 relative aspect-[4/3] flex items-center justify-center overflow-hidden clean-gemini-crop">
                         <span class="absolute top-2.5 left-2.5 bg-vixua-burgundy text-white text-[9px] font-black px-2 py-0.5 rounded-full uppercase z-20">${item.badge}</span>
-                        <img src="${item.img}" alt="${item.name}" class="w-full h-full ${item.id === 1 ? 'object-contain p-2' : 'object-cover'} hover:scale-105 transition-transform duration-500" onerror="this.src='https://images.unsplash.com/photo-1596040033229-a9821ebd058d?auto=format&fit=crop&w=400&q=80';">
+                        <img src="${item.img}" alt="${item.name}" class="max-h-full max-w-full object-contain filter drop-shadow hover:scale-105 transition-transform duration-500" onerror="this.src='muoi-tieu-ham.png';">
                     </div>
                     <div class="p-5 flex-1 flex flex-col justify-between">
                         <div>
@@ -444,7 +439,7 @@
                                 <span class="font-serif font-bold text-base text-vixua-burgundy">${item.price.toLocaleString('vi-VN')}đ</span>
                                 <span class="text-[11px] text-vixua-dark/40 line-through ml-1">${item.oldPrice.toLocaleString('vi-VN')}đ</span>
                             </div>
-                            <button onclick="addToCart('${item.name} (500g)', ${item.price}, '${item.img}')" class="px-3.5 py-1.5 rounded-xl bg-vixua-burgundy/10 text-vixua-burgundy hover:bg-vixua-burgundy hover:text-white text-xs font-bold transition-colors">
+                            <button onclick="addToCart('${item.name}', ${item.price}, '${item.img}')" class="px-3.5 py-1.5 rounded-xl bg-vixua-burgundy/10 text-vixua-burgundy hover:bg-vixua-burgundy hover:text-white text-xs font-bold transition-colors">
                                 Thêm Giỏ
                             </button>
                         </div>
@@ -454,7 +449,6 @@
             });
         }
 
-        // Lọc theo tab
         function filterSpices(category) {
             currentCat = category;
             document.querySelectorAll('.spice-tab').forEach(btn => {
@@ -464,13 +458,11 @@
             renderSpices();
         }
 
-        // Tìm kiếm theo từ khóa
         function searchSpices() {
             currentSearch = document.getElementById('spice-search').value.trim();
             renderSpices();
         }
 
-        // Giỏ hàng
         let cart = [];
         function addToCart(title, price, img) {
             const existing = cart.find(i => i.title === title);
@@ -507,7 +499,7 @@
                 total += item.price * item.qty;
                 return `
                     <div class="flex items-center gap-3 p-3 rounded-xl border border-vixua-burgundy/10 bg-vixua-cream">
-                        <img src="${item.img}" class="w-12 h-12 object-cover rounded-lg bg-white p-0.5">
+                        <img src="${item.img}" class="w-12 h-12 object-contain rounded-lg bg-white p-0.5" onerror="this.src='muoi-tieu-ham.png';">
                         <div class="flex-1 min-w-0">
                             <h4 class="font-serif font-bold text-xs text-vixua-burgundy truncate">${item.title}</h4>
                             <span class="text-xs font-bold">${item.price.toLocaleString('vi-VN')}đ</span>
@@ -538,7 +530,6 @@
             document.getElementById('voucher-modal').classList.add('hidden');
         }
 
-        // Tự động tải 20 sản phẩm ngay khi mở trang
         document.addEventListener('DOMContentLoaded', () => {
             renderSpices();
         });
