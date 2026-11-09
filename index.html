@@ -56,19 +56,6 @@
         .gold-gradient {
             background: linear-gradient(135deg, #DFAC55 0%, #B88126 100%);
         }
-        /* CẮT BỎ TRIỆT ĐỂ CHIẾC NẮP BAY PHÍA TRÊN BẰNG CÁCH ĐẨY RA KHỎI KHUNG HÌNH */
-        .crop-clean-jar {
-            overflow: hidden !important;
-            position: relative;
-        }
-        .crop-clean-jar img {
-            transform: scale(1.34);
-            transform-origin: center 86%;
-            transition: transform 0.4s ease;
-        }
-        .crop-clean-jar:hover img {
-            transform: scale(1.40);
-        }
     </style>
 </head>
 <body class="font-sans text-vixua-dark bg-vixua-cream selection:bg-vixua-burgundy selection:text-white">
@@ -120,7 +107,7 @@
         </div>
     </header>
 
-    <!-- HERO SECTION -->
+    <!-- HERO SECTION (HIỂN THỊ ẢNH GỐC NGUYÊN BẢN, KHÔNG PHÓNG TO, KHÔNG CẮT XÉN) -->
     <section id="about" class="relative bg-kraft-dots py-16 lg:py-20 border-b border-vixua-burgundy/10">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid lg:grid-cols-12 gap-12 items-center">
@@ -165,13 +152,13 @@
                     </div>
                 </div>
 
-                <!-- Right: HŨ SẢN PHẨM HERO - ĐÃ CẮT BỎ TRIỆT ĐỂ NẮP BAY -->
+                <!-- Right: HŨ SẢN PHẨM HERO NGUYÊN BẢN -->
                 <div class="lg:col-span-5 relative">
                     <div class="bg-gradient-to-b from-white to-vixua-kraft/60 p-6 sm:p-8 rounded-3xl border-2 border-vixua-burgundy/20 shadow-2xl relative text-center">
-                        <div class="w-full h-96 flex items-center justify-center relative rounded-2xl bg-[#c5ced8] crop-clean-jar">
+                        <div class="w-full h-96 flex items-center justify-center relative rounded-2xl bg-slate-100/50">
                             <img src="muoi-tieu-ham.png" 
                                  alt="Hũ Muối Tiêu Hầm Vị Xưa 500g" 
-                                 class="max-h-full max-w-full object-contain filter drop-shadow-2xl">
+                                 class="max-h-full max-w-full object-contain">
                             <span class="absolute top-3 left-3 bg-vixua-burgundy text-white text-[10px] font-black px-3 py-1 rounded-full uppercase tracking-wider shadow z-20">
                                 Hũ Chuẩn 500g
                             </span>
@@ -193,7 +180,7 @@
         </div>
     </section>
 
-    <!-- SECTION 2: DANH MỤC 10 HŨ GIA VỊ -->
+    <!-- SECTION 2: DANH MỤC 10 HŨ GIA VỊ (DÙNG NGUYÊN BẢN CÁC FILE TRÊN GITHUB) -->
     <section id="products" class="py-20 bg-vixua-cream">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-3xl mx-auto mb-8">
@@ -216,7 +203,7 @@
                 <button onclick="filterSpices('thao-moc')" class="spice-tab px-5 py-2 rounded-full text-xs font-bold bg-white text-vixua-dark border border-vixua-burgundy/15 hover:bg-vixua-kraft">Bột Củ & Thảo Mộc (5)</button>
             </div>
 
-            <!-- GRID HIỂN THỊ 10 HŨ SẠCH SẼ HOÀN TOÀN -->
+            <!-- GRID HIỂN THỊ ĐÚNG FILE ẢNH GỐC GITHUB -->
             <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6" id="spices-grid"></div>
             
             <div id="no-result" class="hidden text-center py-12 text-vixua-dark/60 text-sm">
@@ -225,43 +212,43 @@
         </div>
     </section>
 
-    <!-- SECTION 3: BỘ QUÀ TẶNG COMBO 3 HŨ (KHUNG THỐNG NHẤT, ĐÃ CẮT BỎ VẾT ĐEN) -->
+    <!-- SECTION 3: BỘ QUÀ TẶNG COMBO 3 HŨ (HIỂN THỊ ĐÚNG 3 FILE ẢNH THẬT TRONG 1 KHUNG DUY NHẤT) -->
     <section id="giftsets" class="py-20 bg-kraft-dots border-t border-b border-vixua-burgundy/10">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-3xl mx-auto mb-16">
                 <span class="text-vixua-gold font-bold text-xs uppercase tracking-widest">Bộ Quà Tri Ân Ý Nghĩa</span>
                 <h2 class="font-serif text-3xl sm:text-4xl font-extrabold text-vixua-burgundy mt-1">Set 3 Hũ Gia Vị 500g "Bếp Ấm Nhà Vui"</h2>
                 <div class="w-16 h-1 bg-vixua-burgundy mx-auto mt-3 rounded-full"></div>
-                <p class="text-xs sm:text-sm text-vixua-dark/70 mt-3">Món quà tinh tế gồm 3 vị muối tiêu đặc sản được đóng hộp gỗ thông khắc laser logo Vị Xưa.</p>
+                <p class="text-xs sm:text-sm text-vixua-dark/70 mt-3">Món quà tinh tế gồm 3 vị muối đặc sản được đóng hộp gỗ thông khắc laser logo Vị Xưa.</p>
             </div>
 
             <div class="max-w-5xl mx-auto bg-white rounded-3xl p-8 sm:p-12 border-2 border-vixua-burgundy shadow-2xl">
                 <div class="grid lg:grid-cols-12 gap-10 items-center">
                     
-                    <!-- KHUNG DUY NHẤT CHỨA 3 HŨ THẲNG HÀNG SẠCH SẼ -->
-                    <div class="lg:col-span-7 bg-[#c5ced8] p-6 rounded-2xl border border-vixua-burgundy/15 flex items-center justify-center min-h-[340px]">
+                    <!-- 1 KHUNG DUY NHẤT CHỨA 3 HŨ THẲNG HÀNG NGUYÊN BẢN -->
+                    <div class="lg:col-span-7 bg-slate-100/70 p-6 rounded-2xl border border-vixua-burgundy/15 flex items-center justify-center min-h-[340px]">
                         <div class="w-full">
                             <div class="grid grid-cols-3 gap-3 items-end justify-items-center">
                                 <!-- Hũ 1: Muối Ớt -->
                                 <div class="text-center flex flex-col items-center">
-                                    <div class="h-48 sm:h-56 flex items-center justify-center crop-clean-jar">
-                                        <img src="muoi-ot.png" alt="Hũ Muối Ớt" class="max-h-full max-w-full object-contain filter drop-shadow-md">
+                                    <div class="h-48 sm:h-56 flex items-center justify-center">
+                                        <img src="muoi-ot.png" alt="Hũ Muối Ớt" class="max-h-full max-w-full object-contain">
                                     </div>
                                     <span class="text-[11px] font-bold text-vixua-burgundy mt-2 block bg-white px-2 py-0.5 rounded-full shadow-sm">1. Muối Ớt</span>
                                 </div>
 
                                 <!-- Hũ 2 (Chính Giữa): Muối Tiêu Hầm -->
                                 <div class="text-center flex flex-col items-center -translate-y-2">
-                                    <div class="h-52 sm:h-64 flex items-center justify-center crop-clean-jar">
-                                        <img src="muoi-tieu-ham.png" alt="Hũ Muối Tiêu Hầm" class="max-h-full max-w-full object-contain filter drop-shadow-xl">
+                                    <div class="h-52 sm:h-64 flex items-center justify-center">
+                                        <img src="muoi-tieu-ham.png" alt="Hũ Muối Tiêu Hầm" class="max-h-full max-w-full object-contain">
                                     </div>
                                     <span class="text-[11px] font-black text-vixua-burgundy mt-2 block bg-vixua-gold/30 px-2 py-0.5 rounded-full shadow">2. Muối Tiêu Hầm</span>
                                 </div>
 
                                 <!-- Hũ 3: Muối Lạc Rang -->
                                 <div class="text-center flex flex-col items-center">
-                                    <div class="h-48 sm:h-56 flex items-center justify-center crop-clean-jar">
-                                        <img src="muoi-lac-rang.png" alt="Hũ Muối Lạc Rang" class="max-h-full max-w-full object-contain filter drop-shadow-md">
+                                    <div class="h-48 sm:h-56 flex items-center justify-center">
+                                        <img src="muoi-lac-rang.png" alt="Hũ Muối Lạc Rang" class="max-h-full max-w-full object-contain">
                                     </div>
                                     <span class="text-[11px] font-bold text-vixua-burgundy mt-2 block bg-white px-2 py-0.5 rounded-full shadow-sm">3. Muối Lạc Rang</span>
                                 </div>
@@ -433,9 +420,9 @@
                 const card = document.createElement('div');
                 card.className = "bg-white rounded-2xl overflow-hidden border border-vixua-burgundy/15 shadow-sm hover:shadow-xl transition-all flex flex-col justify-between";
                 card.innerHTML = `
-                    <div class="p-4 bg-[#c5ced8] relative aspect-[4/3] flex items-center justify-center crop-clean-jar">
+                    <div class="p-4 bg-slate-50 relative aspect-[4/3] flex items-center justify-center overflow-hidden">
                         <span class="absolute top-2.5 left-2.5 bg-vixua-burgundy text-white text-[9px] font-black px-2 py-0.5 rounded-full uppercase z-20">${item.badge}</span>
-                        <img src="${item.img}" alt="${item.name}" class="max-h-full max-w-full object-contain filter drop-shadow">
+                        <img src="${item.img}" alt="${item.name}" class="max-h-full max-w-full object-contain">
                     </div>
                     <div class="p-5 flex-1 flex flex-col justify-between">
                         <div>
