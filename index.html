@@ -107,7 +107,7 @@
         </div>
     </header>
 
-    <!-- HERO SECTION (HIỂN THỊ NGUYÊN BẢN HŨ SẠCH BẠN ĐÃ THAY) -->
+    <!-- HERO SECTION -->
     <section id="about" class="relative bg-kraft-dots py-16 lg:py-20 border-b border-vixua-burgundy/10">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid lg:grid-cols-12 gap-12 items-center">
@@ -152,13 +152,13 @@
                     </div>
                 </div>
 
-                <!-- Right: HŨ HERO NGUYÊN BẢN -->
+                <!-- Right: HŨ SẢN PHẨM HERO NGUYÊN BẢN -->
                 <div class="lg:col-span-5 relative">
                     <div class="bg-gradient-to-b from-white to-vixua-kraft/60 p-6 sm:p-8 rounded-3xl border-2 border-vixua-burgundy/20 shadow-2xl relative text-center">
-                        <div class="w-full h-96 flex items-center justify-center relative overflow-hidden rounded-2xl bg-slate-100/50">
+                        <div class="w-full h-96 flex items-center justify-center relative rounded-2xl bg-slate-100/50">
                             <img src="muoi-tieu-ham.png" 
                                  alt="Hũ Muối Tiêu Hầm Vị Xưa 500g" 
-                                 class="max-h-full max-w-full object-contain filter drop-shadow-2xl">
+                                 class="max-h-full max-w-full object-contain">
                             <span class="absolute top-3 left-3 bg-vixua-burgundy text-white text-[10px] font-black px-3 py-1 rounded-full uppercase tracking-wider shadow z-20">
                                 Hũ Chuẩn 500g
                             </span>
@@ -203,7 +203,7 @@
                 <button onclick="filterSpices('thao-moc')" class="spice-tab px-5 py-2 rounded-full text-xs font-bold bg-white text-vixua-dark border border-vixua-burgundy/15 hover:bg-vixua-kraft">Bột Củ & Thảo Mộc (5)</button>
             </div>
 
-            <!-- GRID HIỂN THỊ 10 HŨ SẠCH SẼ -->
+            <!-- GRID HIỂN THỊ ĐÚNG FILE ẢNH GỐC GITHUB -->
             <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6" id="spices-grid"></div>
             
             <div id="no-result" class="hidden text-center py-12 text-vixua-dark/60 text-sm">
@@ -212,26 +212,47 @@
         </div>
     </section>
 
-    <!-- SECTION 3: BỘ QUÀ TẶNG COMBO 3 HŨ (HIỂN THỊ 1 ẢNH DUY NHẤT BẠN VỪA TẢI LÊN) -->
+    <!-- SECTION 3: BỘ QUÀ TẶNG COMBO 3 HŨ (TỰ ĐỘNG DÒ FILE ẢNH COMBO HOẶC HIỆN 3 HŨ TRONG 1 KHUNG) -->
     <section id="giftsets" class="py-20 bg-kraft-dots border-t border-b border-vixua-burgundy/10">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-3xl mx-auto mb-16">
                 <span class="text-vixua-gold font-bold text-xs uppercase tracking-widest">Bộ Quà Tri Ân Ý Nghĩa</span>
                 <h2 class="font-serif text-3xl sm:text-4xl font-extrabold text-vixua-burgundy mt-1">Set 3 Hũ Gia Vị 500g "Bếp Ấm Nhà Vui"</h2>
                 <div class="w-16 h-1 bg-vixua-burgundy mx-auto mt-3 rounded-full"></div>
-                <p class="text-xs sm:text-sm text-vixua-dark/70 mt-3">Món quà tinh tế gồm 3 vị muối đặc sản được đóng hộp quà sang trọng khắc laser logo Vị Xưa.</p>
+                <p class="text-xs sm:text-sm text-vixua-dark/70 mt-3">Món quà tinh tế gồm 3 vị đặc sản được đóng hộp quà sang trọng khắc laser logo Vị Xưa.</p>
             </div>
 
             <div class="max-w-5xl mx-auto bg-white rounded-3xl p-8 sm:p-12 border-2 border-vixua-burgundy shadow-2xl">
                 <div class="grid lg:grid-cols-12 gap-10 items-center">
                     
-                    <!-- 1 KHUNG DUY NHẤT CHỨA 1 ẢNH COMBO 3 BẠN ĐÃ TẢI LÊN -->
-                    <div class="lg:col-span-7 bg-slate-100/70 p-4 sm:p-6 rounded-2xl border border-vixua-burgundy/15 flex items-center justify-center min-h-[340px]">
-                        <img id="combo-img"
+                    <!-- 1 KHUNG DUY NHẤT CHỨA ẢNH COMBO 3 HŨ -->
+                    <div class="lg:col-span-7 bg-slate-100/80 p-4 sm:p-6 rounded-2xl border border-vixua-burgundy/15 flex items-center justify-center min-h-[340px]">
+                        
+                        <!-- 1. Thẻ ảnh đơn nếu bạn tải lên 1 bức ảnh chụp chung combo -->
+                        <img id="combo-single-img" 
                              src="combo-3.png" 
                              alt="Set 3 Hũ Gia Vị Vị Xưa" 
                              class="max-h-80 w-auto max-w-full object-contain filter drop-shadow-xl"
-                             onerror="this.onerror=null; this.src='combo-3-hu.png'; this.onerror=function(){this.src='combo3.png'; this.onerror=function(){this.src='combo.png'; this.onerror=function(){this.src='set-3-hu.png'; this.onerror=function(){this.src='set-3.png'; this.onerror=function(){this.src='muoi-tieu-ham.png';};};};};};">
+                             onerror="checkComboFallback(this)">
+
+                        <!-- 2. Khung dự phòng tự động: gom 3 hũ thật đứng cạnh nhau nếu không tìm thấy file ảnh đơn -->
+                        <div id="combo-three-bottles" class="hidden w-full">
+                            <div class="grid grid-cols-3 gap-2 sm:gap-4 items-end justify-items-center w-full py-4">
+                                <div class="text-center flex flex-col items-center">
+                                    <img src="muoi-ot.png" alt="Muối Ớt" class="max-h-56 sm:max-h-64 w-auto object-contain filter drop-shadow-md">
+                                    <span class="text-[11px] font-bold text-vixua-burgundy mt-2 block bg-white px-2.5 py-0.5 rounded-full shadow-sm">1. Muối Ớt</span>
+                                </div>
+                                <div class="text-center flex flex-col items-center -translate-y-2">
+                                    <img src="muoi-tieu-ham.png" alt="Muối Tiêu Hầm" class="max-h-60 sm:max-h-72 w-auto object-contain filter drop-shadow-xl">
+                                    <span class="text-[11px] font-black text-vixua-burgundy mt-2 block bg-vixua-gold/30 px-3 py-0.5 rounded-full shadow">2. Muối Tiêu Hầm</span>
+                                </div>
+                                <div class="text-center flex flex-col items-center">
+                                    <img src="muoi-lac-rang.png" alt="Muối Lạc Rang" class="max-h-56 sm:max-h-64 w-auto object-contain filter drop-shadow-md">
+                                    <span class="text-[11px] font-bold text-vixua-burgundy mt-2 block bg-white px-2.5 py-0.5 rounded-full shadow-sm">3. Muối Lạc Rang</span>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
 
                     <!-- THÔNG TIN CHI TIẾT COMBO 3 HŨ -->
@@ -255,7 +276,7 @@
                             <span class="text-xs font-bold text-green-700 bg-green-100 px-2 py-0.5 rounded-full">Tiết kiệm 60.000đ</span>
                         </div>
 
-                        <button onclick="addToCart('Set 3 Hũ Gia Vị 500g (Hộp Quà)', 195000, document.getElementById('combo-img').src)" class="w-full burgundy-gradient text-white font-bold py-4 rounded-xl shadow-lg hover:opacity-95 transition-opacity flex items-center justify-center gap-2">
+                        <button onclick="addToCart('Set 3 Hũ Gia Vị 500g (Hộp Quà)', 195000, 'muoi-tieu-ham.png')" class="w-full burgundy-gradient text-white font-bold py-4 rounded-xl shadow-lg hover:opacity-95 transition-opacity flex items-center justify-center gap-2">
                             <i class="fa-solid fa-cart-shopping text-vixua-gold"></i>
                             <span>Đặt Mua Set 3 Hũ Ngay</span>
                         </button>
@@ -357,8 +378,34 @@
         </div>
     </div>
 
-    <!-- JAVASCRIPT: 10 SẢN PHẨM KHỚP 100% FILE GITHUB -->
+    <!-- JAVASCRIPT: 10 SẢN PHẨM & CƠ CHẾ DÒ TÌM ẢNH COMBO THÔNG MINH -->
     <script>
+        // CÁC TÊN FILE ẢNH COMBO PHỔ BIẾN ĐỂ TỰ ĐỘNG DÒ TÌM TRÊN GITHUB
+        const COMBO_CANDIDATE_NAMES = [
+            'combo-3.png', 'combo-3.jpg', 'combo-3.jpeg',
+            'combo.png', 'combo.jpg',
+            'combo3.png', 'combo3.jpg',
+            'combo-3-hu.png', 'combo-3-hu.jpg',
+            'set-3.png', 'set-3.jpg',
+            'set-3-hu.png', 'set-3-hu.jpg'
+        ];
+        let comboTryIndex = 0;
+
+        function checkComboFallback(imgEl) {
+            comboTryIndex++;
+            if (comboTryIndex < COMBO_CANDIDATE_NAMES.length) {
+                imgEl.src = COMBO_CANDIDATE_NAMES[comboTryIndex];
+            } else {
+                // Nếu thử hết các tên trên vẫn không thấy file combo đơn:
+                // TỰ ĐỘNG HIỆN NGAY CỤM 3 HŨ THẬT ĐỨNG CẠNH NHAU TRONG 1 KHUNG!
+                imgEl.style.display = 'none';
+                const threeBottlesDiv = document.getElementById('combo-three-bottles');
+                if (threeBottlesDiv) {
+                    threeBottlesDiv.classList.remove('hidden');
+                }
+            }
+        }
+
         const SPICES_DATA = [
             { id: 1, name: "Muối Tiêu Hầm Sa Huỳnh", cat: "muoi", price: 65000, oldPrice: 85000, badge: "Signature", img: "muoi-tieu-ham.png", desc: "Hũ thủy tinh 500g tiêu đen Tiên Phước đập dập thơm cay nồng và muối hầm Sa Huỳnh." },
             { id: 2, name: "Hũ Muối Ớt Cay Thơm", cat: "muoi", price: 70000, oldPrice: 90000, badge: "Cay Thơm", img: "muoi-ot.png", desc: "Hũ thủy tinh 500g muối ớt nướng cay nồng nàn kích thích trọn vẹn vị giác." },
