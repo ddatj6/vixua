@@ -152,13 +152,13 @@
                     </div>
                 </div>
 
-                <!-- Right: HŨ SẠCH SẼ 100% KHÔNG CÓ BẤT KỲ VẾT MỜ NÀO -->
+                <!-- Right: HŨ SẢN PHẨM HERO ĐƯỢC AUTO-CLEAN TẨY VẾT ĐEN TỰ ĐỘNG -->
                 <div class="lg:col-span-5 relative">
                     <div class="bg-gradient-to-b from-white to-vixua-kraft/60 p-6 sm:p-8 rounded-3xl border-2 border-vixua-burgundy/20 shadow-2xl relative text-center">
                         <div class="w-full h-96 flex items-center justify-center relative overflow-hidden rounded-2xl bg-slate-100/50">
                             <img src="muoi-tieu-ham.png" 
                                  alt="Hũ Muối Tiêu Hầm Vị Xưa 500g" 
-                                 class="max-h-full max-w-full object-contain filter drop-shadow-2xl transform hover:scale-105 transition-transform duration-500">
+                                 class="auto-clean-jar max-h-full max-w-full object-contain filter drop-shadow-2xl transform hover:scale-105 transition-transform duration-500">
                             <span class="absolute top-3 left-3 bg-vixua-burgundy text-white text-[10px] font-black px-3 py-1 rounded-full uppercase tracking-wider shadow z-20">
                                 Hũ Chuẩn 500g
                             </span>
@@ -203,7 +203,7 @@
                 <button onclick="filterSpices('thao-moc')" class="spice-tab px-5 py-2 rounded-full text-xs font-bold bg-white text-vixua-dark border border-vixua-burgundy/15 hover:bg-vixua-kraft">Bột Củ & Thảo Mộc (5)</button>
             </div>
 
-            <!-- GRID HIỂN THỊ 10 HŨ SẠCH SẼ HOÀN TOÀN -->
+            <!-- GRID HIỂN THỊ 10 HŨ SẠCH SẼ -->
             <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6" id="spices-grid"></div>
             
             <div id="no-result" class="hidden text-center py-12 text-vixua-dark/60 text-sm">
@@ -212,7 +212,7 @@
         </div>
     </section>
 
-    <!-- SECTION 3: BỘ QUÀ TẶNG COMBO 3 HŨ (TRONG 1 KHUNG THỐNG NHẤT, THẲNG HÀNG SẠCH ĐẸP) -->
+    <!-- SECTION 3: BỘ QUÀ TẶNG COMBO 3 HŨ (TRONG 1 KHUNG THỐNG NHẤT) -->
     <section id="giftsets" class="py-20 bg-kraft-dots border-t border-b border-vixua-burgundy/10">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-3xl mx-auto mb-16">
@@ -225,7 +225,6 @@
             <div class="max-w-5xl mx-auto bg-white rounded-3xl p-8 sm:p-12 border-2 border-vixua-burgundy shadow-2xl">
                 <div class="grid lg:grid-cols-12 gap-10 items-center">
                     
-                    <!-- KHUNG DUY NHẤT CHỨA 3 HŨ THẲNG HÀNG KHÔNG VẾT MỜ -->
                     <div class="lg:col-span-7 bg-slate-100/80 p-6 rounded-2xl border border-vixua-burgundy/15 flex items-center justify-center min-h-[340px]">
                         <div class="w-full">
                             <div class="grid grid-cols-3 gap-3 items-end justify-items-center">
@@ -240,7 +239,7 @@
                                 <!-- Hũ 2 (Chính Giữa): Muối Tiêu Hầm -->
                                 <div class="text-center flex flex-col items-center -translate-y-2">
                                     <div class="h-52 sm:h-64 flex items-center justify-center">
-                                        <img src="muoi-tieu-ham.png" alt="Hũ Muối Tiêu Hầm" class="max-h-full max-w-full object-contain filter drop-shadow-xl">
+                                        <img src="muoi-tieu-ham.png" alt="Hũ Muối Tiêu Hầm" class="auto-clean-jar max-h-full max-w-full object-contain filter drop-shadow-xl">
                                     </div>
                                     <span class="text-[11px] font-black text-vixua-burgundy mt-2 block bg-vixua-gold/30 px-2 py-0.5 rounded-full shadow">2. Muối Tiêu Hầm</span>
                                 </div>
@@ -379,8 +378,72 @@
         </div>
     </div>
 
-    <!-- JAVASCRIPT: 10 SẢN PHẨM KHỚP ĐÚNG FILE TRÊN GITHUB -->
+    <!-- JAVASCRIPT: TỰ ĐỘNG QUÉT & XÓA SẠCH VẾT ĐEN BẰNG CANVAS (AUTO INPAINT) -->
     <script>
+        // THUẬT TOÁN TẨY XÓA VẾT NẮP BAY & NGÔI SAO GEMINI TỰ ĐỘNG
+        function autoCleanImageArtifacts() {
+            const targetImgs = document.querySelectorAll('.auto-clean-jar');
+            if (!targetImgs.length) return;
+
+            const baseImg = new Image();
+            baseImg.src = 'muoi-tieu-ham.png';
+
+            baseImg.onload = function() {
+                const canvas = document.createElement('canvas');
+                canvas.width = baseImg.naturalWidth || baseImg.width;
+                canvas.height = baseImg.naturalHeight || baseImg.height;
+                const ctx = canvas.getContext('2d');
+                if (!ctx) return;
+
+                // Vẽ ảnh gốc
+                ctx.drawImage(baseImg, 0, 0);
+
+                const W = canvas.width;
+                const H = canvas.height;
+
+                // 1. Tẩy sạch chiếc nắp bay (quét gradient màu nền từ 2 bên lấp đầy tự nhiên)
+                const startY = Math.round(H * 0.12);
+                const endY = Math.round(H * 0.28);
+                const leftX = Math.round(W * 0.38);
+                const rightX = Math.round(W * 0.62);
+                const fillW = rightX - leftX;
+
+                for (let y = startY; y <= endY; y++) {
+                    const pL = ctx.getImageData(leftX - 4, y, 1, 1).data;
+                    const pR = ctx.getImageData(rightX + 4, y, 1, 1).data;
+
+                    const grad = ctx.createLinearGradient(leftX, y, rightX, y);
+                    grad.addColorStop(0, `rgb(${pL[0]}, ${pL[1]}, ${pL[2]})`);
+                    grad.addColorStop(0.5, `rgb(${Math.round((pL[0]+pR[0])/2)}, ${Math.round((pL[1]+pR[1])/2)}, ${Math.round((pL[2]+pR[2])/2)})`);
+                    grad.addColorStop(1, `rgb(${pR[0]}, ${pR[1]}, ${pR[2]})`);
+
+                    ctx.fillStyle = grad;
+                    ctx.fillRect(leftX, y, fillW, 1);
+                }
+
+                // 2. Tẩy luôn ngôi sao Gemini ở góc dưới bên phải
+                const starY1 = Math.round(H * 0.69);
+                const starY2 = Math.round(H * 0.77);
+                const starX1 = Math.round(W * 0.82);
+                const starX2 = Math.round(W * 0.90);
+                for (let y = starY1; y <= starY2; y++) {
+                    const p = ctx.getImageData(starX1 - 5, y, 1, 1).data;
+                    ctx.fillStyle = `rgb(${p[0]}, ${p[1]}, ${p[2]})`;
+                    ctx.fillRect(starX1, y, starX2 - starX1, 1);
+                }
+
+                // Cập nhật lại hình ảnh đã tẩy sạch cho toàn bộ các vị trí
+                try {
+                    const cleanUrl = canvas.toDataURL('image/png');
+                    targetImgs.forEach(img => {
+                        img.src = cleanUrl;
+                    });
+                } catch (e) {
+                    console.warn(e);
+                }
+            };
+        }
+
         const SPICES_DATA = [
             { id: 1, name: "Muối Tiêu Hầm Sa Huỳnh", cat: "muoi", price: 65000, oldPrice: 85000, badge: "Signature", img: "muoi-tieu-ham.png", desc: "Hũ thủy tinh 500g tiêu đen Tiên Phước đập dập thơm cay nồng và muối hầm Sa Huỳnh." },
             { id: 2, name: "Hũ Muối Ớt Cay Thơm", cat: "muoi", price: 70000, oldPrice: 90000, badge: "Cay Thơm", img: "muoi-ot.png", desc: "Hũ thủy tinh 500g muối ớt nướng cay nồng nàn kích thích trọn vẹn vị giác." },
@@ -422,7 +485,7 @@
                 card.innerHTML = `
                     <div class="p-4 bg-slate-50 relative aspect-[4/3] flex items-center justify-center overflow-hidden">
                         <span class="absolute top-2.5 left-2.5 bg-vixua-burgundy text-white text-[9px] font-black px-2 py-0.5 rounded-full uppercase z-20">${item.badge}</span>
-                        <img src="${item.img}" alt="${item.name}" class="max-h-full max-w-full object-contain filter drop-shadow hover:scale-105 transition-transform duration-500">
+                        <img src="${item.img}" alt="${item.name}" class="${item.id === 1 ? 'auto-clean-jar ' : ''}max-h-full max-w-full object-contain filter drop-shadow hover:scale-105 transition-transform duration-500">
                     </div>
                     <div class="p-5 flex-1 flex flex-col justify-between">
                         <div>
@@ -443,6 +506,9 @@
                 `;
                 grid.appendChild(card);
             });
+
+            // Chạy tẩy vết đen sau khi render
+            autoCleanImageArtifacts();
         }
 
         function filterSpices(category) {
@@ -528,6 +594,10 @@
 
         document.addEventListener('DOMContentLoaded', () => {
             renderSpices();
+        });
+
+        window.addEventListener('load', () => {
+            autoCleanImageArtifacts();
         });
     </script>
 </body>
