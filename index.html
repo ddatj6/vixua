@@ -1,4 +1,849 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vị Xưa - Tự Hào Gia Vị Bản Địa Việt Nam | Hũ Thủy Tinh 500g Cao Cấp</title>
+    
+    <!-- SEO & BRAND METADATA -->
+    <meta name="description" content="Thương hiệu gia vị bản địa Vị Xưa: Muối tiêu hầm Sa Huỳnh, muối ớt, tiêu sọ, bột quế, hạt dổi. 100% tự nhiên không màu tổng hợp, không chất bảo quản nhân tạo.">
+    <meta property="og:title" content="Vị Xưa - Tự Hào Gia Vị Bản Địa Việt Nam">
+    <meta property="og:image" content="combo3-lo.png">
 
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- FONT SVN-GILROY VIỆT HÓA CHÍNH THỨC -->
+    <link href="https://fonts.cdnfonts.com/css/svn-gilroy" rel="stylesheet">
+    
+    <!-- FontAwesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'vixua-burgundy': '#7D1C36',      /* Đỏ mận chủ đạo */
+                        'vixua-burgundy-dark': '#480E1E', /* Đỏ mận sẫm */
+                        'vixua-cream': '#FCF9F5',         /* Nền kem mộc */
+                        'vixua-kraft': '#F4EBE3',         /* Nền kraft ẩm thực */
+                        'vixua-gold': '#C58F38',          /* Vàng kim di sản */
+                        'vixua-dark': '#240F15'           /* Chữ nâu sẫm */
+                    },
+                    fontFamily: {
+                        sans: ['"SVN-Gilroy"', 'Gilroy', '-apple-system', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'SVN-Gilroy', 'Gilroy', sans-serif;
+        }
+        .burgundy-gradient {
+            background: linear-gradient(135deg, #7D1C36 0%, #480E1E 100%);
+        }
+        .gold-gradient {
+            background: linear-gradient(135deg, #E2B258 0%, #B27B22 100%);
+        }
+        .bg-kraft-texture {
+            background-color: #FCF9F5;
+            background-image: radial-gradient(#d8c0b4 0.75px, transparent 0.75px);
+            background-size: 26px 26px;
+        }
+        .dropdown-menu {
+            background-color: #FBF8F3;
+            border: 1px solid rgba(0, 0, 0, 0.08);
+            box-shadow: 0 15px 35px -5px rgba(0, 0, 0, 0.12);
+        }
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #FCF9F5; }
+        ::-webkit-scrollbar-thumb { background: #7D1C36; border-radius: 4px; }
+    </style>
+</head>
+<body class="text-vixua-dark bg-white antialiased">
+
+    <!-- ================= 1. TOP HEADER ================= -->
+    <div class="bg-vixua-burgundy-dark text-white text-xs py-2 px-4 border-b border-vixua-gold/30">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
+            <div class="flex items-center gap-4">
+                <span class="text-[11px] font-medium text-vixua-gold tracking-wide">
+                    <i class="fa-solid fa-seedling mr-1"></i> Tự Hào Gia Vị Bản Địa Việt Nam
+                </span>
+                <span class="text-white/30 hidden sm:inline">|</span>
+                <div class="flex items-center gap-2 text-[10px] font-bold">
+                    <span class="px-1.5 py-0.5 rounded bg-vixua-gold text-vixua-dark cursor-pointer">VI</span>
+                    <span class="text-white/60 hover:text-white cursor-pointer">EN</span>
+                    <span class="text-white/60 hover:text-white cursor-pointer">JP</span>
+                </div>
+            </div>
+            <div class="flex items-center gap-5 text-[11px]">
+                <span class="hidden md:inline text-white/80"><i class="fa-solid fa-shield-halved text-vixua-gold mr-1"></i> Miễn Phí Vận Chuyển Toàn Quốc Cho Đơn Từ 299.000đ</span>
+                <span class="text-white/30 hidden md:inline">|</span>
+                <a href="tel:19001234" class="hover:text-vixua-gold transition-colors font-bold flex items-center gap-1.5">
+                    <i class="fa-solid fa-phone-volume text-vixua-gold"></i> 1900 1234
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- ================= 2. MAIN NAVBAR CÓ TÀI KHOẢN & DROPDOWN ================= -->
+    <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-slate-200 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-22 flex items-center justify-between">
+            
+            <!-- Logo bấm về Trang Chủ -->
+            <a href="javascript:void(0)" onclick="navigateTo('home')" class="flex items-center gap-3 py-2">
+                <img src="logo.png" alt="Logo Vị Xưa" class="h-14 sm:h-16 w-auto object-contain max-w-[200px]" onerror="this.onerror=null; this.parentElement.innerHTML='<span class=\'font-black text-2xl text-vixua-burgundy tracking-widest\'>VỊ XƯA</span>';">
+            </a>
+
+            <!-- Menu Navigation -->
+            <nav class="hidden lg:flex items-center gap-8 font-bold text-xs uppercase tracking-wider text-slate-800 h-full">
+                <a href="javascript:void(0)" onclick="navigateTo('home')" id="nav-home" class="nav-link text-vixua-burgundy transition-colors">Trang Chủ</a>
+
+                <!-- DROPDOWN: VỀ VỊ XƯA (ĐÃ LIÊN KẾT ĐẾN TỪNG PHÂN ĐOẠN CHI TIẾT) -->
+                <div class="relative group h-full flex items-center">
+                    <a href="javascript:void(0)" onclick="navigateTo('about')" id="nav-about" class="nav-link flex items-center gap-1.5 hover:text-vixua-burgundy transition-colors py-8">
+                        <span>Về Vị Xưa</span>
+                        <i class="fa-solid fa-chevron-down text-[9px] text-slate-400 group-hover:rotate-180 transition-transform duration-300"></i>
+                    </a>
+                    
+                    <div class="dropdown-menu absolute top-[85%] left-0 w-64 rounded-2xl py-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform translate-y-2 group-hover:translate-y-0 z-50 divide-y divide-slate-200/70">
+                        <a href="javascript:void(0)" onclick="navigateToAboutSection('sec-brand-story')" class="block px-6 py-3 text-sm text-slate-800 font-semibold hover:bg-white hover:text-vixua-burgundy transition-colors normal-case">
+                            Câu chuyện thương hiệu
+                        </a>
+                        <a href="javascript:void(0)" onclick="navigateToAboutSection('sec-ceo-message')" class="block px-6 py-3 text-sm text-slate-800 font-semibold hover:bg-white hover:text-vixua-burgundy transition-colors normal-case">
+                            Góc nhìn CEO
+                        </a>
+                        <a href="javascript:void(0)" onclick="navigateToAboutSection('sec-sustainability')" class="block px-6 py-3 text-sm text-slate-800 font-semibold hover:bg-white hover:text-vixua-burgundy transition-colors normal-case">
+                            Phát triển bền vững & Vùng trồng
+                        </a>
+                        <a href="javascript:void(0)" onclick="navigateToAboutSection('sec-factory')" class="block px-6 py-3 text-sm text-slate-800 font-semibold hover:bg-white hover:text-vixua-burgundy transition-colors normal-case">
+                            Nhà máy - Chất lượng
+                        </a>
+                        <a href="javascript:void(0)" onclick="navigateToAboutSection('sec-careers')" class="block px-6 py-3 text-sm text-slate-800 font-semibold hover:bg-white hover:text-vixua-burgundy transition-colors normal-case">
+                            Cơ hội nghề nghiệp & Tuyển dụng
+                        </a>
+                    </div>
+                </div>
+
+                <!-- DROPDOWN: SẢN PHẨM -->
+                <div class="relative group h-full flex items-center">
+                    <a href="javascript:void(0)" onclick="navigateTo('products')" id="nav-products" class="nav-link flex items-center gap-1.5 hover:text-vixua-burgundy transition-colors py-8">
+                        <span>Sản Phẩm</span>
+                        <i class="fa-solid fa-chevron-down text-[9px] text-slate-400 group-hover:rotate-180 transition-transform duration-300"></i>
+                    </a>
+                    <div class="dropdown-menu absolute top-[85%] left-0 w-64 rounded-2xl py-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform translate-y-2 group-hover:translate-y-0 z-50 divide-y divide-slate-200/70">
+                        <a href="javascript:void(0)" onclick="navigateTo('products'); filterSpices('all');" class="block px-6 py-3 text-sm text-slate-800 font-semibold hover:bg-white hover:text-vixua-burgundy transition-colors normal-case">
+                            Tất cả sản phẩm (10 Hũ)
+                        </a>
+                        <a href="javascript:void(0)" onclick="navigateTo('products'); filterSpices('muoi');" class="block px-6 py-3 text-sm text-slate-800 font-semibold hover:bg-white hover:text-vixua-burgundy transition-colors normal-case">
+                            Dòng Muối Chấm & Rang
+                        </a>
+                        <a href="javascript:void(0)" onclick="navigateTo('products'); filterSpices('tieu');" class="block px-6 py-3 text-sm text-slate-800 font-semibold hover:bg-white hover:text-vixua-burgundy transition-colors normal-case">
+                            Dòng Tiêu Rừng Bản Địa
+                        </a>
+                        <a href="javascript:void(0)" onclick="navigateTo('products'); filterSpices('thao-moc');" class="block px-6 py-3 text-sm text-slate-800 font-semibold hover:bg-white hover:text-vixua-burgundy transition-colors normal-case">
+                            Bột Củ & Thảo Mộc Ướp Nấu
+                        </a>
+                    </div>
+                </div>
+
+                <!-- DROPDOWN: CHUYỆN VÀO BẾP -->
+                <div class="relative group h-full flex items-center">
+                    <a href="javascript:void(0)" onclick="navigateTo('recipes')" id="nav-recipes" class="nav-link flex items-center gap-1.5 hover:text-vixua-burgundy transition-colors py-8">
+                        <span>Chuyện Vào Bếp</span>
+                        <i class="fa-solid fa-chevron-down text-[9px] text-slate-400 group-hover:rotate-180 transition-transform duration-300"></i>
+                    </a>
+                    <div class="dropdown-menu absolute top-[85%] left-0 w-60 rounded-2xl py-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform translate-y-2 group-hover:translate-y-0 z-50 divide-y divide-slate-200/70">
+                        <a href="javascript:void(0)" onclick="navigateTo('recipes')" class="block px-6 py-3 text-sm text-slate-800 font-semibold hover:bg-white hover:text-vixua-burgundy transition-colors normal-case">
+                            Món ngon dễ làm
+                        </a>
+                        <a href="javascript:void(0)" onclick="navigateTo('recipes')" class="block px-6 py-3 text-sm text-slate-800 font-semibold hover:bg-white hover:text-vixua-burgundy transition-colors normal-case">
+                            Bí quyết nêm nếm gia vị
+                        </a>
+                    </div>
+                </div>
+
+                <a href="javascript:void(0)" onclick="navigateTo('combo')" id="nav-combo" class="nav-link hover:text-vixua-burgundy transition-colors flex items-center gap-1">
+                    <i class="fa-solid fa-gift text-vixua-gold"></i> Combo 3 Lọ
+                </a>
+                <a href="javascript:void(0)" onclick="navigateTo('stores')" id="nav-stores" class="nav-link hover:text-vixua-burgundy transition-colors">Điểm Bán Siêu Thị</a>
+            </nav>
+
+            <!-- Actions: Đăng nhập/Đăng ký & Giỏ hàng -->
+            <div class="flex items-center gap-3">
+                <!-- Nút Tài Khoản (Mở Modal Đăng Nhập / Đăng Ký) -->
+                <button onclick="openAuthModal()" id="user-auth-btn" class="flex items-center gap-2 px-4 py-2.5 rounded-full border border-slate-200 hover:border-vixua-burgundy text-slate-800 text-xs font-bold transition-all shadow-sm bg-slate-50 hover:bg-white">
+                    <i class="fa-regular fa-user text-vixua-burgundy text-sm"></i>
+                    <span id="user-auth-text">Tài Khoản</span>
+                </button>
+
+                <!-- Nút Giỏ Hàng -->
+                <button onclick="toggleCartDrawer()" class="relative p-2.5 rounded-full bg-slate-100 hover:bg-vixua-burgundy hover:text-white text-vixua-burgundy transition-all">
+                    <i class="fa-solid fa-basket-shopping text-base"></i>
+                    <span id="cart-badge" class="absolute -top-1 -right-1 bg-vixua-gold text-vixua-dark text-[11px] font-black w-5 h-5 rounded-full flex items-center justify-center shadow">0</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- =========================================================================
+         PAGE VIEW 1: TRANG CHỦ (HOME PAGE)
+         ========================================================================= -->
+    <main id="view-home" class="page-view">
+        
+        <!-- Hero Banner Lớn -->
+        <section class="relative bg-gradient-to-r from-vixua-cream via-white to-vixua-kraft py-16 lg:py-24 border-b border-slate-200">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid lg:grid-cols-12 gap-10 items-center">
+                    
+                    <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                        <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-vixua-burgundy/10 text-vixua-burgundy font-bold text-xs uppercase tracking-wider">
+                            <i class="fa-solid fa-medal text-vixua-gold"></i> Tinh Hoa Gia Vị Bản Địa Việt Nam
+                        </div>
+
+                        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black text-vixua-burgundy leading-tight tracking-tight">
+                            Đậm Vị Truyền Thống, <br>
+                            <span class="text-vixua-gold">Tiện Lợi Mọi Căn Bếp.</span>
+                        </h1>
+
+                        <p class="text-base sm:text-lg text-slate-700 leading-relaxed max-w-2xl mx-auto lg:mx-0 font-normal">
+                            Khám phá bộ sưu tập 10 dòng gia vị bản địa đóng hũ thủy tinh 500g nắp kín: từ Muối tiêu hầm Sa Huỳnh nung lu sành, Muối ớt cay nồng, Tiêu sọ Tiên Phước cho tới Bột quế rừng Trà Bồng.
+                        </p>
+
+                        <!-- Khối Cam Kết Tiêu Chuẩn Sản Xuất -->
+                        <div class="bg-white p-5 rounded-2xl border border-slate-200 max-w-lg mx-auto lg:mx-0 shadow-sm">
+                            <div class="flex items-center gap-2 mb-2 pb-2 border-b border-slate-100 text-xs font-bold text-vixua-burgundy uppercase">
+                                <i class="fa-solid fa-shield-halved text-vixua-gold"></i>
+                                Tiêu Chuẩn Sản Xuất Khép Kín Chuẩn ISO & HACCP
+                            </div>
+                            <div class="grid grid-cols-3 gap-3 text-center text-xs">
+                                <div class="bg-slate-50 p-2.5 rounded-xl font-bold text-slate-800">100% Tự Nhiên<span class="block text-[10px] text-slate-400 font-normal mt-0.5">Không hương liệu</span></div>
+                                <div class="bg-slate-50 p-2.5 rounded-xl font-bold text-slate-800">0% Màu Hóa Học<span class="block text-[10px] text-slate-400 font-normal mt-0.5">Màu thảo mộc thật</span></div>
+                                <div class="bg-slate-50 p-2.5 rounded-xl font-bold text-slate-800">Hũ Thủy Tinh<span class="block text-[10px] text-slate-400 font-normal mt-0.5">Bảo quản 18 tháng</span></div>
+                            </div>
+                        </div>
+
+                        <!-- Nút hành động -->
+                        <div class="pt-2 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                            <button onclick="navigateTo('products')" class="burgundy-gradient text-white font-bold px-8 py-3.5 rounded-xl shadow-lg hover:shadow-xl transition-all flex items-center justify-center gap-2">
+                                <span>Khám Phá 10 Hũ Gia Vị</span>
+                                <i class="fa-solid fa-arrow-right text-xs"></i>
+                            </button>
+                            <button onclick="navigateTo('stores')" class="bg-white border-2 border-slate-300 text-slate-800 font-bold px-7 py-3 rounded-xl hover:bg-slate-50 transition-all">
+                                Xem Điểm Bán Siêu Thị
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Right: Hũ Muối Tiêu Hầm của bạn -->
+                    <div class="lg:col-span-5 relative text-center">
+                        <div class="w-full h-[400px] flex items-center justify-center relative rounded-3xl bg-white p-6 shadow-xl border border-slate-100 cursor-pointer" onclick="openProductDetail(1)">
+                            <img src="muoi-tieu-ham.png" alt="Muối Tiêu Hầm" class="max-h-full max-w-full object-contain hover:scale-105 transition-transform duration-500">
+                            <span class="absolute top-4 left-4 bg-vixua-burgundy text-white text-[10px] font-black px-3 py-1 rounded-full uppercase tracking-wider shadow">
+                                Hũ Chuẩn 500g • Bấm Xem Chi Tiết
+                            </span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Thống kê quy mô -->
+        <section class="py-12 bg-vixua-burgundy text-white">
+            <div class="max-w-7xl mx-auto px-4 grid grid-cols-2 md:grid-cols-4 gap-8 text-center divide-y md:divide-y-0 md:divide-x divide-white/15">
+                <div class="pt-4 md:pt-0"><span class="font-black text-3xl sm:text-4xl text-vixua-gold block">1.5 Triệu+</span><span class="text-xs text-white/80 font-medium uppercase mt-1 block">Hũ Bán Ra Mỗi Năm</span></div>
+                <div class="pt-4 md:pt-0"><span class="font-black text-3xl sm:text-4xl text-vixua-gold block">50.000+</span><span class="text-xs text-white/80 font-medium uppercase mt-1 block">Điểm Bán & Cửa Hàng</span></div>
+                <div class="pt-4 md:pt-0"><span class="font-black text-3xl sm:text-4xl text-vixua-gold block">500+</span><span class="text-xs text-white/80 font-medium uppercase mt-1 block">Siêu Thị Toàn Quốc</span></div>
+                <div class="pt-4 md:pt-0"><span class="font-black text-3xl sm:text-4xl text-vixua-gold block">10+</span><span class="text-xs text-white/80 font-medium uppercase mt-1 block">Quốc Gia Xuất Khẩu</span></div>
+            </div>
+        </section>
+
+        <!-- Bản đồ 4 Vùng Đất Mẹ Di Sản -->
+        <section class="py-20 bg-white border-b border-slate-200">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-3xl mx-auto mb-14">
+                    <span class="text-vixua-burgundy font-bold text-xs uppercase tracking-widest">Nguồn Gốc Bản Địa</span>
+                    <h2 class="text-3xl font-black text-slate-900 mt-2">Hành Trình 4 Vùng Đất Mẹ</h2>
+                    <div class="w-16 h-1 bg-vixua-gold mx-auto mt-3 rounded-full"></div>
+                    <p class="text-slate-600 text-sm mt-3">Mỗi hạt gia vị Vị Xưa đều có căn cước xuất xứ rõ ràng từ những vùng thổ nhưỡng trứ danh Việt Nam.</p>
+                </div>
+
+                <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <div class="p-6 rounded-3xl bg-slate-50 border border-slate-200 shadow-sm hover:shadow-lg transition-all">
+                        <div class="w-12 h-12 rounded-2xl burgundy-gradient text-vixua-gold flex items-center justify-center text-xl mb-4 shadow"><i class="fa-solid fa-water"></i></div>
+                        <span class="text-[10px] font-bold text-vixua-gold uppercase tracking-wider block mb-1">Quảng Ngãi</span>
+                        <h3 class="font-bold text-lg text-vixua-burgundy">Đồng Muối Sa Huỳnh</h3>
+                        <p class="text-xs text-slate-600 mt-2 leading-relaxed">Hạt muối biển thuần khiết được nung 24h trong lu sành đất nung tạo vị ngọt hậu thanh dịu.</p>
+                    </div>
+
+                    <div class="p-6 rounded-3xl bg-slate-50 border border-slate-200 shadow-sm hover:shadow-lg transition-all">
+                        <div class="w-12 h-12 rounded-2xl burgundy-gradient text-vixua-gold flex items-center justify-center text-xl mb-4 shadow"><i class="fa-solid fa-tree"></i></div>
+                        <span class="text-[10px] font-bold text-vixua-gold uppercase tracking-wider block mb-1">Quảng Nam</span>
+                        <h3 class="font-bold text-lg text-vixua-burgundy">Rừng Tiêu Tiên Phước</h3>
+                        <p class="text-xs text-slate-600 mt-2 leading-relaxed">Vùng đất bazan cổ thụ cho ra đời hạt tiêu sọ giàu tinh dầu cay ấm nồng nàn không gắt cổ.</p>
+                    </div>
+
+                    <div class="p-6 rounded-3xl bg-slate-50 border border-slate-200 shadow-sm hover:shadow-lg transition-all">
+                        <div class="w-12 h-12 rounded-2xl burgundy-gradient text-vixua-gold flex items-center justify-center text-xl mb-4 shadow"><i class="fa-solid fa-mountain"></i></div>
+                        <span class="text-[10px] font-bold text-vixua-gold uppercase tracking-wider block mb-1">Quảng Ngãi</span>
+                        <h3 class="font-bold text-lg text-vixua-burgundy">Quế Rừng Trà Bồng</h3>
+                        <p class="text-xs text-slate-600 mt-2 leading-relaxed">Quế vỏ rừng già của đồng bào Kor với hàm lượng tinh dầu cao nhất, thơm ngọt ấm nồng đượm vị.</p>
+                    </div>
+
+                    <div class="p-6 rounded-3xl bg-slate-50 border border-slate-200 shadow-sm hover:shadow-lg transition-all">
+                        <div class="w-12 h-12 rounded-2xl burgundy-gradient text-vixua-gold flex items-center justify-center text-xl mb-4 shadow"><i class="fa-solid fa-sun"></i></div>
+                        <span class="text-[10px] font-bold text-vixua-gold uppercase tracking-wider block mb-1">Kiên Giang</span>
+                        <h3 class="font-bold text-lg text-vixua-burgundy">Đảo Ngọc Phú Quốc</h3>
+                        <p class="text-xs text-slate-600 mt-2 leading-relaxed">Những chùm tiêu chín cây phơi nắng biển đảo tự nhiên, tròn mẩy thơm ngát nổi tiếng thế giới.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Cam kết 4 KHÔNG -->
+        <section class="py-20 bg-vixua-cream border-b border-slate-200">
+            <div class="max-w-5xl mx-auto px-4">
+                <div class="bg-white rounded-3xl p-8 sm:p-12 border border-slate-200 shadow-xl text-center">
+                    <span class="text-vixua-burgundy font-bold text-xs uppercase tracking-widest">Tiêu Chuẩn Sản Phẩm Vị Xưa</span>
+                    <h2 class="text-3xl font-black text-slate-900 mt-2">Cam Kết Vàng 4 KHÔNG</h2>
+                    <p class="text-xs sm:text-sm text-slate-600 mt-2">Bảo vệ sức khỏe và hệ tim mạch của cả gia đình qua từng bữa cơm ngon.</p>
+                    
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mt-8">
+                        <div class="p-4 rounded-2xl bg-slate-50 border border-slate-200">
+                            <i class="fa-solid fa-ban text-2xl text-vixua-burgundy mb-2 block"></i>
+                            <span class="font-bold text-sm text-slate-900 block">0% Mì Chính</span>
+                            <span class="text-[11px] text-slate-500">Không bột ngọt E621</span>
+                        </div>
+                        <div class="p-4 rounded-2xl bg-slate-50 border border-slate-200">
+                            <i class="fa-solid fa-eye-dropper-empty text-2xl text-vixua-burgundy mb-2 block"></i>
+                            <span class="font-bold text-sm text-slate-900 block">0% Phẩm Màu</span>
+                            <span class="text-[11px] text-slate-500">Màu thảo mộc tự nhiên</span>
+                        </div>
+                        <div class="p-4 rounded-2xl bg-slate-50 border border-slate-200">
+                            <i class="fa-solid fa-flask-vial text-2xl text-vixua-burgundy mb-2 block"></i>
+                            <span class="font-bold text-sm text-slate-900 block">0% Bảo Quản</span>
+                            <span class="text-[11px] text-slate-500">Hũ thủy tinh kháng ẩm</span>
+                        </div>
+                        <div class="p-4 rounded-2xl bg-slate-50 border border-slate-200">
+                            <i class="fa-solid fa-spray-can text-2xl text-vixua-burgundy mb-2 block"></i>
+                            <span class="font-bold text-sm text-slate-900 block">0% Hương Liệu</span>
+                            <span class="text-[11px] text-slate-500">Mùi thơm tinh dầu thật</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Showroom Sản Phẩm Tiêu Biểu -->
+        <section class="py-20 bg-white border-b border-slate-200">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex justify-between items-end mb-10">
+                    <div>
+                        <span class="text-vixua-burgundy font-bold text-xs uppercase tracking-widest">Sản Phẩm Tiêu Biểu</span>
+                        <h2 class="text-2xl sm:text-3xl font-black text-slate-900 mt-1">10 Dòng Hũ Thủy Tinh 500g Bản Địa</h2>
+                    </div>
+                    <button onclick="navigateTo('products')" class="text-xs font-bold text-vixua-burgundy hover:underline flex items-center gap-1">
+                        <span>Xem Toàn Bộ Sản Phẩm ➔</span>
+                    </button>
+                </div>
+
+                <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6" id="home-bestsellers-grid"></div>
+            </div>
+        </section>
+
+        <!-- Combo 3 Lọ Bếp Ấm (Ảnh combo3-lo.png) -->
+        <section class="py-20 bg-vixua-cream border-b border-slate-200">
+            <div class="max-w-6xl mx-auto px-4">
+                <div class="bg-white rounded-3xl p-8 sm:p-12 border border-slate-200 shadow-xl grid md:grid-cols-12 gap-8 items-center">
+                    <div class="md:col-span-7 bg-slate-50 p-6 rounded-2xl flex items-center justify-center cursor-pointer" onclick="navigateTo('combo')">
+                        <img src="combo3-lo.png" alt="Combo 3 Hũ" class="max-h-84 sm:max-h-96 w-auto object-contain hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <div class="md:col-span-5 space-y-4">
+                        <span class="bg-vixua-burgundy text-white text-[10px] font-black px-3 py-1 rounded-full uppercase">Hộp Quà Cao Cấp</span>
+                        <h3 class="text-2xl sm:text-3xl font-black text-slate-900">Combo 3 Hũ Bếp Ấm (500g x 3)</h3>
+                        <p class="text-xs sm:text-sm text-slate-600">Trọn bộ 3 phong vị đặc sắc nhất: Muối Tiêu Hầm + Bột Quế Trà Bồng + Muối Ớt Cay Thơm.</p>
+                        
+                        <div class="space-y-2 text-xs text-slate-700 bg-slate-50 p-4 rounded-xl border border-slate-200 font-medium">
+                            <p><i class="fa-solid fa-check text-green-700 mr-2"></i><strong>01 Hũ Muối Tiêu Hầm Sa Huỳnh (500g)</strong></p>
+                            <p><i class="fa-solid fa-check text-green-700 mr-2"></i><strong>01 Hũ Bột Quế Tự Nhiên Trà Bồng (500g)</strong></p>
+                            <p><i class="fa-solid fa-check text-green-700 mr-2"></i><strong>01 Hũ Muối Ớt Tự Nhiên Cay Thơm (500g)</strong></p>
+                            <p class="text-vixua-gold font-bold pt-1 border-t border-slate-200"><i class="fa-solid fa-gift mr-2"></i>Tặng kèm 01 muỗng gỗ tự nhiên khắc logo Vị Xưa</p>
+                        </div>
+
+                        <div class="pt-2 flex items-baseline gap-3">
+                            <span class="font-black text-3xl text-vixua-burgundy">195.000đ</span>
+                            <span class="text-xs text-slate-500">/ Trọn bộ hộp quà</span>
+                        </div>
+
+                        <div class="flex gap-3 pt-2">
+                            <button onclick="addToCart('Combo 3 Lọ Bếp Ấm (500g x 3)', 195000, 'combo3-lo.png')" class="flex-1 burgundy-gradient text-white font-bold py-3.5 rounded-xl shadow text-xs uppercase tracking-wider">
+                                Đặt Mua Ngay
+                            </button>
+                            <button onclick="navigateTo('combo')" class="px-5 py-3.5 rounded-xl border border-slate-300 text-slate-700 hover:bg-slate-50 font-bold text-xs">
+                                Chi Tiết
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Chuyện Vào Bếp -->
+        <section class="py-20 bg-white border-b border-slate-200">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex justify-between items-end mb-12">
+                    <div>
+                        <span class="text-vixua-burgundy font-bold text-xs uppercase tracking-widest">Nấu Ngon Chuẩn Vị</span>
+                        <h2 class="text-2xl sm:text-3xl font-black text-slate-900 mt-1">Chuyện Vào Bếp Cùng Vị Xưa</h2>
+                    </div>
+                    <button onclick="navigateTo('recipes')" class="text-xs font-bold text-vixua-burgundy hover:underline flex items-center gap-1">
+                        <span>Xem Tất Cả Công Thức ➔</span>
+                    </button>
+                </div>
+
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="bg-slate-50 rounded-3xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition-all cursor-pointer" onclick="navigateTo('recipes')">
+                        <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=600&q=80" class="w-full h-52 object-cover">
+                        <div class="p-6 space-y-2">
+                            <span class="text-[10px] font-bold text-vixua-gold uppercase tracking-wider"><i class="fa-regular fa-clock mr-1"></i>25 phút • 3-4 người</span>
+                            <h3 class="font-bold text-lg text-slate-900">Gà Đồi Luộc Da Giòn Chấm Muối Tiêu Hầm</h3>
+                            <p class="text-xs text-slate-600 leading-relaxed">Vị mặn ngọt thanh dịu của muối hầm Sa Huỳnh thấm vào da gà giòn ngọt xuất sắc.</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-slate-50 rounded-3xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition-all cursor-pointer" onclick="navigateTo('recipes')">
+                        <img src="https://images.unsplash.com/photo-1534422298391-e4f8c172dddb?auto=format&fit=crop&w=600&q=80" class="w-full h-52 object-cover">
+                        <div class="p-6 space-y-2">
+                            <span class="text-[10px] font-bold text-vixua-gold uppercase tracking-wider"><i class="fa-regular fa-clock mr-1"></i>15 phút • 2-3 người</span>
+                            <h3 class="font-bold text-lg text-slate-900">Tôm Càng Hấp Dừa Chấm Muối Ớt Cay Nồng</h3>
+                            <p class="text-xs text-slate-600 leading-relaxed">Muối ớt cay nồng đượm khói bếp làm bừng sáng vị ngọt thanh từ thịt tôm tươi rói.</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-slate-50 rounded-3xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition-all cursor-pointer" onclick="navigateTo('recipes')">
+                        <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=600&q=80" class="w-full h-52 object-cover">
+                        <div class="p-6 space-y-2">
+                            <span class="text-[10px] font-bold text-vixua-gold uppercase tracking-wider"><i class="fa-regular fa-clock mr-1"></i>40 phút • 3-4 người</span>
+                            <h3 class="font-bold text-lg text-slate-900">Sườn Non Kho Tiêu Rừng & Bột Quế Trà Bồng</h3>
+                            <p class="text-xs text-slate-600 leading-relaxed">Mẹo ướp thịt sườn cùng bột quế cổ thụ cho nước kho lên màu cánh gián tự nhiên thơm nức.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Hệ Thống Điểm Bán Siêu Thị -->
+        <section class="py-16 bg-white border-b border-slate-200 text-center">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <span class="text-vixua-burgundy font-bold text-xs uppercase tracking-widest">Hệ Thống Phân Phối Toàn Quốc</span>
+                <h2 class="text-2xl sm:text-3xl font-black text-slate-900 mt-1">Dễ Dàng Mua Vị Xưa Tại Các Siêu Thị Lớn</h2>
+                
+                <div class="grid grid-cols-3 sm:grid-cols-6 gap-6 items-center justify-items-center mt-10 opacity-80">
+                    <div class="bg-slate-50 p-4 rounded-xl border border-slate-200 w-full font-black text-red-600 text-sm">Co.opmart</div>
+                    <div class="bg-slate-50 p-4 rounded-xl border border-slate-200 w-full font-black text-red-700 text-sm">WinMart</div>
+                    <div class="bg-slate-50 p-4 rounded-xl border border-slate-200 w-full font-black text-green-700 text-sm">Bách Hóa XANH</div>
+                    <div class="bg-slate-50 p-4 rounded-xl border border-slate-200 w-full font-black text-red-600 text-sm">GO! / Big C</div>
+                    <div class="bg-slate-50 p-4 rounded-xl border border-slate-200 w-full font-black text-red-600 text-sm">LOTTE Mart</div>
+                    <div class="bg-slate-50 p-4 rounded-xl border border-slate-200 w-full font-black text-orange-600 text-sm">Shopee Mall</div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+
+    <!-- =========================================================================
+         PAGE VIEW 2: TRANG VỀ VỊ XƯA (ĐỒ SỘ: CÂU CHUYỆN, GÓC NHÌN CEO, NHÀ MÁY, CSR)
+         ========================================================================= -->
+    <main id="view-about" class="page-view hidden py-10 bg-slate-50 min-h-screen">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <!-- Breadcrumbs -->
+            <div class="flex items-center gap-2 text-xs font-semibold text-slate-500 mb-8 border-b border-slate-200 pb-4">
+                <a href="javascript:void(0)" onclick="navigateTo('home')" class="hover:text-vixua-burgundy">Trang Chủ</a>
+                <span>/</span>
+                <span class="text-vixua-burgundy font-bold">Về Vị Xưa & Di Sản Ẩm Thực</span>
+            </div>
+
+            <!-- Banner Trang Giới Thiệu -->
+            <div class="rounded-3xl burgundy-gradient text-white p-8 sm:p-14 mb-14 shadow-xl relative overflow-hidden">
+                <div class="max-w-2xl space-y-4 relative z-10">
+                    <span class="text-vixua-gold text-xs font-black uppercase tracking-widest">Hồ Sơ Thương Hiệu</span>
+                    <h1 class="text-3xl sm:text-5xl font-black leading-tight tracking-tight">Hành Trình Giữ Lại Hồn Bếp Cũ</h1>
+                    <p class="text-sm sm:text-base text-white/85 leading-relaxed font-normal">
+                        Vị Xưa sinh ra từ tình yêu với những vùng đất mẹ và ước mơ nâng tầm gia vị bản địa Việt Nam bước ra thế giới bằng chuẩn mực quốc tế cao nhất.
+                    </p>
+                </div>
+            </div>
+
+            <!-- PHẦN 1: CÂU CHUYỆN THƯƠNG HIỆU -->
+            <section id="sec-brand-story" class="bg-white rounded-3xl p-8 sm:p-12 border border-slate-200 shadow-sm mb-12">
+                <div class="grid md:grid-cols-12 gap-10 items-center">
+                    <div class="md:col-span-6 space-y-4 text-slate-700 leading-relaxed text-sm">
+                        <span class="text-xs font-black text-vixua-gold uppercase tracking-wider block">Chương I</span>
+                        <h2 class="text-2xl sm:text-3xl font-black text-vixua-burgundy">Ký Ức Từ Gian Bếp Của Mẹ</h2>
+                        <p>Thời hiện đại với nhịp sống hối hả đã làm mâm cơm gia đình quen dần với những hạt nêm tổng hợp, phẩm màu công nghiệp và chất điều vị nhân tạo. Chúng ta ăn no nhưng dần quên đi vị ngọt thanh tự nhiên của hạt muối biển hầm nung, vị cay nồng sâu lắng của hạt tiêu sọ rừng già.</p>
+                        <p><strong>Vị Xưa</strong> ra đời để tìm lại những giá trị thuần khiết ấy. Chúng tôi lặn lội đến tận những làng nghề trăm năm: đồng muối Sa Huỳnh, thung lũng quế Trà Bồng, đồi tiêu Tiên Phước để gom góp từng hạt tinh hoa đất trời vào trong chiếc hũ thủy tinh tiện lợi.</p>
+                    </div>
+                    <div class="md:col-span-6 rounded-2xl overflow-hidden shadow-md">
+                        <img src="https://images.unsplash.com/photo-1506368249639-73a05d6f6488?auto=format&fit=crop&w=700&q=80" alt="Nông sản bản địa" class="w-full h-80 object-cover">
+                    </div>
+                </div>
+            </section>
+
+            <!-- PHẦN 2: GÓC NHÌN CEO & THÔNG ĐIỆP NHÀ SÁNG LẬP (ĐẦY ĐỦ ẢNH CHÂN DUNG & BỨC THƯ) -->
+            <section id="sec-ceo-message" class="bg-vixua-cream rounded-3xl p-8 sm:p-12 border border-vixua-gold/30 shadow-md mb-12">
+                <div class="grid md:grid-cols-12 gap-10 items-center">
+                    <div class="md:col-span-5 text-center">
+                        <div class="relative inline-block rounded-3xl overflow-hidden border-4 border-white shadow-xl">
+                            <img src="https://images.unsplash.com/photo-1556157382-97eda2d62296?auto=format&fit=crop&w=600&q=80" alt="Chân dung CEO Vị Xưa" class="w-72 h-96 object-cover">
+                        </div>
+                        <h3 class="font-black text-lg text-vixua-burgundy mt-4">Nguyễn Thành Đạt</h3>
+                        <p class="text-xs text-vixua-gold font-bold uppercase tracking-wider">Nhà Sáng Lập & Tổng Giám Đốc Điều Hành (CEO)</p>
+                    </div>
+                    
+                    <div class="md:col-span-7 space-y-4 text-slate-700 leading-relaxed text-sm">
+                        <div class="inline-block p-2 rounded-xl bg-vixua-burgundy text-vixua-gold text-lg">
+                            <i class="fa-solid fa-quote-left"></i>
+                        </div>
+                        <h2 class="text-2xl sm:text-3xl font-black text-vixua-burgundy">Góc Nhìn CEO: "Khát Vọng Nâng Tầm Hạt Gia Vị Quê Hương"</h2>
+                        <blockquote class="italic text-slate-800 font-semibold border-l-4 border-vixua-gold pl-4 text-base">
+                            "Việt Nam ta được thiên nhiên ưu đãi cho những loại gia vị ngon bậc nhất thế giới, nhưng phần lớn vẫn chỉ xuất thô giá rẻ hoặc bị công nghiệp hóa. Tôi sáng lập Vị Xưa với niềm tin mãnh liệt: Khi người Việt tôn trọng chính hạt gia vị của dân tộc mình, thế giới cũng sẽ ngả mũ thán phục nền ẩm thực của chúng ta."
+                        </blockquote>
+                        <p>Tại Vị Xưa, mỗi quyết định kinh doanh đều phải trả lời được câu hỏi: <em>'Sản phẩm này có thực sự an lành cho sức khỏe người ăn và có giúp người nông dân bản địa có cuộc sống sung túc hơn không?'</em> Nếu câu trả lời là có, chúng tôi mới bắt tay vào làm.</p>
+                        <div class="pt-2">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/3/3a/Jon_Kirsch%27s_Signature.png" class="h-10 opacity-70 filter invert" alt="Chữ ký CEO">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- PHẦN 3: PHÁT TRIỂN BỀN VỮNG & VÙNG NGUYÊN LIỆU (CSR) -->
+            <section id="sec-sustainability" class="bg-white rounded-3xl p-8 sm:p-12 border border-slate-200 shadow-sm mb-12">
+                <span class="text-xs font-black text-vixua-gold uppercase tracking-wider block mb-1">Trách Nhiệm Xã Hội</span>
+                <h2 class="text-2xl sm:text-3xl font-black text-vixua-burgundy mb-6">Phát Triển Bền Vững & Đồng Hành Cùng Nông Dân</h2>
+                
+                <div class="grid md:grid-cols-3 gap-6 text-sm text-slate-700">
+                    <div class="space-y-3 p-5 rounded-2xl bg-slate-50 border border-slate-200">
+                        <img src="https://images.unsplash.com/photo-1500937386664-56d1dfef3854?auto=format&fit=crop&w=400&q=80" class="w-full h-40 object-cover rounded-xl mb-3">
+                        <h3 class="font-bold text-base text-slate-900">Bao Tiêu Giá Cao Hơn 20%</h3>
+                        <p class="text-xs text-slate-600 leading-relaxed font-normal">Ký hợp đồng thu mua dài hạn với diêm dân Sa Huỳnh và nông dân Tiên Phước với giá cao hơn giá thị trường 20%, giúp bà con yên tâm gắn bó với nghề cha truyền con nối.</p>
+                    </div>
+                    
+                    <div class="space-y-3 p-5 rounded-2xl bg-slate-50 border border-slate-200">
+                        <img src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?auto=format&fit=crop&w=400&q=80" class="w-full h-40 object-cover rounded-xl mb-3">
+                        <h3 class="font-bold text-base text-slate-900">Bảo Vệ Rừng Quế Cổ Thụ</h3>
+                        <p class="text-xs text-slate-600 leading-relaxed font-normal">Đồng hành cùng đồng bào Kor tại Trà Bồng nhân giống và bảo tồn giống quế bản địa, tuyệt đối không khai thác tận diệt cây non dưới 15 năm tuổi.</p>
+                    </div>
+
+                    <div class="space-y-3 p-5 rounded-2xl bg-slate-50 border border-slate-200">
+                        <img src="https://images.unsplash.com/photo-1530587191325-3db32d826c18?auto=format&fit=crop&w=400&q=80" class="w-full h-40 object-cover rounded-xl mb-3">
+                        <h3 class="font-bold text-base text-slate-900">100% Bao Bì Tái Chế</h3>
+                        <p class="text-xs text-slate-600 leading-relaxed font-normal">Sử dụng hũ thủy tinh cao cấp có thể tái sử dụng nhiều năm và hộp quà bằng giấy Kraft tái sinh, hạn chế tối đa rác thải nhựa một lần ra môi trường.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- PHẦN 4: NHÀ MÁY & CHUẨN MỰC CHẤT LƯỢNG -->
+            <section id="sec-factory" class="bg-white rounded-3xl p-8 sm:p-12 border border-slate-200 shadow-sm mb-12">
+                <div class="grid md:grid-cols-12 gap-10 items-center">
+                    <div class="md:col-span-6 rounded-2xl overflow-hidden shadow-md">
+                        <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=700&q=80" alt="Nhà máy Vị Xưa" class="w-full h-80 object-cover">
+                    </div>
+                    <div class="md:col-span-6 space-y-4 text-slate-700 leading-relaxed text-sm">
+                        <span class="text-xs font-black text-vixua-gold uppercase tracking-wider block">Công Nghệ Đột Phá</span>
+                        <h2 class="text-2xl sm:text-3xl font-black text-vixua-burgundy">Nhà Máy Chế Biến Sạch Chuẩn Quốc Tế</h2>
+                        <p>Nhà máy chế biến Vị Xưa tọa lạc tại Khu Công Nghiệp Thực Phẩm Sạch với diện tích hơn 10.000m², vận hành theo tiêu chuẩn phòng sạch áp suất dương khắt khe nhất.</p>
+                        <div class="space-y-2 text-xs font-medium bg-slate-50 p-4 rounded-2xl border border-slate-200">
+                            <p><i class="fa-solid fa-check text-green-700 mr-2"></i><strong>Công nghệ sấy nhiệt sạch & sấy thăng hoa:</strong> Giữ nguyên 98% lượng tinh dầu quý.</p>
+                            <p><i class="fa-solid fa-check text-green-700 mr-2"></i><strong>Hệ thống dò kim loại & vi sinh:</strong> Kiểm soát nghiêm ngặt 100% từng lô hũ.</p>
+                            <p><i class="fa-solid fa-check text-green-700 mr-2"></i><strong>Chứng nhận chất lượng:</strong> ISO 22000:2018, HACCP Codex, FDA Hoa Kỳ.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- PHẦN 5: TUYỂN DỤNG & CƠ HỘI NGHỀ NGHIỆP -->
+            <section id="sec-careers" class="bg-vixua-cream rounded-3xl p-8 sm:p-12 border border-vixua-gold/30 shadow-sm mb-12">
+                <div class="text-center max-w-2xl mx-auto mb-10">
+                    <span class="text-xs font-black text-vixua-gold uppercase tracking-wider block">Gia Nhập Vị Xưa</span>
+                    <h2 class="text-2xl sm:text-3xl font-black text-vixua-burgundy mt-1">Cơ Hội Nghề Nghiệp Cùng Đại Gia Đình Vị Xưa</h2>
+                    <p class="text-xs text-slate-600 mt-2">Chúng tôi luôn tìm kiếm những cộng sự có chung niềm đam mê gìn giữ di sản ẩm thực dân tộc.</p>
+                </div>
+
+                <div class="space-y-4 max-w-3xl mx-auto text-xs">
+                    <div class="p-4 bg-white rounded-2xl border border-slate-200 flex justify-between items-center shadow-sm">
+                        <div>
+                            <h3 class="font-bold text-sm text-slate-900">Chuyên Viên R&D Phát Triển Sản Phẩm Gia Vị</h3>
+                            <p class="text-slate-500 mt-0.5">Toàn thời gian • Làm việc tại TP. Hồ Chí Minh</p>
+                        </div>
+                        <button onclick="alert('Vui lòng gửi CV về: hr@vixua.vn với tiêu đề [Ứng Tuyển R&D]');" class="px-4 py-2 rounded-xl bg-vixua-burgundy text-white font-bold hover:opacity-90">Ứng Tuyển</button>
+                    </div>
+
+                    <div class="p-4 bg-white rounded-2xl border border-slate-200 flex justify-between items-center shadow-sm">
+                        <div>
+                            <h3 class="font-bold text-sm text-slate-900">Quản Lý Vùng Nguyên Liệu Nông Sản (Quảng Nam - Quảng Ngãi)</h3>
+                            <p class="text-slate-500 mt-0.5">Toàn thời gian • Phụ trách vùng trồng</p>
+                        </div>
+                        <button onclick="alert('Vui lòng gửi CV về: hr@vixua.vn với tiêu đề [Ứng Tuyển Quản Lý Vùng Trồng]');" class="px-4 py-2 rounded-xl bg-vixua-burgundy text-white font-bold hover:opacity-90">Ứng Tuyển</button>
+                    </div>
+
+                    <div class="p-4 bg-white rounded-2xl border border-slate-200 flex justify-between items-center shadow-sm">
+                        <div>
+                            <h3 class="font-bold text-sm text-slate-900">Chuyên Viên Digital Marketing & Thương Hiệu</h3>
+                            <p class="text-slate-500 mt-0.5">Toàn thời gian • Làm việc tại Hà Nội / TP. HCM</p>
+                        </div>
+                        <button onclick="alert('Vui lòng gửi CV về: hr@vixua.vn với tiêu đề [Ứng Tuyển Marketing]');" class="px-4 py-2 rounded-xl bg-vixua-burgundy text-white font-bold hover:opacity-90">Ứng Tuyển</button>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+
+    <!-- =========================================================================
+         PAGE VIEW 3: TRANG DANH MỤC TẤT CẢ SẢN PHẨM
+         ========================================================================= -->
+    <main id="view-products" class="page-view hidden py-10 bg-slate-50 min-h-screen">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center gap-2 text-xs font-semibold text-slate-500 mb-6">
+                <a href="javascript:void(0)" onclick="navigateTo('home')" class="hover:text-vixua-burgundy">Trang Chủ</a>
+                <span>/</span>
+                <span class="text-vixua-burgundy">Danh Mục Sản Phẩm</span>
+            </div>
+
+            <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-8 gap-4 border-b border-slate-200 pb-5">
+                <div>
+                    <h1 class="text-2xl sm:text-3xl font-black text-slate-900">Tất Cả Sản Phẩm Gia Vị Vị Xưa</h1>
+                    <p class="text-xs text-slate-500 mt-1">10 dòng gia vị bản địa đóng hũ thủy tinh 500g nắp kín kháng ẩm</p>
+                </div>
+                <input type="text" id="spice-search" oninput="searchSpices()" placeholder="🔍 Tìm kiếm gia vị..." class="px-5 py-2.5 rounded-full border border-slate-300 text-xs w-full md:w-72 bg-white">
+            </div>
+
+            <div class="flex flex-wrap gap-2 mb-8">
+                <button onclick="filterSpices('all')" class="spice-tab active px-5 py-2 rounded-full text-xs font-bold burgundy-gradient text-white shadow-sm">Tất Cả (10 Hũ)</button>
+                <button onclick="filterSpices('muoi')" class="spice-tab px-5 py-2 rounded-full text-xs font-bold bg-white text-slate-700 border border-slate-200 hover:bg-slate-100">Muối Chấm & Rang (3)</button>
+                <button onclick="filterSpices('tieu')" class="spice-tab px-5 py-2 rounded-full text-xs font-bold bg-white text-slate-700 border border-slate-200 hover:bg-slate-100">Dòng Tiêu Bản Địa (2)</button>
+                <button onclick="filterSpices('thao-moc')" class="spice-tab px-5 py-2 rounded-full text-xs font-bold bg-white text-slate-700 border border-slate-200 hover:bg-slate-100">Bột Củ & Thảo Mộc (5)</button>
+            </div>
+
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6" id="products-catalog-grid"></div>
+        </div>
+    </main>
+
+
+    <!-- =========================================================================
+         PAGE VIEW 4: TRANG CHI TIẾT SẢN PHẨM
+         ========================================================================= -->
+    <main id="view-product-detail" class="page-view hidden py-10 bg-white min-h-screen">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between text-xs font-semibold text-slate-500 mb-8 border-b border-slate-100 pb-4">
+                <div class="flex items-center gap-2">
+                    <a href="javascript:void(0)" onclick="navigateTo('home')" class="hover:text-vixua-burgundy">Trang Chủ</a>
+                    <span>/</span>
+                    <a href="javascript:void(0)" onclick="navigateTo('products')" class="hover:text-vixua-burgundy">Sản Phẩm</a>
+                    <span>/</span>
+                    <span id="detail-breadcrumb" class="text-vixua-burgundy font-bold">Chi Tiết</span>
+                </div>
+                <button onclick="navigateTo('products')" class="text-vixua-burgundy font-bold hover:underline flex items-center gap-1">
+                    <i class="fa-solid fa-arrow-left"></i> Quay lại danh mục
+                </button>
+            </div>
+
+            <div class="grid md:grid-cols-12 gap-10 items-start">
+                <div class="md:col-span-6 bg-slate-50 p-8 rounded-3xl border border-slate-200 flex items-center justify-center min-h-[420px]">
+                    <img id="detail-img" src="muoi-tieu-ham.png" class="max-h-[380px] w-auto object-contain filter drop-shadow-2xl">
+                </div>
+
+                <div class="md:col-span-6 space-y-5">
+                    <div>
+                        <span id="detail-badge" class="bg-vixua-burgundy text-white text-[10px] font-black px-3 py-1 rounded-full uppercase">Signature</span>
+                        <h1 id="detail-title" class="text-3xl font-black text-slate-900 mt-2">Muối Tiêu Hầm Sa Huỳnh</h1>
+                        <div class="flex items-center gap-2 mt-2 text-xs text-amber-500 font-bold">
+                            <div><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                            <span class="text-slate-500 font-normal">(4.9/5 • 820 lượt đánh giá)</span>
+                        </div>
+                    </div>
+
+                    <div class="bg-slate-50 p-4 rounded-2xl flex items-baseline gap-4 border border-slate-200">
+                        <span id="detail-price" class="text-3xl font-black text-vixua-burgundy">65.000đ</span>
+                        <span class="text-xs text-slate-500">/ Hũ 500g</span>
+                    </div>
+
+                    <p id="detail-desc" class="text-sm text-slate-600 leading-relaxed font-normal"></p>
+
+                    <div class="text-xs space-y-1.5 border-t border-b border-slate-100 py-3 text-slate-600">
+                        <p>📦 <strong>Dung tích:</strong> Hũ thủy tinh nắp đen 500g kháng ẩm mốc</p>
+                        <p>🌿 <strong>Tiêu chuẩn:</strong> 0% Mì chính E621 • 0% Phẩm màu • 0% Chất bảo quản</p>
+                        <p>⏳ <strong>Hạn sử dụng:</strong> 18 tháng kể từ ngày sản xuất</p>
+                    </div>
+
+                    <div class="flex items-center gap-4 pt-2">
+                        <div class="flex items-center border border-slate-300 rounded-xl bg-slate-50">
+                            <button onclick="adjustDetailQty(-1)" class="w-10 h-10 flex items-center justify-center font-bold text-slate-600 hover:text-black">-</button>
+                            <span id="detail-qty" class="w-10 text-center font-bold text-sm">1</span>
+                            <button onclick="adjustDetailQty(1)" class="w-10 h-10 flex items-center justify-center font-bold text-slate-600 hover:text-black">+</button>
+                        </div>
+                        <button onclick="addCurrentDetailToCart()" class="flex-1 burgundy-gradient text-white font-bold py-3.5 rounded-xl shadow-lg hover:opacity-95 transition-all text-xs uppercase tracking-wider flex items-center justify-center gap-2">
+                            <i class="fa-solid fa-cart-shopping text-vixua-gold"></i>
+                            <span>Thêm Vào Giỏ Hàng</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <!-- =========================================================================
+         PAGE VIEW 5: TRANG COMBO 3 LỌ BẾP ẤM
+         ========================================================================= -->
+    <main id="view-combo" class="page-view hidden py-10 bg-vixua-cream min-h-screen">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between text-xs font-semibold text-slate-500 mb-8 border-b border-slate-200 pb-4">
+                <div class="flex items-center gap-2">
+                    <a href="javascript:void(0)" onclick="navigateTo('home')" class="hover:text-vixua-burgundy">Trang Chủ</a>
+                    <span>/</span>
+                    <span class="text-vixua-burgundy font-bold">Hộp Quà Combo 3 Lọ</span>
+                </div>
+                <button onclick="navigateTo('home')" class="text-vixua-burgundy font-bold hover:underline flex items-center gap-1">
+                    <i class="fa-solid fa-arrow-left"></i> Quay lại
+                </button>
+            </div>
+
+            <div class="bg-white rounded-3xl p-8 sm:p-12 border border-slate-200 shadow-xl grid md:grid-cols-12 gap-10 items-center">
+                <div class="md:col-span-7 bg-slate-50 p-6 rounded-2xl border border-slate-200 flex items-center justify-center min-h-[380px]">
+                    <img src="combo3-lo.png" alt="Combo 3 Lọ Vị Xưa" class="max-h-96 w-auto object-contain filter drop-shadow-2xl">
+                </div>
+
+                <div class="md:col-span-5 space-y-4">
+                    <span class="bg-vixua-burgundy text-white text-[10px] font-black px-3.5 py-1.5 rounded-full uppercase">Trọn Bộ 3 Lọ Thủy Tinh 500g</span>
+                    <h1 class="text-3xl font-black text-slate-900 leading-tight">Combo 3 Hũ Bếp Ấm (500g x 3)</h1>
+                    <p class="text-xs sm:text-sm text-slate-600">Món quà tặng tinh tế và ấm cúng nhất cho mỗi dịp sum vầy mâm cơm gia đình.</p>
+                    
+                    <div class="space-y-2 text-xs text-slate-700 bg-slate-50 p-4 rounded-xl border border-slate-200 font-medium">
+                        <p><i class="fa-solid fa-check text-green-700 mr-2"></i><strong>01 Hũ Muối Tiêu Hầm Sa Huỳnh (500g)</strong></p>
+                        <p><i class="fa-solid fa-check text-green-700 mr-2"></i><strong>01 Hũ Bột Quế Tự Nhiên Trà Bồng (500g)</strong></p>
+                        <p><i class="fa-solid fa-check text-green-700 mr-2"></i><strong>01 Hũ Muối Ớt Tự Nhiên Cay Thơm (500g)</strong></p>
+                        <p class="text-vixua-gold font-bold pt-1 border-t border-slate-200"><i class="fa-solid fa-gift mr-2"></i>Tặng kèm 01 muỗng gỗ tự nhiên khắc logo Vị Xưa</p>
+                    </div>
+
+                    <div class="pt-2 flex items-baseline gap-3">
+                        <span class="font-black text-3xl text-vixua-burgundy">195.000đ</span>
+                        <span class="text-xs text-slate-500">/ Trọn bộ hộp quà</span>
+                    </div>
+
+                    <button onclick="addToCart('Combo 3 Lọ Bếp Ấm (500g x 3)', 195000, 'combo3-lo.png')" class="w-full burgundy-gradient text-white font-bold py-4 rounded-xl shadow-md hover:opacity-95 text-xs uppercase tracking-wider flex items-center justify-center gap-2">
+                        <i class="fa-solid fa-cart-shopping text-vixua-gold"></i>
+                        <span>Đặt Mua Combo 3 Lọ Ngay</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <!-- =========================================================================
+         PAGE VIEW 6: TRANG CHUYỆN VÀO BẾP
+         ========================================================================= -->
+    <main id="view-recipes" class="page-view hidden py-10 bg-slate-50 min-h-screen">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center gap-2 text-xs font-semibold text-slate-500 mb-6">
+                <a href="javascript:void(0)" onclick="navigateTo('home')" class="hover:text-vixua-burgundy">Trang Chủ</a>
+                <span>/</span>
+                <span class="text-vixua-burgundy">Chuyện Vào Bếp</span>
+            </div>
+
+            <div class="mb-10 text-center max-w-2xl mx-auto">
+                <h1 class="text-3xl font-black text-slate-900">Chuyện Vào Bếp Cùng Vị Xưa</h1>
+                <p class="text-xs text-slate-500 mt-2">Bí quyết nêm nếm gia vị truyền thống cho những bữa cơm gia đình thơm ngon, tròn vị nhất.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white rounded-3xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition-all">
+                    <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=600&q=80" class="w-full h-52 object-cover">
+                    <div class="p-6 space-y-3">
+                        <div class="flex items-center gap-3 text-[11px] text-slate-500 font-semibold">
+                            <span><i class="fa-regular fa-clock text-vixua-gold mr-1"></i>25 phút</span>
+                            <span>•</span>
+                            <span>3-4 người</span>
+                        </div>
+                        <h3 class="font-bold text-lg text-slate-900">Gà Đồi Luộc Da Giòn Chấm Muối Tiêu Hầm</h3>
+                        <p class="text-xs text-slate-600 leading-relaxed">Pha một nhúm muối tiêu hầm Sa Huỳnh cùng nửa quả chanh tươi và ớt xiêm đập dập, chấm thịt gà giòn ngọt xuất sắc.</p>
+                        <button onclick="openProductDetail(1)" class="text-xs font-bold text-vixua-burgundy hover:underline">
+                            Xem hũ Muối Tiêu Hầm dùng cho món này ➔
+                        </button>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-3xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition-all">
+                    <img src="https://images.unsplash.com/photo-1534422298391-e4f8c172dddb?auto=format&fit=crop&w=600&q=80" class="w-full h-52 object-cover">
+                    <div class="p-6 space-y-3">
+                        <div class="flex items-center gap-3 text-[11px] text-slate-500 font-semibold">
+                            <span><i class="fa-regular fa-clock text-vixua-gold mr-1"></i>15 phút</span>
+                            <span>•</span>
+                            <span>2-3 người</span>
+                        </div>
+                        <h3 class="font-bold text-lg text-slate-900">Tôm Hấp Nước Dừa Chấm Muối Ớt Cay Nồng</h3>
+                        <p class="text-xs text-slate-600 leading-relaxed">Muối ớt cay thơm đượm vị khói bếp làm bừng sáng vị ngọt thanh từ thịt tôm càng tươi rói.</p>
+                        <button onclick="openProductDetail(2)" class="text-xs font-bold text-vixua-burgundy hover:underline">
+                            Xem hũ Muối Ớt dùng cho món này ➔
+                        </button>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-3xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition-all">
+                    <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=600&q=80" class="w-full h-52 object-cover">
+                    <div class="p-6 space-y-3">
+                        <div class="flex items-center gap-3 text-[11px] text-slate-500 font-semibold">
+                            <span><i class="fa-regular fa-clock text-vixua-gold mr-1"></i>40 phút</span>
+                            <span>•</span>
+                            <span>3-4 người</span>
+                        </div>
+                        <h3 class="font-bold text-lg text-slate-900">Sườn Non Kho Tiêu & Bột Quế Trà Bồng</h3>
+                        <p class="text-xs text-slate-600 leading-relaxed">Mẹo ướp thịt sườn cùng bột quế cổ thụ và tiêu sọ Tiên Phước cho nước kho lên màu cánh gián thơm lừng.</p>
+                        <button onclick="openProductDetail(7)" class="text-xs font-bold text-vixua-burgundy hover:underline">
+                            Xem hũ Bột Quế dùng cho món này ➔
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <!-- =========================================================================
+         PAGE VIEW 7: TRANG ĐIỂM BÁN SIÊU THỊ
+         ========================================================================= -->
+    <main id="view-stores" class="page-view hidden py-10 bg-slate-50 min-h-screen">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex items-center gap-2 text-xs font-semibold text-slate-500 mb-6">
+                <a href="javascript:void(0)" onclick="navigateTo('home')" class="hover:text-vixua-burgundy">Trang Chủ</a>
+                <span>/</span>
+                <span class="text-vixua-burgundy">Hệ Thống Phân Phối</span>
+            </div>
+
+            <div class="text-center max-w-2xl mx-auto mb-10">
+                <h1 class="text-3xl font-black text-slate-900">Tìm Điểm Bán Siêu Thị Gần Nhất</h1>
+                <p class="text-xs text-slate-500 mt-2">Sản phẩm Vị Xưa hiện đã có mặt tại hơn 500 siêu thị và 50.000 điểm bán lẻ trên toàn quốc.</p>
+            </div>
+
+            <div class="bg-white p-8 rounded-3xl border border-slate-200 shadow-md">
+                <div class="grid md:grid-cols-3 gap-6">
+                    <div class="p-5 rounded-2xl bg-slate-50 border border-slate-200">
+                        <h3 class="font-bold text-base text-vixua-burgundy mb-2">Hà Nội & Miền Bắc</h3>
+                        <p class="text-xs text-slate-600 leading-relaxed">• Hệ thống siêu thị WinMart / WinMart+<br>• Đại siêu thị GO! Thăng Long<br>• Chuỗi cửa hàng tiện lợi Circle K</p>
+                    </div>
+                    <div class="p-5 rounded-2xl bg-slate-50 border border-slate-200">
+                        <h3 class="font-bold text-base text-vixua-burgundy mb-2">TP. Hồ Chí Minh & Miền Nam</h3>
+                        <p class="text-xs text-slate-600 leading-relaxed">• Hệ thống Co.opmart & Co.opXtra<br>• Hệ thống siêu thị Bách Hóa XANH<br>• Siêu thị LOTTE Mart Nam Sài Gòn</p>
+                    </div>
                     <div class="p-5 rounded-2xl bg-slate-50 border border-slate-200">
                         <h3 class="font-bold text-base text-vixua-burgundy mb-2">Mua Hàng Online Chính Hãng</h3>
                         <p class="text-xs text-slate-600 leading-relaxed">• Gian hàng Shopee Mall: <em>Vị Xưa Official</em><br>• Gian hàng TikTok Shop: <em>@vixuavn</em><br>• Giao hàng hỏa tốc trong 2 giờ</p>
@@ -14,7 +859,7 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid md:grid-cols-4 gap-10 pb-12 border-b border-white/10">
                 <div class="space-y-3">
-                    <img src="logo.png" class="h-14 bg-white p-2 rounded-xl" onerror="this.style.display='none'">
+                    <img src="logo.png" class="h-14 bg-white p-2 rounded-xl">
                     <p class="text-xs text-white/80 font-bold uppercase">CÔNG TY CỔ PHẦN GIA VỊ VỊ XƯA</p>
                     <p class="text-xs text-white/70">Hành trình lưu giữ và nâng tầm gia vị đặc sản bản địa Việt Nam.</p>
                 </div>
@@ -27,7 +872,7 @@
                     <p><a href="javascript:void(0)" onclick="navigateTo('about')" class="hover:text-vixua-gold">Về Vị Xưa</a></p>
                 </div>
                 <div class="space-y-2 text-xs text-white/80">
-                    <h4 class="font-bold text-sm text-vixua-gold uppercase mb-3">Liên Hệ &amp; Phân Phối</h4>
+                    <h4 class="font-bold text-sm text-vixua-gold uppercase mb-3">Liên Hệ & Phân Phối</h4>
                     <p><i class="fa-solid fa-location-dot text-vixua-gold mr-2"></i>Trụ sở: Q.1, TP. Hồ Chí Minh</p>
                     <p><i class="fa-solid fa-phone text-vixua-gold mr-2"></i>Hotline: 1900 1234</p>
                     <p><i class="fa-solid fa-envelope text-vixua-gold mr-2"></i>Email: contact@vixua.vn</p>
@@ -49,43 +894,30 @@
     </footer>
 
 
-    <!-- ================= LIGHTBOX PHÓNG TO ẢNH ================= -->
-    <div id="image-lightbox" class="fixed inset-0 z-50 hidden bg-black/90 backdrop-blur-sm flex items-center justify-center p-4" onclick="if(event.target === this) closeLightbox()">
-        <button type="button" onclick="closeLightbox()" class="absolute top-5 right-5 w-10 h-10 rounded-full bg-white/10 hover:bg-white/25 text-white flex items-center justify-center transition-colors">
-            <i class="fa-solid fa-xmark text-lg"></i>
-        </button>
-
-        <button type="button" onclick="stepLightbox(-1)" class="absolute left-4 sm:left-8 w-11 h-11 rounded-full bg-white/15 hover:bg-vixua-burgundy text-white flex items-center justify-center transition-colors">
-            <i class="fa-solid fa-chevron-left"></i>
-        </button>
-
-        <img id="lightbox-img" src="" alt="Phóng to sản phẩm" class="max-h-[85vh] max-w-[85vw] object-contain rounded-2xl shadow-2xl bg-white/5">
-
-        <button type="button" onclick="stepLightbox(1)" class="absolute right-4 sm:right-8 w-11 h-11 rounded-full bg-white/15 hover:bg-vixua-burgundy text-white flex items-center justify-center transition-colors">
-            <i class="fa-solid fa-chevron-right"></i>
-        </button>
-    </div>
-
-
-    <!-- ================= MODAL ĐĂNG NHẬP / ĐĂNG KÝ ================= -->
+    <!-- ================= MODAL ĐĂNG NHẬP / ĐĂNG KÝ (GOOGLE, FACEBOOK, APPLE) ================= -->
     <div id="auth-modal" class="fixed inset-0 z-50 hidden bg-black/60 backdrop-blur-sm flex items-center justify-center p-4">
         <div class="bg-white rounded-3xl max-w-md w-full p-6 sm:p-8 relative shadow-2xl border border-slate-200">
+            <!-- Nút tắt -->
             <button onclick="closeAuthModal()" class="absolute top-5 right-5 text-slate-400 hover:text-black">
                 <i class="fa-solid fa-xmark text-lg"></i>
             </button>
 
+            <!-- Logo -->
             <div class="text-center mb-6">
                 <img src="logo.png" class="h-12 w-auto mx-auto mb-2" onerror="this.onerror=null; this.parentElement.innerHTML='<span class=\'font-black text-xl text-vixua-burgundy\'>VỊ XƯA</span>';">
                 <h3 class="text-xl font-black text-vixua-burgundy" id="auth-modal-title">Chào Mừng Đến Với Vị Xưa</h3>
-                <p class="text-xs text-slate-500 mt-1">Đăng nhập để nhận quyền lợi thành viên &amp; theo dõi đơn hàng</p>
+                <p class="text-xs text-slate-500 mt-1">Đăng nhập để nhận quyền lợi thành viên & theo dõi đơn hàng</p>
             </div>
 
+            <!-- Tab Switcher: Đăng Nhập / Đăng Ký -->
             <div class="flex rounded-xl bg-slate-100 p-1 mb-6 text-xs font-bold">
                 <button onclick="switchAuthTab('login')" id="tab-btn-login" class="flex-1 py-2 rounded-lg bg-white text-vixua-burgundy shadow-sm transition-all">Đăng Nhập</button>
                 <button onclick="switchAuthTab('register')" id="tab-btn-register" class="flex-1 py-2 rounded-lg text-slate-600 hover:text-black transition-all">Đăng Ký</button>
             </div>
 
+            <!-- Nút Mạng Xã Hội (Google, Facebook, Apple) -->
             <div class="space-y-2.5 mb-5">
+                <!-- Đăng nhập Google -->
                 <button onclick="handleSocialAuth('Google')" class="w-full py-2.5 px-4 rounded-xl border border-slate-300 hover:bg-slate-50 text-slate-700 text-xs font-bold flex items-center justify-center gap-3 transition-all shadow-sm">
                     <svg class="w-4 h-4" viewBox="0 0 24 24">
                         <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
@@ -96,22 +928,26 @@
                     <span>Tiếp tục với Google</span>
                 </button>
 
+                <!-- Đăng nhập Facebook -->
                 <button onclick="handleSocialAuth('Facebook')" class="w-full py-2.5 px-4 rounded-xl bg-[#1877F2] hover:bg-[#166fe5] text-white text-xs font-bold flex items-center justify-center gap-3 transition-all shadow-sm">
                     <i class="fa-brands fa-facebook-f text-sm"></i>
                     <span>Tiếp tục với Facebook</span>
                 </button>
 
+                <!-- Đăng nhập Apple -->
                 <button onclick="handleSocialAuth('Apple')" class="w-full py-2.5 px-4 rounded-xl bg-black hover:bg-neutral-800 text-white text-xs font-bold flex items-center justify-center gap-3 transition-all shadow-sm">
                     <i class="fa-brands fa-apple text-sm"></i>
                     <span>Tiếp tục với Apple</span>
                 </button>
             </div>
 
+            <!-- Đường kẻ phân cách -->
             <div class="relative flex items-center justify-center mb-5">
                 <div class="border-t border-slate-200 w-full"></div>
                 <span class="bg-white px-3 text-[10px] font-bold uppercase tracking-wider text-slate-400 absolute">Hoặc Email / SĐT</span>
             </div>
 
+            <!-- FORM ĐĂNG NHẬP -->
             <form id="form-login" onsubmit="handleEmailAuth(event, 'login')" class="space-y-3.5">
                 <div>
                     <label class="block text-[11px] font-bold text-slate-700 mb-1">Email hoặc Số điện thoại</label>
@@ -129,6 +965,7 @@
                 </button>
             </form>
 
+            <!-- FORM ĐĂNG KÝ (ẨN MẶC ĐỊNH) -->
             <form id="form-register" onsubmit="handleEmailAuth(event, 'register')" class="space-y-3 hidden">
                 <div>
                     <label class="block text-[11px] font-bold text-slate-700 mb-1">Họ và tên</label>
@@ -173,7 +1010,7 @@
                     <span class="text-slate-600">Tổng thanh toán:</span>
                     <span id="cart-total" class="font-black text-xl text-vixua-burgundy">0đ</span>
                 </div>
-                <button onclick="checkoutCart()" class="w-full burgundy-gradient text-white font-bold py-3.5 rounded-xl shadow hover:opacity-95">
+                <button onclick="alert('Đơn hàng của bạn đã được ghi nhận thành công!')" class="w-full burgundy-gradient text-white font-bold py-3.5 rounded-xl shadow hover:opacity-95">
                     Tiến Hành Đặt Hàng
                 </button>
             </div>
@@ -183,167 +1020,20 @@
 
     <!-- ================= JAVASCRIPT ================= -->
     <script>
-        /*
-         * THÊM / SỬA ẢNH SẢN PHẨM TẠI ĐÂY:
-         * Mỗi sản phẩm có mảng `images: [...]` chứa nhiều ảnh (góc chụp khác, ảnh món ăn, mặt sau hũ...).
-         */
         const SPICES_DATA = [
-            {
-                id: 1,
-                name: "Muối Tiêu Hầm Sa Huỳnh",
-                cat: "muoi",
-                price: 65000,
-                badge: "Signature",
-                img: "muoi-tieu-ham.png",
-                images: [
-                    "muoi-tieu-ham.png",
-                    "https://images.unsplash.com/photo-1596040033229-a9821ebd058d?auto=format&fit=crop&w=800&q=80",
-                    "https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80",
-                    "https://images.unsplash.com/photo-1506368249639-73a05d6f6488?auto=format&fit=crop&w=800&q=80"
-                ],
-                desc: "Hũ thủy tinh 500g tiêu đen Tiên Phước đập dập thơm cay nồng và muối biển Sa Huỳnh nung lu sành 24h."
-            },
-            {
-                id: 2,
-                name: "Hũ Muối Ớt Cay Thơm",
-                cat: "muoi",
-                price: 70000,
-                badge: "Cay Thơm",
-                img: "muoi-ot.png",
-                images: [
-                    "muoi-ot.png",
-                    "https://images.unsplash.com/photo-1583119022894-919a68a3d0e3?auto=format&fit=crop&w=800&q=80",
-                    "https://images.unsplash.com/photo-1534422298391-e4f8c172dddb?auto=format&fit=crop&w=800&q=80",
-                    "https://images.unsplash.com/photo-1596040033229-a9821ebd058d?auto=format&fit=crop&w=800&q=80"
-                ],
-                desc: "Hũ thủy tinh 500g muối ớt nướng củi cay nồng nàn kích thích vị giác."
-            },
-            {
-                id: 3,
-                name: "Hũ Muối Lạc Rang Bếp Quê",
-                cat: "muoi",
-                price: 55000,
-                badge: "Bùi Béo",
-                img: "muoi-lac-rang.png",
-                images: [
-                    "muoi-lac-rang.png",
-                    "https://images.unsplash.com/photo-1567892737950-30c4db37cd89?auto=format&fit=crop&w=800&q=80",
-                    "https://images.unsplash.com/photo-1506368249639-73a05d6f6488?auto=format&fit=crop&w=800&q=80"
-                ],
-                desc: "Hũ 500g đậu phộng sẻ rang vàng giòn rụm giã dập cùng muối hầm đưa cơm."
-            },
-            {
-                id: 4,
-                name: "Hũ Tiêu Sọ Rừng Tiên Phước Xay",
-                cat: "tieu",
-                price: 125000,
-                badge: "Thượng Hạng",
-                img: "tieu-so.png",
-                images: [
-                    "tieu-so.png",
-                    "https://images.unsplash.com/photo-1599909533681-74fcd70c0d39?auto=format&fit=crop&w=800&q=80",
-                    "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=800&q=80"
-                ],
-                desc: "Hũ 500g tiêu sọ chà vỏ tự nhiên, tinh dầu cay ấm sâu lắng, không gắt cổ."
-            },
-            {
-                id: 5,
-                name: "Hũ Tiêu Chín Đỏ Đảo Phú Quốc",
-                cat: "tieu",
-                price: 145000,
-                badge: "Quý Hiếm",
-                img: "tieu-chin.png",
-                images: [
-                    "tieu-chin.png",
-                    "https://images.unsplash.com/photo-1596040033229-a9821ebd058d?auto=format&fit=crop&w=800&q=80",
-                    "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=800&q=80"
-                ],
-                desc: "Hũ 500g hạt tiêu chín cây thu hái từng chùm giàu tinh dầu thơm ngọt nức mũi."
-            },
-            {
-                id: 6,
-                name: "Hũ Bột Ớt Cay Nguyên Chất",
-                cat: "thao-moc",
-                price: 65000,
-                badge: "Cay Nồng",
-                img: "bot-ot.png",
-                images: [
-                    "bot-ot.png",
-                    "https://images.unsplash.com/photo-1583119022894-919a68a3d0e3?auto=format&fit=crop&w=800&q=80",
-                    "https://images.unsplash.com/photo-1596040033229-a9821ebd058d?auto=format&fit=crop&w=800&q=80"
-                ],
-                desc: "Hũ 500g ớt sấy lạnh xay mịn, màu đỏ tự nhiên 100%, không pha trộn phẩm màu."
-            },
-            {
-                id: 7,
-                name: "Hũ Bột Quế Rừng Trà Bồng",
-                cat: "thao-moc",
-                price: 95000,
-                badge: "Nguyên Chất",
-                img: "bot-que.png",
-                images: [
-                    "bot-que.png",
-                    "https://images.unsplash.com/photo-1596040033229-a9821ebd058d?auto=format&fit=crop&w=800&q=80",
-                    "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=800&q=80"
-                ],
-                desc: "Hũ 500g vỏ quế cổ thụ Trà Bồng xay mịn, thơm ngọt thanh ấm, chuyên ướp kho & nướng."
-            },
-            {
-                id: 8,
-                name: "Hũ Bột Nghệ Nếp Rừng Tây Bắc",
-                cat: "thao-moc",
-                price: 85000,
-                badge: "Giàu Curcumin",
-                img: "bot-nghe.png",
-                images: [
-                    "bot-nghe.png",
-                    "https://images.unsplash.com/photo-1615485500704-8e990f9900f7?auto=format&fit=crop&w=800&q=80",
-                    "https://images.unsplash.com/photo-1506368249639-73a05d6f6488?auto=format&fit=crop&w=800&q=80"
-                ],
-                desc: "Hũ 500g bột nghệ nếp đỏ ruột vàng cam sấy lạnh, thơm nhẹ không hăng nồng."
-            },
-            {
-                id: 9,
-                name: "Hũ Bột Gừng Gió Đồi Cao",
-                cat: "thao-moc",
-                price: 75000,
-                badge: "Ấm Tỳ Vị",
-                img: "bot-gung.png",
-                images: [
-                    "bot-gung.png",
-                    "https://images.unsplash.com/photo-1615485290382-441e4d049cb5?auto=format&fit=crop&w=800&q=80",
-                    "https://images.unsplash.com/photo-1506368249639-73a05d6f6488?auto=format&fit=crop&w=800&q=80"
-                ],
-                desc: "Hũ 500g bột gừng sẻ vàng cay ấm, khử tanh nấu canh súp cực kỳ thơm ngon."
-            },
-            {
-                id: 10,
-                name: "Hũ Bột Hành Cổ Truyền",
-                cat: "thao-moc",
-                price: 80000,
-                badge: "Đặc Sản",
-                img: "bot-hanh.png",
-                images: [
-                    "bot-hanh.png",
-                    "https://images.unsplash.com/photo-1587049352846-4a222e784d38?auto=format&fit=crop&w=800&q=80",
-                    "https://images.unsplash.com/photo-1506368249639-73a05d6f6488?auto=format&fit=crop&w=800&q=80"
-                ],
-                desc: "Hũ 500g hành sấy thăng hoa thơm nức, chuyên nêm ướp kho cá, xào thịt dậy vị quê."
-            }
+            { id: 1, name: "Muối Tiêu Hầm Sa Huỳnh", cat: "muoi", price: 65000, badge: "Signature", img: "muoi-tieu-ham.png", desc: "Hũ thủy tinh 500g tiêu đen Tiên Phước đập dập thơm cay nồng và muối biển Sa Huỳnh nung lu sành 24h." },
+            { id: 2, name: "Hũ Muối Ớt Cay Thơm", cat: "muoi", price: 70000, badge: "Cay Thơm", img: "muoi-ot.png", desc: "Hũ thủy tinh 500g muối ớt nướng củi cay nồng nàn kích thích vị giác." },
+            { id: 3, name: "Hũ Muối Lạc Rang Bếp Quê", cat: "muoi", price: 55000, badge: "Bùi Béo", img: "muoi-lac-rang.png", desc: "Hũ 500g đậu phộng sẻ rang vàng giòn rụm giã dập cùng muối hầm đưa cơm." },
+            { id: 4, name: "Hũ Tiêu Sọ Rừng Tiên Phước Xay", cat: "tieu", price: 125000, badge: "Thượng Hạng", img: "tieu-so.png", desc: "Hũ 500g tiêu sọ chà vỏ tự nhiên, tinh dầu cay ấm sâu lắng, không gắt cổ." },
+            { id: 5, name: "Hũ Tiêu Chín Đỏ Đảo Phú Quốc", cat: "tieu", price: 145000, badge: "Quý Hiếm", img: "tieu-chin.png", desc: "Hũ 500g hạt tiêu chín cây thu hái từng chùm giàu tinh dầu thơm ngọt nức mũi." },
+            { id: 6, name: "Hũ Bột Ớt Cay Nguyên Chất", cat: "thao-moc", price: 65000, badge: "Cay Nồng", img: "bot-ot.png", desc: "Hũ 500g ớt sấy lạnh xay mịn, màu đỏ tự nhiên 100%, không pha trộn phẩm màu." },
+            { id: 7, name: "Hũ Bột Quế Rừng Trà Bồng", cat: "thao-moc", price: 95000, badge: "Nguyên Chất", img: "bot-que.png", desc: "Hũ 500g vỏ quế cổ thụ Trà Bồng xay mịn, thơm ngọt thanh ấm, chuyên ướp kho & nướng." },
+            { id: 8, name: "Hũ Bột Nghệ Nếp Rừng Tây Bắc", cat: "thao-moc", price: 85000, badge: "Giàu Curcumin", img: "bot-nghe.png", desc: "Hũ 500g bột nghệ nếp đỏ ruột vàng cam sấy lạnh, thơm nhẹ không hăng nồng." },
+            { id: 9, name: "Hũ Bột Gừng Gió Đồi Cao", cat: "thao-moc", price: 75000, badge: "Ấm Tỳ Vị", img: "bot-gung.png", desc: "Hũ 500g bột gừng sẻ vàng cay ấm, khử tanh nấu canh súp cực kỳ thơm ngon." },
+            { id: 10, name: "Hũ Bột Hành Cổ Truyền", cat: "thao-moc", price: 80000, badge: "Đặc Sản", img: "bot-hanh.png", desc: "Hũ 500g hành sấy thăng hoa thơm nức, chuyên nêm ướp kho cá, xào thịt dậy vị quê." }
         ];
 
-        const COMBO_IMAGES = [
-            "combo3-lo.png",
-            "muoi-tieu-ham.png",
-            "bot-que.png",
-            "muoi-ot.png"
-        ];
-
-        /* ================= ĐIỀU HƯỚNG & MOBILE MENU ================= */
-        function toggleMobileMenu() {
-            document.getElementById('mobile-menu').classList.toggle('hidden');
-        }
-
+        /* ================= BỘ ĐIỀU HƯỚNG CHUYỂN TRANG (ROUTER) ================= */
         function navigateTo(pageView) {
             document.querySelectorAll('.page-view').forEach(view => {
                 view.classList.add('hidden');
@@ -365,6 +1055,7 @@
             window.scrollTo({ top: 0, behavior: 'smooth' });
         }
 
+        /* Chuyển đến phân đoạn cụ thể trong trang About */
         function navigateToAboutSection(sectionId) {
             navigateTo('about');
             setTimeout(() => {
@@ -375,142 +1066,26 @@
             }, 100);
         }
 
-        /* ================= GALLERY CHI TIẾT SẢN PHẨM ================= */
+        /* ================= CHI TIẾT SẢN PHẨM ================= */
         let currentDetailItem = null;
-        let currentImageList = [];
-        let currentImageIndex = 0;
         let detailQty = 1;
-        let lightboxMode = 'detail';
 
         function openProductDetail(id) {
             const item = SPICES_DATA.find(i => i.id === id);
             if (!item) return;
 
             currentDetailItem = item;
-            currentImageList = (item.images && item.images.length > 0) ? item.images : [item.img];
-            currentImageIndex = 0;
             detailQty = 1;
 
             document.getElementById('detail-breadcrumb').innerText = item.name;
             document.getElementById('detail-title').innerText = item.name;
+            document.getElementById('detail-img').src = item.img;
             document.getElementById('detail-price').innerText = item.price.toLocaleString('vi-VN') + 'đ';
             document.getElementById('detail-desc').innerText = item.desc;
             document.getElementById('detail-badge').innerText = item.badge;
             document.getElementById('detail-qty').innerText = "1";
 
-            renderDetailGallery();
             navigateTo('product-detail');
-        }
-
-        function renderDetailGallery() {
-            const mainImg = document.getElementById('detail-img');
-            const counter = document.getElementById('detail-img-counter');
-            const thumbContainer = document.getElementById('detail-thumbnails');
-
-            const activeSrc = currentImageList[currentImageIndex];
-            mainImg.src = activeSrc;
-            mainImg.alt = `${currentDetailItem.name} - Ảnh ${currentImageIndex + 1}`;
-            if (lightboxMode === 'detail') {
-                document.getElementById('lightbox-img').src = activeSrc;
-            }
-
-            counter.innerText = `${currentImageIndex + 1} / ${currentImageList.length}`;
-
-            thumbContainer.innerHTML = currentImageList.map((src, idx) => {
-                const isActive = idx === currentImageIndex;
-                return `
-                    <button type="button"
-                        onclick="selectDetailImage(${idx})"
-                        id="detail-thumb-${idx}"
-                        class="w-16 h-16 sm:w-20 sm:h-20 rounded-2xl p-1.5 shrink-0 border-2 transition-all overflow-hidden flex items-center justify-center ${
-                            isActive
-                            ? 'bg-vixua-kraft border-vixua-burgundy shadow-sm scale-[1.03]'
-                            : 'bg-white border-slate-200 hover:border-vixua-gold opacity-80 hover:opacity-100'
-                        }">
-                        <img src="${src}" alt="Ảnh nhỏ ${idx + 1}" class="w-full h-full object-contain rounded-xl">
-                    </button>
-                `;
-            }).join('');
-
-            const activeThumb = document.getElementById(`detail-thumb-${currentImageIndex}`);
-            if (activeThumb) {
-                activeThumb.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'nearest' });
-            }
-        }
-
-        function selectDetailImage(index) {
-            if (index < 0 || index >= currentImageList.length) return;
-            currentImageIndex = index;
-            renderDetailGallery();
-        }
-
-        function stepDetailImage(delta) {
-            if (currentImageList.length <= 1) return;
-            currentImageIndex = (currentImageIndex + delta + currentImageList.length) % currentImageList.length;
-            renderDetailGallery();
-        }
-
-        /* ================= GALLERY COMBO 3 LỌ ================= */
-        let comboImageIndex = 0;
-
-        function renderComboGallery() {
-            const mainImg = document.getElementById('combo-main-img');
-            const counter = document.getElementById('combo-img-counter');
-            const thumbContainer = document.getElementById('combo-thumbnails');
-            if (!mainImg || !thumbContainer) return;
-
-            const activeSrc = COMBO_IMAGES[comboImageIndex];
-            mainImg.src = activeSrc;
-            counter.innerText = `${comboImageIndex + 1} / ${COMBO_IMAGES.length}`;
-            if (lightboxMode === 'combo') {
-                document.getElementById('lightbox-img').src = activeSrc;
-            }
-
-            thumbContainer.innerHTML = COMBO_IMAGES.map((src, idx) => {
-                const isActive = idx === comboImageIndex;
-                return `
-                    <button type="button"
-                        onclick="selectComboImage(${idx})"
-                        class="w-16 h-16 sm:w-18 sm:h-18 rounded-2xl p-1.5 shrink-0 border-2 transition-all overflow-hidden flex items-center justify-center ${
-                            isActive
-                            ? 'bg-vixua-kraft border-vixua-burgundy shadow-sm'
-                            : 'bg-white border-slate-200 hover:border-vixua-gold opacity-80 hover:opacity-100'
-                        }">
-                        <img src="${src}" alt="Combo ảnh ${idx + 1}" class="w-full h-full object-contain rounded-xl">
-                    </button>
-                `;
-            }).join('');
-        }
-
-        function selectComboImage(idx) {
-            comboImageIndex = idx;
-            renderComboGallery();
-        }
-
-        function stepComboImage(delta) {
-            comboImageIndex = (comboImageIndex + delta + COMBO_IMAGES.length) % COMBO_IMAGES.length;
-            renderComboGallery();
-        }
-
-        /* ================= LIGHTBOX PHÓNG TO ================= */
-        function openLightbox(mode) {
-            lightboxMode = mode || 'detail';
-            const lightbox = document.getElementById('image-lightbox');
-            const img = document.getElementById('lightbox-img');
-            img.src = lightboxMode === 'combo' ? COMBO_IMAGES[comboImageIndex] : currentImageList[currentImageIndex];
-            lightbox.classList.remove('hidden');
-        }
-
-        function stepLightbox(delta) {
-            if (lightboxMode === 'combo') {
-                stepComboImage(delta);
-            } else {
-                stepDetailImage(delta);
-            }
-        }
-
-        function closeLightbox() {
-            document.getElementById('image-lightbox').classList.add('hidden');
         }
 
         function adjustDetailQty(delta) {
@@ -528,7 +1103,7 @@
             toggleCartDrawer();
         }
 
-        /* ================= RENDER DANH MỤC & TRANG CHỦ ================= */
+        /* ================= RENDER SẢN PHẨM ================= */
         let currentCat = 'all';
         let currentSearch = '';
 
@@ -539,30 +1114,17 @@
 
             const filtered = SPICES_DATA.filter(item => {
                 const matchCat = (currentCat === 'all' || item.cat === currentCat);
-                const matchSearch = item.name.toLowerCase().includes(currentSearch.toLowerCase()) ||
+                const matchSearch = item.name.toLowerCase().includes(currentSearch.toLowerCase()) || 
                                     item.desc.toLowerCase().includes(currentSearch.toLowerCase());
                 return matchCat && matchSearch;
             });
 
-            if (filtered.length === 0) {
-                catalogGrid.innerHTML = `
-                    <div class="col-span-full text-center py-16 bg-white rounded-3xl border border-slate-200">
-                        <i class="fa-solid fa-magnifying-glass text-3xl text-slate-300 mb-3 block"></i>
-                        <p class="text-sm font-bold text-slate-700">Không tìm thấy sản phẩm phù hợp.</p>
-                        <button onclick="document.getElementById('spice-search').value=''; currentSearch=''; filterSpices('all');" class="mt-3 text-xs font-bold text-vixua-burgundy hover:underline">Xem lại tất cả sản phẩm</button>
-                    </div>
-                `;
-                return;
-            }
-
             filtered.forEach(item => {
-                const imgCount = (item.images && item.images.length) ? item.images.length : 1;
                 const card = document.createElement('div');
                 card.className = "bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group";
                 card.innerHTML = `
                     <div class="p-6 bg-slate-50 relative aspect-[4/3] flex items-center justify-center overflow-hidden cursor-pointer" onclick="openProductDetail(${item.id})">
                         <span class="absolute top-2.5 left-2.5 bg-vixua-burgundy text-white text-[9px] font-black px-2.5 py-1 rounded-full uppercase z-20">${item.badge}</span>
-                        <span class="absolute bottom-2.5 right-2.5 bg-white/90 text-slate-600 text-[10px] font-bold px-2 py-0.5 rounded-full border border-slate-200 z-20"><i class="fa-regular fa-images mr-1 text-vixua-burgundy"></i>${imgCount} ảnh</span>
                         <img src="${item.img}" alt="${item.name}" class="max-h-full max-w-full object-contain group-hover:scale-105 transition-transform duration-500">
                     </div>
                     <div class="p-5 flex-1 flex flex-col justify-between">
@@ -589,13 +1151,11 @@
             homeGrid.innerHTML = '';
 
             SPICES_DATA.slice(0, 4).forEach(item => {
-                const imgCount = (item.images && item.images.length) ? item.images.length : 1;
                 const card = document.createElement('div');
                 card.className = "bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group";
                 card.innerHTML = `
                     <div class="p-6 bg-slate-50 relative aspect-[4/3] flex items-center justify-center overflow-hidden cursor-pointer" onclick="openProductDetail(${item.id})">
                         <span class="absolute top-2.5 left-2.5 bg-vixua-burgundy text-white text-[9px] font-black px-2.5 py-1 rounded-full uppercase z-20">${item.badge}</span>
-                        <span class="absolute bottom-2.5 right-2.5 bg-white/90 text-slate-600 text-[10px] font-bold px-2 py-0.5 rounded-full border border-slate-200 z-20"><i class="fa-regular fa-images mr-1 text-vixua-burgundy"></i>${imgCount} ảnh</span>
                         <img src="${item.img}" alt="${item.name}" class="max-h-full max-w-full object-contain group-hover:scale-105 transition-transform duration-500">
                     </div>
                     <div class="p-5 flex-1 flex flex-col justify-between">
@@ -619,12 +1179,9 @@
         function filterSpices(category) {
             currentCat = category;
             document.querySelectorAll('.spice-tab').forEach(btn => {
-                if (btn.dataset.cat === category) {
-                    btn.className = "spice-tab active px-5 py-2 rounded-full text-xs font-bold burgundy-gradient text-white shadow-sm";
-                } else {
-                    btn.className = "spice-tab px-5 py-2 rounded-full text-xs font-bold bg-white text-slate-700 border border-slate-200 hover:bg-slate-100";
-                }
+                btn.className = "spice-tab px-5 py-2 rounded-full text-xs font-bold bg-white text-slate-700 border border-slate-200 hover:bg-slate-100";
             });
+            event.target.className = "spice-tab active px-5 py-2 rounded-full text-xs font-bold burgundy-gradient text-white shadow-sm";
             renderCatalog();
         }
 
@@ -690,18 +1247,7 @@
             document.getElementById('cart-drawer').classList.toggle('hidden');
         }
 
-        function checkoutCart() {
-            if (cart.length === 0) {
-                alert('Giỏ hàng đang trống! Hãy chọn thêm gia vị Vị Xưa nhé.');
-                return;
-            }
-            alert('Đơn hàng của bạn đã được ghi nhận thành công!');
-            cart = [];
-            updateCartUI();
-            toggleCartDrawer();
-        }
-
-        /* ================= ĐĂNG NHẬP / ĐĂNG KÝ ================= */
+        /* ================= ĐĂNG NHẬP / ĐĂNG KÝ (AUTH MODAL) ================= */
         function openAuthModal() {
             document.getElementById('auth-modal').classList.remove('hidden');
         }
@@ -732,12 +1278,14 @@
             }
         }
 
+        // Xử lý đăng nhập bằng Google, Facebook, Apple
         function handleSocialAuth(provider) {
-            const userName = provider === 'Google' ? 'Nguyễn Thành Đạt (Google)' :
+            const userName = provider === 'Google' ? 'Nguyễn Thành Đạt (Google)' : 
                              provider === 'Facebook' ? 'Thành Đạt (Facebook)' : 'Thành Đạt (Apple ID)';
             loginSuccess(userName);
         }
 
+        // Xử lý đăng nhập / đăng ký bằng form
         function handleEmailAuth(e, type) {
             e.preventDefault();
             if (type === 'login') {
@@ -758,15 +1306,9 @@
             alert(`Xin chào, ${name}! Bạn đã đăng nhập thành công vào hệ thống Vị Xưa.`);
         }
 
-        document.addEventListener('keydown', (e) => {
-            if (e.key === 'Escape') closeLightbox();
-        });
-
         document.addEventListener('DOMContentLoaded', () => {
             renderCatalog();
             renderHomeBestsellers();
-            renderComboGallery();
-            updateCartUI();
         });
     </script>
 </body>
